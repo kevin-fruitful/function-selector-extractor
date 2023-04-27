@@ -1,0 +1,1571 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "owner_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5061055f806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80638da5cb5b1461003b578063f2fde38b1461005f575b600080fd5b610043610074565b6040516001600160a01b03909116815260200160405180910390f35b61007261006d3660046104f9565b6100ac565b005b60006100a77fc8fcad8db84d3cc18b4c41d551ea0ee66dd599cde068d998e57d5e09332c1320546001600160a01b031690565b905090565b61010a6100cf6100ba6102ad565b60601b6bffffffffffffffffffffffff191690565b6100d7610309565b6101056040518060400160405280600d81526020016c53797374656d2041646d696e7360981b81525061032e565b61033f565b6101505760405162461bcd60e51b81526020600482015260126024820152713737ba10309039bcb9ba32b69030b236b4b760711b60448201526064015b60405180910390fd5b60006101796040518060400160405280600681526020016553797374656d60d01b81525061032e565b90506000606083901b6bffffffffffffffffffffffff191690506101c681836101056040518060400160405280600d81526020016c53797374656d2041646d696e7360981b81525061032e565b156102135760405162461bcd60e51b815260206004820152601f60248201527f4e4557206f776e6572204d555354204e4f54206265207379732061646d696e006044820152606401610147565b61024881836101056040518060400160405280600f81526020016e53797374656d204d616e616765727360881b81525061032e565b1561029f5760405162461bcd60e51b815260206004820152602160248201527f4e4557206f776e6572204d555354204e4f5420626520737973206d616e6167656044820152603960f91b6064820152608401610147565b6102a88361043d565b505050565b600030330361030357600080368080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152505050503601516001600160a01b031691506103069050565b50335b90565b60006100a76040518060400160405280600681526020016553797374656d60d01b8152505b600061033982610449565b92915050565b60008381527f1ab5ce5b595c6e94c5fba2e588bf4eafa8b384a4fb6e188b892768e695c1bfe6602090815260408083208584529091528120547f1ab5ce5b595c6e94c5fba2e588bf4eafa8b384a4fb6e188b892768e695c1bfc79080158015906103c457506000818152601d83016020908152604080832087845290915290205460ff165b156103d25760019250610434565b6000868152601f830160205260408120816103eb610309565b81526020810191909152604001600020549050801580159061042857506000818152601d84016020908152604080832088845290915290205460ff165b1561043257600193505b505b50509392505050565b61044681610464565b50565b6000815160000361045c57506000919050565b506020015190565b7fc8fcad8db84d3cc18b4c41d551ea0ee66dd599cde068d998e57d5e09332c132080546001600160a01b031981166001600160a01b038481169182179093556040517fc8fcad8db84d3cc18b4c41d551ea0ee66dd599cde068d998e57d5e09332c131c939092169182907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e090600090a3505050565b60006020828403121561050b57600080fd5b81356001600160a01b038116811461052257600080fd5b939250505056fea2646970667358221220d5535a29f102d0c40d46d507da792a23a6d7e3b34603a58763e40ca2f101cde864736f6c63430008110033",
+    "sourceMap": "473:668:82:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80638da5cb5b1461003b578063f2fde38b1461005f575b600080fd5b610043610074565b6040516001600160a01b03909116815260200160405180910390f35b61007261006d3660046104f9565b6100ac565b005b60006100a77fc8fcad8db84d3cc18b4c41d551ea0ee66dd599cde068d998e57d5e09332c1320546001600160a01b031690565b905090565b61010a6100cf6100ba6102ad565b60601b6bffffffffffffffffffffffff191690565b6100d7610309565b6101056040518060400160405280600d81526020016c53797374656d2041646d696e7360981b81525061032e565b61033f565b6101505760405162461bcd60e51b81526020600482015260126024820152713737ba10309039bcb9ba32b69030b236b4b760711b60448201526064015b60405180910390fd5b60006101796040518060400160405280600681526020016553797374656d60d01b81525061032e565b90506000606083901b6bffffffffffffffffffffffff191690506101c681836101056040518060400160405280600d81526020016c53797374656d2041646d696e7360981b81525061032e565b156102135760405162461bcd60e51b815260206004820152601f60248201527f4e4557206f776e6572204d555354204e4f54206265207379732061646d696e006044820152606401610147565b61024881836101056040518060400160405280600f81526020016e53797374656d204d616e616765727360881b81525061032e565b1561029f5760405162461bcd60e51b815260206004820152602160248201527f4e4557206f776e6572204d555354204e4f5420626520737973206d616e6167656044820152603960f91b6064820152608401610147565b6102a88361043d565b505050565b600030330361030357600080368080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152505050503601516001600160a01b031691506103069050565b50335b90565b60006100a76040518060400160405280600681526020016553797374656d60d01b8152505b600061033982610449565b92915050565b60008381527f1ab5ce5b595c6e94c5fba2e588bf4eafa8b384a4fb6e188b892768e695c1bfe6602090815260408083208584529091528120547f1ab5ce5b595c6e94c5fba2e588bf4eafa8b384a4fb6e188b892768e695c1bfc79080158015906103c457506000818152601d83016020908152604080832087845290915290205460ff165b156103d25760019250610434565b6000868152601f830160205260408120816103eb610309565b81526020810191909152604001600020549050801580159061042857506000818152601d84016020908152604080832088845290915290205460ff165b1561043257600193505b505b50509392505050565b61044681610464565b50565b6000815160000361045c57506000919050565b506020015190565b7fc8fcad8db84d3cc18b4c41d551ea0ee66dd599cde068d998e57d5e09332c132080546001600160a01b031981166001600160a01b038481169182179093556040517fc8fcad8db84d3cc18b4c41d551ea0ee66dd599cde068d998e57d5e09332c131c939092169182907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e090600090a3505050565b60006020828403121561050b57600080fd5b81356001600160a01b038116811461052257600080fd5b939250505056fea2646970667358221220d5535a29f102d0c40d46d507da792a23a6d7e3b34603a58763e40ca2f101cde864736f6c63430008110033",
+    "sourceMap": "473:668:82:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;336:117:83;;;:::i;:::-;;;-1:-1:-1;;;;;178:32:123;;;160:51;;148:2;133:18;336:117:83;;;;;;;537:602:82;;;;;;:::i;:::-;;:::i;:::-;;336:117:83;385:14;420:26;2736:30:89;;-1:-1:-1;;;;;2736:30:89;;2637:136;420:26:83;411:35;;336:117;:::o;537:602:82:-;741:155:41;759:48;787:19;:17;:19::i;:::-;352:14:73;;-1:-1:-1;;344:23:73;;254:120;759:48:41;809:23;:21;:23::i;:::-;834:61;862:32;;;;;;;;;;;;;-1:-1:-1;;;862:32:41;;;834:27;:61::i;:::-;741:17;:155::i;:::-;720:220;;;;-1:-1:-1;;;720:220:41;;715:2:123;720:220:41;;;697:21:123;754:2;734:18;;;727:30;-1:-1:-1;;;773:18:123;;;766:48;831:18;;720:220:41;;;;;;;;;624:16:82::1;643:59;671:30;;;;;;;;;;;;;-1:-1:-1::0;;;671:30:82::1;;::::0;643:27:::1;:59::i;:::-;624:78:::0;-1:-1:-1;712:17:82::1;352:14:73::0;;;;-1:-1:-1;;344:23:73;712:58:82::1;;790:101;808:9;819:8;829:61;857:32;;;;;;;;;;;;;-1:-1:-1::0;;;857:32:82::1;;::::0;829:27:::1;:61::i;790:101::-;789:102;781:146;;;::::0;-1:-1:-1;;;781:146:82;;1062:2:123;781:146:82::1;::::0;::::1;1044:21:123::0;1101:2;1081:18;;;1074:30;1140:33;1120:18;;;1113:61;1191:18;;781:146:82::1;860:355:123::0;781:146:82::1;946:103;964:9;975:8;985:63;1013:34;;;;;;;;;;;;;-1:-1:-1::0;;;1013:34:82::1;;::::0;985:27:::1;:63::i;946:103::-;945:104;937:150;;;::::0;-1:-1:-1;;;937:150:82;;1422:2:123;937:150:82::1;::::0;::::1;1404:21:123::0;1461:2;1441:18;;;1434:30;1500:34;1480:18;;;1473:62;-1:-1:-1;;;1551:18:123;;;1544:31;1592:19;;937:150:82::1;1220:397:123::0;937:150:82::1;1098:34;1122:9;1098:23;:34::i;:::-;614:525;;537:602:::0;:::o;79:508:90:-;123:15;176:4;154:10;:27;150:431;;197:18;218:8;;197:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;256:8:90;443:17;437:24;-1:-1:-1;;;;;433:73:90;;-1:-1:-1;150:431:90;;-1:-1:-1;150:431:90;;-1:-1:-1;560:10:90;150:431;79:508;:::o;1165:139:68:-;1212:7;1238:59;1266:30;;;;;;;;;;;;;-1:-1:-1;;;1266:30:68;;;1579:132:73;1649:7;1675:29;1697:5;1675:15;:29::i;:::-;1668:36;1579:132;-1:-1:-1;;1579:132:73:o;3330:745:67:-;3460:8;3619:18;;;:7;:18;;;;;;;;:30;;;;;;;;;4704:43:38;;3664:24:67;;;;;:67;;-1:-1:-1;3692:29:67;;;;:8;;;:29;;;;;;;;:39;;;;;;;;;;;3664:67;3660:409;;;3753:4;3747:10;;3660:409;;;3858:26;3887:18;;;:7;;;:18;;;;;3858:26;3906:23;:21;:23::i;:::-;3887:43;;;;;;;;;;;-1:-1:-1;3887:43:67;;;-1:-1:-1;3949:23:67;;;;;:65;;-1:-1:-1;3976:28:67;;;;:8;;;:28;;;;;;;;:38;;;;;;;;;;;3949:65;3945:114;;;4040:4;4034:10;;3945:114;3774:295;3660:409;3470:605;;3330:745;;;;;:::o;205:125:83:-;285:38;313:9;285:27;:38::i;:::-;205:125;:::o;1860:234:73:-;1929:14;1959:6;:13;1976:1;1959:18;1955:59;;-1:-1:-1;2000:3:73;;1860:234;-1:-1:-1;1860:234:73:o;1955:59::-;-1:-1:-1;2074:2:73;2062:15;2056:22;;1860:234::o;2367:264:89:-;2509:16;;;-1:-1:-1;;;;;;2535:28:89;;-1:-1:-1;;;;;2535:28:89;;;;;;;;;2578:46;;1179:45;;2509:16;;;;;;2578:46;;2431:25;;2578:46;2421:210;;2367:264;:::o;222:286:123:-;281:6;334:2;322:9;313:7;309:23;305:32;302:52;;;350:1;347;340:12;302:52;376:23;;-1:-1:-1;;;;;428:31:123;;418:42;;408:70;;474:1;471;464:12;408:70;497:5;222:286;-1:-1:-1;;;222:286:123:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "owner()": "8da5cb5b",
+    "transferOwnership(address)": "f2fde38b"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"owner_\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"returns\":{\"owner_\":\"The address of the owner.\"}},\"transferOwnership(address)\":{\"details\":\"Set _newOwner to address(0) to renounce any ownership.\",\"params\":{\"_newOwner\":\"The address of the new owner of the contract\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"owner()\":{\"notice\":\"Get the address of the owner\"},\"transferOwnership(address)\":{\"notice\":\"Set the address of the new owner of the contract\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/diamonds/shared/facets/NaymsOwnershipFacet.sol\":\"NaymsOwnershipFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\"]},\"sources\":{\"src/diamonds/nayms/AppStorage.sol\":{\"keccak256\":\"0xea212ff0174b72ed18d8f4288df97a202eebe977d5858e525b748e596f279edf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f8e0b7c0f3cb0e886f221aaa3f5f4fbe2f4d9d17ca2e5fe8ab2095b8951740c6\",\"dweb:/ipfs/QmQme6aQVAn39Bp5upLuncPm8JZ6Pa7D6udPSwPK5GQbTx\"]},\"src/diamonds/nayms/INayms.sol\":{\"keccak256\":\"0x5e4923ab77351098cd809238e56b71e940514730e652520aa85ae0deec4bdadd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://befcf0b889c99292d49a724d4b59d61fd52e1fd7cbb4f8ed64d6fc6a2c732ed1\",\"dweb:/ipfs/QmecX5Mfx8mDWLn4axucUHSG6MBD7h9cFho2x1QHLx2umi\"]},\"src/diamonds/nayms/Modifiers.sol\":{\"keccak256\":\"0xb32baad8377717871c7bb8d9dfe65fc1eaa6b9e8dc9d4ee7e187c6f22eda9440\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c9ebd2e6d4ff12a95fd32c53dee2670bf6c225cd732b0c48ebff4a112b7016f2\",\"dweb:/ipfs/QmcR7eEZrg4Gi9bhMtunt1yTXvMrcUxNzPb5AmDmH1cJAj\"]},\"src/diamonds/nayms/interfaces/CustomErrors.sol\":{\"keccak256\":\"0x7d7246de26f9b5c861fc50697837fb98a0eb2b1dbd6c844fb84356e57774c3e6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://97f1d1ef8fd408776bec083632d2d99ec7721090a542a0dcf0ff5f7a6fb953de\",\"dweb:/ipfs/QmZ48N2EZT2n3Pmwqi2TNCYJT1iC9cfyupjkM1DjybMreQ\"]},\"src/diamonds/nayms/interfaces/FreeStructs.sol\":{\"keccak256\":\"0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4\",\"dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD\"]},\"src/diamonds/nayms/interfaces/IACLFacet.sol\":{\"keccak256\":\"0xd72d59aa31c0834a96493e2a896bc9ee2963f906ab5c907184aeb1e7b8263176\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e55525f0117636d55524b0f56513c4c14e5d533994fbf303d05813ba27705931\",\"dweb:/ipfs/QmXiUgcRkULmBTeSXDv96sb584H9eQNX3wqN88qUVUBFdh\"]},\"src/diamonds/nayms/interfaces/IAdminFacet.sol\":{\"keccak256\":\"0xe7008511e360617181eeec1ecf76743bf9253501962c84a4931a72eb65aa1a1b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4b3c7852635cda5c013408accfe40646a6180bfbd74ee77f9928167e4754b631\",\"dweb:/ipfs/QmTwYLEXEiWZzVooS1SAtev2GfSfKTdqoTGL8uXQeojyJa\"]},\"src/diamonds/nayms/interfaces/IEntityFacet.sol\":{\"keccak256\":\"0xce32aa04ea48b38030d2b8650d0989b37cde6e48bcbbb133ff8e7e7ffd0f78e4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c970eb23c90a71386c7524abf0faca59dada315598df56826312ef15065556f5\",\"dweb:/ipfs/QmZCxwYYyPQyKgrpR7cqKWSw8aCbDHCYCi4JZUVdkKrQRY\"]},\"src/diamonds/nayms/interfaces/IGovernanceFacet.sol\":{\"keccak256\":\"0x521a78755df804dc302abec66a068c8529c7976893f7b5e9de6d8b5f463044bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c7d94ca1e30c4302f6125b97306a29ee6bf1a141acb8447fbdd18630f342c666\",\"dweb:/ipfs/QmZZRkAVWLhXMbc31m5e3MZJVZ7JUKiXAnNDBm5Ap7isaN\"]},\"src/diamonds/nayms/interfaces/IMarketFacet.sol\":{\"keccak256\":\"0xf5bd6475cc57cf8e6b1b4517cfd3e1ccdeea590ba398a0a828c9a02bfd7ce047\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d5beace8be7754de703ded6d95f04a6d75a291d993a0afa7a6f3addebb8769f2\",\"dweb:/ipfs/QmULQVQQQro6YxQE6SF6TKS2G3BhXuzyJKyGXZrKR3LXNH\"]},\"src/diamonds/nayms/interfaces/INaymsTokenFacet.sol\":{\"keccak256\":\"0xfdd01e5e0cd4dfea9196a3fa6dca3d277e394c7e1f6ea972e12620e04dcfd6aa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://850e6bfc293916409884dcd223a8afba6cf8c1fd545935e5eb40cbe64fd79039\",\"dweb:/ipfs/QmYtHEdHZbQfrxkD417EcJbwe1tiCpLRWE2Rgm7yJTQ3UG\"]},\"src/diamonds/nayms/interfaces/ISimplePolicyFacet.sol\":{\"keccak256\":\"0xa19aacc7591f778a17b6238212567584d4f261dd035ea1a5430cc4acde135b9c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://796c08003a00a8fac916d3dd60f753b7eac13f0bcf063af738045008684d9369\",\"dweb:/ipfs/QmVntDBDnY7xXKVDh1hniz84v8XHcrXf8tm4pgANAnH7Ts\"]},\"src/diamonds/nayms/interfaces/ISystemFacet.sol\":{\"keccak256\":\"0x3fbb24b05dd3e2dbfe8541af0dc9f175e562a77fcdc549848b170b9b14462f45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c626e5e5487847d9c8931f7fcab85b483164714704261432418dfac239311452\",\"dweb:/ipfs/QmTWqLGW2EoJ2oZJx8LjUbAfu4WHnv4A6uYAWdxEuQ89c5\"]},\"src/diamonds/nayms/interfaces/ITokenizedVaultFacet.sol\":{\"keccak256\":\"0x02a9fc017690a2fd1424a67f2ecae15cd741fc381e3c755d141ca5dbfb78f368\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2e654d4947bfddda09340711ac961871527ba9587d300100036604b97d9668e7\",\"dweb:/ipfs/QmUg32HGvV17CHwu2tThPpVrojQwhuXEnfFe2WFwvqkqzF\"]},\"src/diamonds/nayms/interfaces/ITokenizedVaultIOFacet.sol\":{\"keccak256\":\"0x6e524d2ab08929f2d31c1f1dd3c5c6c3f3317b80f22c8536b4ba7421369b1f87\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://646c0316fce39694cf11b020aa0b28496f31f2925cc31e795793977ac363fa12\",\"dweb:/ipfs/QmT9C9Ee5UuqzF9V6Rv7heJvoLGKXrd3KjYDQnzDyEVZs6\"]},\"src/diamonds/nayms/interfaces/IUserFacet.sol\":{\"keccak256\":\"0x3b7ed45fc97adf42268310737d3a5f2c07e9fa4d6105efbc3d16363c0ce4a839\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e996ea5a861ab4bd5da3a0e9bd4d0824cd12cdc21bc9563feb0ae24a0ae0e9bc\",\"dweb:/ipfs/Qmcaqi2NdUM8SJAupkznNQ3ey2DUE5JhXa7frG6AH3kw5o\"]},\"src/diamonds/nayms/libs/LibACL.sol\":{\"keccak256\":\"0x8f549e1ea1cf2634bf13370699b52d379399f31bb76d31f75cf0011a822c70cd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6776acf5de267965e5063bac3d0aab59cb270816c0a9c0530eceddefa6de1c8b\",\"dweb:/ipfs/QmURjioyaw3k64bTMYNuudomZxa9G7KrqTfUYgP9FCRNE4\"]},\"src/diamonds/nayms/libs/LibAdmin.sol\":{\"keccak256\":\"0x0c053811001b46912a34aacdfba50e70ea9440dde38d79980470969c36232310\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b24157174cc5b5f08fd7d18f180cc867f6f328a4f7ffa6ea4c0e8dd8eb3f5132\",\"dweb:/ipfs/QmQQHqWznGrdqNdoF6o3dYkt7acaUBenqYMKpjyfhckpwS\"]},\"src/diamonds/nayms/libs/LibConstants.sol\":{\"keccak256\":\"0xcba3c1c2947d879f894413bfcab9b0f6211b5cfc2adbd8db7ae218db1f5bd7af\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f0def6636ae5ab4b697720a32e370682f112432466c79a1e759488f09dca7a89\",\"dweb:/ipfs/QmeV8mYQjRGNXR5pKpK9RibT9KCcBY3vCh3nSbFuaD4bSW\"]},\"src/diamonds/nayms/libs/LibHelpers.sol\":{\"keccak256\":\"0x61ad402a9a658e721efca42b26e40b9fafeb59b7d22a7e68368c2a537251296d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://77813a6182ec65fb8859e2a3599568d64a70758c34fa1e48438e6c0737026d0b\",\"dweb:/ipfs/QmS8fw62nJ37UQp8yft6JgYArhEJPei6Cwi8eKtY1i2K61\"]},\"src/diamonds/nayms/libs/LibObject.sol\":{\"keccak256\":\"0x82b2d21a9cd294f922cdbef660c05dbb45ded4e0550801db8b2720b6cd0a742b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cd35c5c54631391008a536be2e1607ad8cec181c995694993d25dad7bdb732ae\",\"dweb:/ipfs/QmZamFKpWFQCR5gyvT9fWfZFxhoaV62SZYmTED7PQcTExK\"]},\"src/diamonds/shared/facets/NaymsOwnershipFacet.sol\":{\"keccak256\":\"0x6f559c9726fafbe49b940682aaf36646e659e0fb2c0a1effa5d2fb23e3dc71fc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d7c48051de82e47660b57733dbcffbff3153ce2647136159a62e4ab1745db6a9\",\"dweb:/ipfs/QmXrg7uhQ3pHA2uZYPhMqQgMJRJvg56cbabqCgFCcAbmKo\"]},\"src/diamonds/shared/facets/OwnershipFacet.sol\":{\"keccak256\":\"0xaf700bba2f9e15361f07b9f44c7700bd1fa73fead5fac8fbfd7f6a1829ba15e2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5db0fd25935e6a43cc22e043ec37fb963c17b80ba7491fb69828e6bc69496d87\",\"dweb:/ipfs/Qmd5PtWRaaiNH9QjiDZdoH2EyvHK7eNfnU6HzL64QbqFGF\"]},\"src/diamonds/shared/interfaces/IDiamondCut.sol\":{\"keccak256\":\"0x9f5fae94fa7eb7878762079d230687bd7184c60a0f1fdddf9775742bd5c495f1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8fd5f10ef1d46dc0c902fd83de013dc5fef5e144b168bfa9a418d6598bb1eb4b\",\"dweb:/ipfs/QmVgzifBPGZxxfwt2CuQMpVEdEmQWZNwpaJ2Nwfx3cvpn3\"]},\"src/diamonds/shared/interfaces/IDiamondLoupe.sol\":{\"keccak256\":\"0x27ca2115c56b2f09b4b4e24dc023e1d2ec0d6e1c603bdb30929d5bbda411cee0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0bc3bd5ac85edff564ecbe8896cf8be85a656f141c25c9705f02fad717cb6f9c\",\"dweb:/ipfs/QmYnQYgFapFvm7zwZMFFfGnERyd37mfVqHx8aT3HcCTDg2\"]},\"src/diamonds/shared/interfaces/IERC165.sol\":{\"keccak256\":\"0x13c14966128e5d95c060726fdfe204873e97df95d8092b65532e84d28bbeb6a4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://182cd2a57a4973dfe33b602219f92f46d8b5c93c2447c29299472740f4f39d9e\",\"dweb:/ipfs/QmTudnwW2V64G5FhetwDwmYTi7AaoFeksEXfV9Eq2SbDpc\"]},\"src/diamonds/shared/interfaces/IERC173.sol\":{\"keccak256\":\"0xfa7177a2353c17ceef7fb133fb547c7ce4fb9ad17f8fdcaca754fcec9c10f871\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd9f221cf880daa211ca7d9697a35de3a92311b1853048a9a62d49567cda947b\",\"dweb:/ipfs/QmWyV5Np2Dfxxs9PfoGGC24YJ1KsHBhP9ijsGrwQ5DpJ3Z\"]},\"src/diamonds/shared/libs/LibDiamond.sol\":{\"keccak256\":\"0x763a90994d21ad6b57b1c937045ccf6d4c718216d1a7e447b4d59e6565b28d52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://513f13eec9b409b405029eeae1a01f27ad46abd2a91f0eb778c4e9479cbaf65e\",\"dweb:/ipfs/QmWiyM7f3Q9HmLDddew9JAL9z3oo1mxfQD2xDcUUxHfZ7K\"]},\"src/diamonds/shared/libs/LibMeta.sol\":{\"keccak256\":\"0x060a6231ab516d9e21784ab33c14040a93e701808c262065a4e9631dd51981a5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f9ff4d59759fa3be9204a1e2a3af93a8ebd53af8d66616f09617e5d8a5ab66d8\",\"dweb:/ipfs/QmWroFXPtYPRQPCCB76UhSKGfhwviVbhVa3sQPRpu6tWF8\"]},\"src/erc20/ERC20Wrapper.sol\":{\"keccak256\":\"0x21ee46d5a54bfbe15ca0d406cbb273931cc24fc7fd8875d44107329526f5adc0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d310a4b48541753a2bb88f4891017ac84388551132e8bffe07a98908eece23b9\",\"dweb:/ipfs/QmNRcocVMWV4NvdSnVk9w84ULzCCXXVjkJ6wrK1QqZrKZ7\"]},\"src/erc20/IERC20.sol\":{\"keccak256\":\"0xbf33f9f19e0114283a92f8e4634c293527f6d695f64cbbbf39a63e0a0fb8dbae\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f85239a96f8597eedd3e22e37f5a2dd979b2fcd5cc8cae6a6d9f0210e220e09e\",\"dweb:/ipfs/QmUKN9ciqs19zMz3FPK3vBu4EaifWvciF5EsAzVDRsiNeb\"]},\"src/erc20/LibERC20.sol\":{\"keccak256\":\"0xfb91ec582c67f95775ae726d48f36df30e0920ecbae8deacb1b94cf4559e80a9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f4ad1f287ad4cc1906b59c9fb5c3fd051c2fa9f44beffa789dd65ee9d9c5b3a5\",\"dweb:/ipfs/QmZr288Va9yguWVnqbUw86LSNgjPt3RVg2qGp3mkvrEWWA\"]},\"src/utils/ReentrancyGuard.sol\":{\"keccak256\":\"0xa5e9cf016e387adab639172486c0d249d1a8a8a67d4f36254b81229d9b3f9e98\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b295db277d2b2723281cbee4795c1fcba805b75153af2419e68d1ded02dd0c8d\",\"dweb:/ipfs/QmVt7i8hzWMbXmMiVwDp8ps9i6Bz1uHtrMHadEBoMnCYjy\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipTransferred",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "owner_",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transferOwnership"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "owner()": {
+            "returns": {
+              "owner_": "The address of the owner."
+            }
+          },
+          "transferOwnership(address)": {
+            "details": "Set _newOwner to address(0) to renounce any ownership.",
+            "params": {
+              "_newOwner": "The address of the new owner of the contract"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "owner()": {
+            "notice": "Get the address of the owner"
+          },
+          "transferOwnership(address)": {
+            "notice": "Set the address of the new owner of the contract"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/diamonds/shared/facets/NaymsOwnershipFacet.sol": "NaymsOwnershipFacet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/AppStorage.sol": {
+        "keccak256": "0xea212ff0174b72ed18d8f4288df97a202eebe977d5858e525b748e596f279edf",
+        "urls": [
+          "bzz-raw://f8e0b7c0f3cb0e886f221aaa3f5f4fbe2f4d9d17ca2e5fe8ab2095b8951740c6",
+          "dweb:/ipfs/QmQme6aQVAn39Bp5upLuncPm8JZ6Pa7D6udPSwPK5GQbTx"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/INayms.sol": {
+        "keccak256": "0x5e4923ab77351098cd809238e56b71e940514730e652520aa85ae0deec4bdadd",
+        "urls": [
+          "bzz-raw://befcf0b889c99292d49a724d4b59d61fd52e1fd7cbb4f8ed64d6fc6a2c732ed1",
+          "dweb:/ipfs/QmecX5Mfx8mDWLn4axucUHSG6MBD7h9cFho2x1QHLx2umi"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/Modifiers.sol": {
+        "keccak256": "0xb32baad8377717871c7bb8d9dfe65fc1eaa6b9e8dc9d4ee7e187c6f22eda9440",
+        "urls": [
+          "bzz-raw://c9ebd2e6d4ff12a95fd32c53dee2670bf6c225cd732b0c48ebff4a112b7016f2",
+          "dweb:/ipfs/QmcR7eEZrg4Gi9bhMtunt1yTXvMrcUxNzPb5AmDmH1cJAj"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/CustomErrors.sol": {
+        "keccak256": "0x7d7246de26f9b5c861fc50697837fb98a0eb2b1dbd6c844fb84356e57774c3e6",
+        "urls": [
+          "bzz-raw://97f1d1ef8fd408776bec083632d2d99ec7721090a542a0dcf0ff5f7a6fb953de",
+          "dweb:/ipfs/QmZ48N2EZT2n3Pmwqi2TNCYJT1iC9cfyupjkM1DjybMreQ"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/FreeStructs.sol": {
+        "keccak256": "0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384",
+        "urls": [
+          "bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4",
+          "dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IACLFacet.sol": {
+        "keccak256": "0xd72d59aa31c0834a96493e2a896bc9ee2963f906ab5c907184aeb1e7b8263176",
+        "urls": [
+          "bzz-raw://e55525f0117636d55524b0f56513c4c14e5d533994fbf303d05813ba27705931",
+          "dweb:/ipfs/QmXiUgcRkULmBTeSXDv96sb584H9eQNX3wqN88qUVUBFdh"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IAdminFacet.sol": {
+        "keccak256": "0xe7008511e360617181eeec1ecf76743bf9253501962c84a4931a72eb65aa1a1b",
+        "urls": [
+          "bzz-raw://4b3c7852635cda5c013408accfe40646a6180bfbd74ee77f9928167e4754b631",
+          "dweb:/ipfs/QmTwYLEXEiWZzVooS1SAtev2GfSfKTdqoTGL8uXQeojyJa"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IEntityFacet.sol": {
+        "keccak256": "0xce32aa04ea48b38030d2b8650d0989b37cde6e48bcbbb133ff8e7e7ffd0f78e4",
+        "urls": [
+          "bzz-raw://c970eb23c90a71386c7524abf0faca59dada315598df56826312ef15065556f5",
+          "dweb:/ipfs/QmZCxwYYyPQyKgrpR7cqKWSw8aCbDHCYCi4JZUVdkKrQRY"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IGovernanceFacet.sol": {
+        "keccak256": "0x521a78755df804dc302abec66a068c8529c7976893f7b5e9de6d8b5f463044bf",
+        "urls": [
+          "bzz-raw://c7d94ca1e30c4302f6125b97306a29ee6bf1a141acb8447fbdd18630f342c666",
+          "dweb:/ipfs/QmZZRkAVWLhXMbc31m5e3MZJVZ7JUKiXAnNDBm5Ap7isaN"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IMarketFacet.sol": {
+        "keccak256": "0xf5bd6475cc57cf8e6b1b4517cfd3e1ccdeea590ba398a0a828c9a02bfd7ce047",
+        "urls": [
+          "bzz-raw://d5beace8be7754de703ded6d95f04a6d75a291d993a0afa7a6f3addebb8769f2",
+          "dweb:/ipfs/QmULQVQQQro6YxQE6SF6TKS2G3BhXuzyJKyGXZrKR3LXNH"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/INaymsTokenFacet.sol": {
+        "keccak256": "0xfdd01e5e0cd4dfea9196a3fa6dca3d277e394c7e1f6ea972e12620e04dcfd6aa",
+        "urls": [
+          "bzz-raw://850e6bfc293916409884dcd223a8afba6cf8c1fd545935e5eb40cbe64fd79039",
+          "dweb:/ipfs/QmYtHEdHZbQfrxkD417EcJbwe1tiCpLRWE2Rgm7yJTQ3UG"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/ISimplePolicyFacet.sol": {
+        "keccak256": "0xa19aacc7591f778a17b6238212567584d4f261dd035ea1a5430cc4acde135b9c",
+        "urls": [
+          "bzz-raw://796c08003a00a8fac916d3dd60f753b7eac13f0bcf063af738045008684d9369",
+          "dweb:/ipfs/QmVntDBDnY7xXKVDh1hniz84v8XHcrXf8tm4pgANAnH7Ts"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/ISystemFacet.sol": {
+        "keccak256": "0x3fbb24b05dd3e2dbfe8541af0dc9f175e562a77fcdc549848b170b9b14462f45",
+        "urls": [
+          "bzz-raw://c626e5e5487847d9c8931f7fcab85b483164714704261432418dfac239311452",
+          "dweb:/ipfs/QmTWqLGW2EoJ2oZJx8LjUbAfu4WHnv4A6uYAWdxEuQ89c5"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/ITokenizedVaultFacet.sol": {
+        "keccak256": "0x02a9fc017690a2fd1424a67f2ecae15cd741fc381e3c755d141ca5dbfb78f368",
+        "urls": [
+          "bzz-raw://2e654d4947bfddda09340711ac961871527ba9587d300100036604b97d9668e7",
+          "dweb:/ipfs/QmUg32HGvV17CHwu2tThPpVrojQwhuXEnfFe2WFwvqkqzF"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/ITokenizedVaultIOFacet.sol": {
+        "keccak256": "0x6e524d2ab08929f2d31c1f1dd3c5c6c3f3317b80f22c8536b4ba7421369b1f87",
+        "urls": [
+          "bzz-raw://646c0316fce39694cf11b020aa0b28496f31f2925cc31e795793977ac363fa12",
+          "dweb:/ipfs/QmT9C9Ee5UuqzF9V6Rv7heJvoLGKXrd3KjYDQnzDyEVZs6"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IUserFacet.sol": {
+        "keccak256": "0x3b7ed45fc97adf42268310737d3a5f2c07e9fa4d6105efbc3d16363c0ce4a839",
+        "urls": [
+          "bzz-raw://e996ea5a861ab4bd5da3a0e9bd4d0824cd12cdc21bc9563feb0ae24a0ae0e9bc",
+          "dweb:/ipfs/Qmcaqi2NdUM8SJAupkznNQ3ey2DUE5JhXa7frG6AH3kw5o"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/libs/LibACL.sol": {
+        "keccak256": "0x8f549e1ea1cf2634bf13370699b52d379399f31bb76d31f75cf0011a822c70cd",
+        "urls": [
+          "bzz-raw://6776acf5de267965e5063bac3d0aab59cb270816c0a9c0530eceddefa6de1c8b",
+          "dweb:/ipfs/QmURjioyaw3k64bTMYNuudomZxa9G7KrqTfUYgP9FCRNE4"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/libs/LibAdmin.sol": {
+        "keccak256": "0x0c053811001b46912a34aacdfba50e70ea9440dde38d79980470969c36232310",
+        "urls": [
+          "bzz-raw://b24157174cc5b5f08fd7d18f180cc867f6f328a4f7ffa6ea4c0e8dd8eb3f5132",
+          "dweb:/ipfs/QmQQHqWznGrdqNdoF6o3dYkt7acaUBenqYMKpjyfhckpwS"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/libs/LibConstants.sol": {
+        "keccak256": "0xcba3c1c2947d879f894413bfcab9b0f6211b5cfc2adbd8db7ae218db1f5bd7af",
+        "urls": [
+          "bzz-raw://f0def6636ae5ab4b697720a32e370682f112432466c79a1e759488f09dca7a89",
+          "dweb:/ipfs/QmeV8mYQjRGNXR5pKpK9RibT9KCcBY3vCh3nSbFuaD4bSW"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/libs/LibHelpers.sol": {
+        "keccak256": "0x61ad402a9a658e721efca42b26e40b9fafeb59b7d22a7e68368c2a537251296d",
+        "urls": [
+          "bzz-raw://77813a6182ec65fb8859e2a3599568d64a70758c34fa1e48438e6c0737026d0b",
+          "dweb:/ipfs/QmS8fw62nJ37UQp8yft6JgYArhEJPei6Cwi8eKtY1i2K61"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/libs/LibObject.sol": {
+        "keccak256": "0x82b2d21a9cd294f922cdbef660c05dbb45ded4e0550801db8b2720b6cd0a742b",
+        "urls": [
+          "bzz-raw://cd35c5c54631391008a536be2e1607ad8cec181c995694993d25dad7bdb732ae",
+          "dweb:/ipfs/QmZamFKpWFQCR5gyvT9fWfZFxhoaV62SZYmTED7PQcTExK"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/facets/NaymsOwnershipFacet.sol": {
+        "keccak256": "0x6f559c9726fafbe49b940682aaf36646e659e0fb2c0a1effa5d2fb23e3dc71fc",
+        "urls": [
+          "bzz-raw://d7c48051de82e47660b57733dbcffbff3153ce2647136159a62e4ab1745db6a9",
+          "dweb:/ipfs/QmXrg7uhQ3pHA2uZYPhMqQgMJRJvg56cbabqCgFCcAbmKo"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/facets/OwnershipFacet.sol": {
+        "keccak256": "0xaf700bba2f9e15361f07b9f44c7700bd1fa73fead5fac8fbfd7f6a1829ba15e2",
+        "urls": [
+          "bzz-raw://5db0fd25935e6a43cc22e043ec37fb963c17b80ba7491fb69828e6bc69496d87",
+          "dweb:/ipfs/Qmd5PtWRaaiNH9QjiDZdoH2EyvHK7eNfnU6HzL64QbqFGF"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/interfaces/IDiamondCut.sol": {
+        "keccak256": "0x9f5fae94fa7eb7878762079d230687bd7184c60a0f1fdddf9775742bd5c495f1",
+        "urls": [
+          "bzz-raw://8fd5f10ef1d46dc0c902fd83de013dc5fef5e144b168bfa9a418d6598bb1eb4b",
+          "dweb:/ipfs/QmVgzifBPGZxxfwt2CuQMpVEdEmQWZNwpaJ2Nwfx3cvpn3"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/interfaces/IDiamondLoupe.sol": {
+        "keccak256": "0x27ca2115c56b2f09b4b4e24dc023e1d2ec0d6e1c603bdb30929d5bbda411cee0",
+        "urls": [
+          "bzz-raw://0bc3bd5ac85edff564ecbe8896cf8be85a656f141c25c9705f02fad717cb6f9c",
+          "dweb:/ipfs/QmYnQYgFapFvm7zwZMFFfGnERyd37mfVqHx8aT3HcCTDg2"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/interfaces/IERC165.sol": {
+        "keccak256": "0x13c14966128e5d95c060726fdfe204873e97df95d8092b65532e84d28bbeb6a4",
+        "urls": [
+          "bzz-raw://182cd2a57a4973dfe33b602219f92f46d8b5c93c2447c29299472740f4f39d9e",
+          "dweb:/ipfs/QmTudnwW2V64G5FhetwDwmYTi7AaoFeksEXfV9Eq2SbDpc"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/interfaces/IERC173.sol": {
+        "keccak256": "0xfa7177a2353c17ceef7fb133fb547c7ce4fb9ad17f8fdcaca754fcec9c10f871",
+        "urls": [
+          "bzz-raw://bd9f221cf880daa211ca7d9697a35de3a92311b1853048a9a62d49567cda947b",
+          "dweb:/ipfs/QmWyV5Np2Dfxxs9PfoGGC24YJ1KsHBhP9ijsGrwQ5DpJ3Z"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/libs/LibDiamond.sol": {
+        "keccak256": "0x763a90994d21ad6b57b1c937045ccf6d4c718216d1a7e447b4d59e6565b28d52",
+        "urls": [
+          "bzz-raw://513f13eec9b409b405029eeae1a01f27ad46abd2a91f0eb778c4e9479cbaf65e",
+          "dweb:/ipfs/QmWiyM7f3Q9HmLDddew9JAL9z3oo1mxfQD2xDcUUxHfZ7K"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/libs/LibMeta.sol": {
+        "keccak256": "0x060a6231ab516d9e21784ab33c14040a93e701808c262065a4e9631dd51981a5",
+        "urls": [
+          "bzz-raw://f9ff4d59759fa3be9204a1e2a3af93a8ebd53af8d66616f09617e5d8a5ab66d8",
+          "dweb:/ipfs/QmWroFXPtYPRQPCCB76UhSKGfhwviVbhVa3sQPRpu6tWF8"
+        ],
+        "license": "MIT"
+      },
+      "src/erc20/ERC20Wrapper.sol": {
+        "keccak256": "0x21ee46d5a54bfbe15ca0d406cbb273931cc24fc7fd8875d44107329526f5adc0",
+        "urls": [
+          "bzz-raw://d310a4b48541753a2bb88f4891017ac84388551132e8bffe07a98908eece23b9",
+          "dweb:/ipfs/QmNRcocVMWV4NvdSnVk9w84ULzCCXXVjkJ6wrK1QqZrKZ7"
+        ],
+        "license": "MIT"
+      },
+      "src/erc20/IERC20.sol": {
+        "keccak256": "0xbf33f9f19e0114283a92f8e4634c293527f6d695f64cbbbf39a63e0a0fb8dbae",
+        "urls": [
+          "bzz-raw://f85239a96f8597eedd3e22e37f5a2dd979b2fcd5cc8cae6a6d9f0210e220e09e",
+          "dweb:/ipfs/QmUKN9ciqs19zMz3FPK3vBu4EaifWvciF5EsAzVDRsiNeb"
+        ],
+        "license": "MIT"
+      },
+      "src/erc20/LibERC20.sol": {
+        "keccak256": "0xfb91ec582c67f95775ae726d48f36df30e0920ecbae8deacb1b94cf4559e80a9",
+        "urls": [
+          "bzz-raw://f4ad1f287ad4cc1906b59c9fb5c3fd051c2fa9f44beffa789dd65ee9d9c5b3a5",
+          "dweb:/ipfs/QmZr288Va9yguWVnqbUw86LSNgjPt3RVg2qGp3mkvrEWWA"
+        ],
+        "license": "MIT"
+      },
+      "src/utils/ReentrancyGuard.sol": {
+        "keccak256": "0xa5e9cf016e387adab639172486c0d249d1a8a8a67d4f36254b81229d9b3f9e98",
+        "urls": [
+          "bzz-raw://b295db277d2b2723281cbee4795c1fcba805b75153af2419e68d1ded02dd0c8d",
+          "dweb:/ipfs/QmVt7i8hzWMbXmMiVwDp8ps9i6Bz1uHtrMHadEBoMnCYjy"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/diamonds/shared/facets/NaymsOwnershipFacet.sol",
+    "id": 50118,
+    "exportedSymbols": {
+      "LibACL": [
+        42661
+      ],
+      "LibConstants": [
+        43445
+      ],
+      "LibDiamond": [
+        52002
+      ],
+      "LibHelpers": [
+        45420
+      ],
+      "Modifiers": [
+        38973
+      ],
+      "NaymsOwnershipFacet": [
+        50117
+      ],
+      "OwnershipFacet": [
+        50152
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:1110:82",
+    "nodes": [
+      {
+        "id": 50040,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:82",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 50042,
+        "nodeType": "ImportDirective",
+        "src": "57:60:82",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/libs/LibACL.sol",
+        "file": "src/diamonds/nayms/libs/LibACL.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 50118,
+        "sourceUnit": 42662,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 50041,
+              "name": "LibACL",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 42661,
+              "src": "66:6:82",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 50044,
+        "nodeType": "ImportDirective",
+        "src": "118:68:82",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/libs/LibHelpers.sol",
+        "file": "src/diamonds/nayms/libs/LibHelpers.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 50118,
+        "sourceUnit": 45421,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 50043,
+              "name": "LibHelpers",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 45420,
+              "src": "127:10:82",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 50046,
+        "nodeType": "ImportDirective",
+        "src": "187:72:82",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/libs/LibConstants.sol",
+        "file": "src/diamonds/nayms/libs/LibConstants.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 50118,
+        "sourceUnit": 43446,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 50045,
+              "name": "LibConstants",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 43445,
+              "src": "196:12:82",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 50048,
+        "nodeType": "ImportDirective",
+        "src": "260:69:82",
+        "nodes": [],
+        "absolutePath": "src/diamonds/shared/libs/LibDiamond.sol",
+        "file": "src/diamonds/shared/libs/LibDiamond.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 50118,
+        "sourceUnit": 52003,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 50047,
+              "name": "LibDiamond",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 52002,
+              "src": "269:10:82",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 50050,
+        "nodeType": "ImportDirective",
+        "src": "330:79:82",
+        "nodes": [],
+        "absolutePath": "src/diamonds/shared/facets/OwnershipFacet.sol",
+        "file": "src/diamonds/shared/facets/OwnershipFacet.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 50118,
+        "sourceUnit": 50153,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 50049,
+              "name": "OwnershipFacet",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 50152,
+              "src": "339:14:82",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 50052,
+        "nodeType": "ImportDirective",
+        "src": "410:61:82",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/Modifiers.sol",
+        "file": "src/diamonds/nayms/Modifiers.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 50118,
+        "sourceUnit": 38974,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 50051,
+              "name": "Modifiers",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 38973,
+              "src": "419:9:82",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 50117,
+        "nodeType": "ContractDefinition",
+        "src": "473:668:82",
+        "nodes": [
+          {
+            "id": 50116,
+            "nodeType": "FunctionDefinition",
+            "src": "537:602:82",
+            "nodes": [],
+            "body": {
+              "id": 50115,
+              "nodeType": "Block",
+              "src": "614:525:82",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    50065
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 50065,
+                      "mutability": "mutable",
+                      "name": "systemID",
+                      "nameLocation": "632:8:82",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 50115,
+                      "src": "624:16:82",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 50064,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "624:7:82",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 50071,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 50068,
+                          "name": "LibConstants",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 43445,
+                          "src": "671:12:82",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_LibConstants_$43445_$",
+                            "typeString": "type(library LibConstants)"
+                          }
+                        },
+                        "id": 50069,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberLocation": "684:17:82",
+                        "memberName": "SYSTEM_IDENTIFIER",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 43268,
+                        "src": "671:30:82",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 50066,
+                        "name": "LibHelpers",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 45420,
+                        "src": "643:10:82",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_LibHelpers_$45420_$",
+                          "typeString": "type(library LibHelpers)"
+                        }
+                      },
+                      "id": 50067,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "654:16:82",
+                      "memberName": "_stringToBytes32",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 45369,
+                      "src": "643:27:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$returns$_t_bytes32_$",
+                        "typeString": "function (string memory) pure returns (bytes32)"
+                      }
+                    },
+                    "id": 50070,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "643:59:82",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "624:78:82"
+                },
+                {
+                  "assignments": [
+                    50073
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 50073,
+                      "mutability": "mutable",
+                      "name": "newAcc1Id",
+                      "nameLocation": "720:9:82",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 50115,
+                      "src": "712:17:82",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 50072,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "712:7:82",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 50078,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 50076,
+                        "name": "_newOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50058,
+                        "src": "760:9:82",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 50074,
+                        "name": "LibHelpers",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 45420,
+                        "src": "732:10:82",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_LibHelpers_$45420_$",
+                          "typeString": "type(library LibHelpers)"
+                        }
+                      },
+                      "id": 50075,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "743:16:82",
+                      "memberName": "_getIdForAddress",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 45258,
+                      "src": "732:27:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_address_$returns$_t_bytes32_$",
+                        "typeString": "function (address) pure returns (bytes32)"
+                      }
+                    },
+                    "id": 50077,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "732:38:82",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "712:58:82"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 50090,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "789:102:82",
+                        "subExpression": {
+                          "arguments": [
+                            {
+                              "id": 50082,
+                              "name": "newAcc1Id",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 50073,
+                              "src": "808:9:82",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            },
+                            {
+                              "id": 50083,
+                              "name": "systemID",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 50065,
+                              "src": "819:8:82",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            },
+                            {
+                              "arguments": [
+                                {
+                                  "expression": {
+                                    "id": 50086,
+                                    "name": "LibConstants",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 43445,
+                                    "src": "857:12:82",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_type$_t_contract$_LibConstants_$43445_$",
+                                      "typeString": "type(library LibConstants)"
+                                    }
+                                  },
+                                  "id": 50087,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "memberLocation": "870:19:82",
+                                  "memberName": "GROUP_SYSTEM_ADMINS",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 43325,
+                                  "src": "857:32:82",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_string_memory_ptr",
+                                    "typeString": "string memory"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_string_memory_ptr",
+                                    "typeString": "string memory"
+                                  }
+                                ],
+                                "expression": {
+                                  "id": 50084,
+                                  "name": "LibHelpers",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 45420,
+                                  "src": "829:10:82",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_contract$_LibHelpers_$45420_$",
+                                    "typeString": "type(library LibHelpers)"
+                                  }
+                                },
+                                "id": 50085,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberLocation": "840:16:82",
+                                "memberName": "_stringToBytes32",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 45369,
+                                "src": "829:27:82",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$returns$_t_bytes32_$",
+                                  "typeString": "function (string memory) pure returns (bytes32)"
+                                }
+                              },
+                              "id": 50088,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "nameLocations": [],
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "829:61:82",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              },
+                              {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              },
+                              {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            ],
+                            "expression": {
+                              "id": 50080,
+                              "name": "LibACL",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 42661,
+                              "src": "790:6:82",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_LibACL_$42661_$",
+                                "typeString": "type(library LibACL)"
+                              }
+                            },
+                            "id": 50081,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "797:10:82",
+                            "memberName": "_isInGroup",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 42347,
+                            "src": "790:17:82",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_bytes32_$_t_bytes32_$returns$_t_bool_$",
+                              "typeString": "function (bytes32,bytes32,bytes32) view returns (bool)"
+                            }
+                          },
+                          "id": 50089,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "790:101:82",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4e4557206f776e6572204d555354204e4f54206265207379732061646d696e",
+                        "id": 50091,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "893:33:82",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_daf05c5edb294f9929b689eec99027cc706d4a2a2eeb4d18e83a9d2db13486e7",
+                          "typeString": "literal_string \"NEW owner MUST NOT be sys admin\""
+                        },
+                        "value": "NEW owner MUST NOT be sys admin"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_daf05c5edb294f9929b689eec99027cc706d4a2a2eeb4d18e83a9d2db13486e7",
+                          "typeString": "literal_string \"NEW owner MUST NOT be sys admin\""
+                        }
+                      ],
+                      "id": 50079,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "781:7:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 50092,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "781:146:82",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 50093,
+                  "nodeType": "ExpressionStatement",
+                  "src": "781:146:82"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 50105,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "945:104:82",
+                        "subExpression": {
+                          "arguments": [
+                            {
+                              "id": 50097,
+                              "name": "newAcc1Id",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 50073,
+                              "src": "964:9:82",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            },
+                            {
+                              "id": 50098,
+                              "name": "systemID",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 50065,
+                              "src": "975:8:82",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            },
+                            {
+                              "arguments": [
+                                {
+                                  "expression": {
+                                    "id": 50101,
+                                    "name": "LibConstants",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 43445,
+                                    "src": "1013:12:82",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_type$_t_contract$_LibConstants_$43445_$",
+                                      "typeString": "type(library LibConstants)"
+                                    }
+                                  },
+                                  "id": 50102,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "memberLocation": "1026:21:82",
+                                  "memberName": "GROUP_SYSTEM_MANAGERS",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 43328,
+                                  "src": "1013:34:82",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_string_memory_ptr",
+                                    "typeString": "string memory"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_string_memory_ptr",
+                                    "typeString": "string memory"
+                                  }
+                                ],
+                                "expression": {
+                                  "id": 50099,
+                                  "name": "LibHelpers",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 45420,
+                                  "src": "985:10:82",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_contract$_LibHelpers_$45420_$",
+                                    "typeString": "type(library LibHelpers)"
+                                  }
+                                },
+                                "id": 50100,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberLocation": "996:16:82",
+                                "memberName": "_stringToBytes32",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 45369,
+                                "src": "985:27:82",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$returns$_t_bytes32_$",
+                                  "typeString": "function (string memory) pure returns (bytes32)"
+                                }
+                              },
+                              "id": 50103,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "nameLocations": [],
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "985:63:82",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              },
+                              {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              },
+                              {
+                                "typeIdentifier": "t_bytes32",
+                                "typeString": "bytes32"
+                              }
+                            ],
+                            "expression": {
+                              "id": 50095,
+                              "name": "LibACL",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 42661,
+                              "src": "946:6:82",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_LibACL_$42661_$",
+                                "typeString": "type(library LibACL)"
+                              }
+                            },
+                            "id": 50096,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "953:10:82",
+                            "memberName": "_isInGroup",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 42347,
+                            "src": "946:17:82",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_bytes32_$_t_bytes32_$returns$_t_bool_$",
+                              "typeString": "function (bytes32,bytes32,bytes32) view returns (bool)"
+                            }
+                          },
+                          "id": 50104,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "946:103:82",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4e4557206f776e6572204d555354204e4f5420626520737973206d616e61676572",
+                        "id": 50106,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1051:35:82",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_d22210e91ab2e2aaa0753327dbe4aeb441808e43428fef708313c539cc21526e",
+                          "typeString": "literal_string \"NEW owner MUST NOT be sys manager\""
+                        },
+                        "value": "NEW owner MUST NOT be sys manager"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_d22210e91ab2e2aaa0753327dbe4aeb441808e43428fef708313c539cc21526e",
+                          "typeString": "literal_string \"NEW owner MUST NOT be sys manager\""
+                        }
+                      ],
+                      "id": 50094,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "937:7:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 50107,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "937:150:82",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 50108,
+                  "nodeType": "ExpressionStatement",
+                  "src": "937:150:82"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 50112,
+                        "name": "_newOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50058,
+                        "src": "1122:9:82",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 50109,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -25,
+                        "src": "1098:5:82",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_super$_NaymsOwnershipFacet_$50117_$",
+                          "typeString": "type(contract super NaymsOwnershipFacet)"
+                        }
+                      },
+                      "id": 50111,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1104:17:82",
+                      "memberName": "transferOwnership",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 50138,
+                      "src": "1098:23:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 50113,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1098:34:82",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 50114,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1098:34:82"
+                }
+              ]
+            },
+            "baseFunctions": [
+              50138
+            ],
+            "functionSelector": "f2fde38b",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 50062,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 50061,
+                  "name": "assertSysAdmin",
+                  "nameLocations": [
+                    "599:14:82"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 38856,
+                  "src": "599:14:82"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "599:14:82"
+              }
+            ],
+            "name": "transferOwnership",
+            "nameLocation": "546:17:82",
+            "overrides": {
+              "id": 50060,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "590:8:82"
+            },
+            "parameters": {
+              "id": 50059,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 50058,
+                  "mutability": "mutable",
+                  "name": "_newOwner",
+                  "nameLocation": "572:9:82",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 50116,
+                  "src": "564:17:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 50057,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "564:7:82",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "563:19:82"
+            },
+            "returnParameters": {
+              "id": 50063,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "614:0:82"
+            },
+            "scope": 50117,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 50053,
+              "name": "OwnershipFacet",
+              "nameLocations": [
+                "505:14:82"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 50152,
+              "src": "505:14:82"
+            },
+            "id": 50054,
+            "nodeType": "InheritanceSpecifier",
+            "src": "505:14:82"
+          },
+          {
+            "baseName": {
+              "id": 50055,
+              "name": "Modifiers",
+              "nameLocations": [
+                "521:9:82"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 38973,
+              "src": "521:9:82"
+            },
+            "id": 50056,
+            "nodeType": "InheritanceSpecifier",
+            "src": "521:9:82"
+          }
+        ],
+        "canonicalName": "NaymsOwnershipFacet",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          50117,
+          38973,
+          50152,
+          50458
+        ],
+        "name": "NaymsOwnershipFacet",
+        "nameLocation": "482:19:82",
+        "scope": 50118,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 82
+}

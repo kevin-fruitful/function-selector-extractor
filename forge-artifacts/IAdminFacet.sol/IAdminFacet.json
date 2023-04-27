@@ -1,0 +1,1629 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "addSupportedExternalToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getMaxDividendDenominations",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getSupportedExternalTokens",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getSystemId",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "functionSelector",
+          "type": "bytes4"
+        }
+      ],
+      "name": "isFunctionLocked",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_objectId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isObjectTokenizable",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_tokenId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isSupportedExternalToken",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lockAllFundTransferFunctions",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "functionSelector",
+          "type": "bytes4"
+        }
+      ],
+      "name": "lockFunction",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "_newMax",
+          "type": "uint8"
+        }
+      ],
+      "name": "setMaxDividendDenominations",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint16",
+              "name": "premiumCommissionNaymsLtdBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "premiumCommissionNDFBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "premiumCommissionSTMBP",
+              "type": "uint16"
+            }
+          ],
+          "internalType": "struct PolicyCommissionsBasisPoints",
+          "name": "_policyCommissions",
+          "type": "tuple"
+        }
+      ],
+      "name": "setPolicyCommissionsBasisPoints",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint16",
+              "name": "tradingCommissionTotalBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "tradingCommissionNaymsLtdBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "tradingCommissionNDFBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "tradingCommissionSTMBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "tradingCommissionMakerBP",
+              "type": "uint16"
+            }
+          ],
+          "internalType": "struct TradingCommissionsBasisPoints",
+          "name": "_tradingCommissions",
+          "type": "tuple"
+        }
+      ],
+      "name": "setTradingCommissionsBasisPoints",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "functionSelector",
+          "type": "bytes4"
+        }
+      ],
+      "name": "unlockFunction",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "addSupportedExternalToken(address)": "cb429501",
+    "getMaxDividendDenominations()": "e9f0273c",
+    "getSupportedExternalTokens()": "bdd2620a",
+    "getSystemId()": "eb75c8e8",
+    "isFunctionLocked(bytes4)": "e6a19df2",
+    "isObjectTokenizable(bytes32)": "a62caf82",
+    "isSupportedExternalToken(bytes32)": "a0069289",
+    "lockAllFundTransferFunctions()": "a246e7a8",
+    "lockFunction(bytes4)": "34531828",
+    "setMaxDividendDenominations(uint8)": "5c74d6a4",
+    "setPolicyCommissionsBasisPoints((uint16,uint16,uint16))": "d57af28f",
+    "setTradingCommissionsBasisPoints((uint16,uint16,uint16,uint16,uint16))": "08a111ae",
+    "unlockFunction(bytes4)": "7f09d085"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tokenAddress\",\"type\":\"address\"}],\"name\":\"addSupportedExternalToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getMaxDividendDenominations\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getSupportedExternalTokens\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getSystemId\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"functionSelector\",\"type\":\"bytes4\"}],\"name\":\"isFunctionLocked\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_objectId\",\"type\":\"bytes32\"}],\"name\":\"isObjectTokenizable\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_tokenId\",\"type\":\"bytes32\"}],\"name\":\"isSupportedExternalToken\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lockAllFundTransferFunctions\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"functionSelector\",\"type\":\"bytes4\"}],\"name\":\"lockFunction\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_newMax\",\"type\":\"uint8\"}],\"name\":\"setMaxDividendDenominations\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint16\",\"name\":\"premiumCommissionNaymsLtdBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"premiumCommissionNDFBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"premiumCommissionSTMBP\",\"type\":\"uint16\"}],\"internalType\":\"struct PolicyCommissionsBasisPoints\",\"name\":\"_policyCommissions\",\"type\":\"tuple\"}],\"name\":\"setPolicyCommissionsBasisPoints\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint16\",\"name\":\"tradingCommissionTotalBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"tradingCommissionNaymsLtdBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"tradingCommissionNDFBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"tradingCommissionSTMBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"tradingCommissionMakerBP\",\"type\":\"uint16\"}],\"internalType\":\"struct TradingCommissionsBasisPoints\",\"name\":\"_tradingCommissions\",\"type\":\"tuple\"}],\"name\":\"setTradingCommissionsBasisPoints\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"functionSelector\",\"type\":\"bytes4\"}],\"name\":\"unlockFunction\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Use it to configure various core parameters\",\"kind\":\"dev\",\"methods\":{\"addSupportedExternalToken(address)\":{\"params\":{\"_tokenAddress\":\"address of the token to support\"}},\"getMaxDividendDenominations()\":{\"returns\":{\"_0\":\"max dividend denominations\"}},\"getSupportedExternalTokens()\":{\"returns\":{\"_0\":\"array containing address of all supported tokens\"}},\"getSystemId()\":{\"returns\":{\"_0\":\"System Identifier\"}},\"isFunctionLocked(bytes4)\":{\"details\":\"This views FunctionLockedStorage.lock\",\"params\":{\"functionSelector\":\"the bytes4 function selector\"}},\"isObjectTokenizable(bytes32)\":{\"params\":{\"_objectId\":\"ID of the object\"}},\"isSupportedExternalToken(bytes32)\":{\"params\":{\"_tokenId\":\"token address converted to bytes32\"},\"returns\":{\"_0\":\"whether token issupported or not\"}},\"lockFunction(bytes4)\":{\"details\":\"This toggles FunctionLockedStorage.lock to true\",\"params\":{\"functionSelector\":\"the bytes4 function selector\"}},\"setMaxDividendDenominations(uint8)\":{\"params\":{\"_newMax\":\"new value to be used.\"}},\"setPolicyCommissionsBasisPoints((uint16,uint16,uint16))\":{\"params\":{\"_policyCommissions\":\"policy commissions configuration to set\"}},\"setTradingCommissionsBasisPoints((uint16,uint16,uint16,uint16,uint16))\":{\"params\":{\"_tradingCommissions\":\"trading commissions configuration to set\"}},\"unlockFunction(bytes4)\":{\"details\":\"This toggles FunctionLockedStorage.lock to false\",\"params\":{\"functionSelector\":\"the bytes4 function selector\"}}},\"title\":\"Administration\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"addSupportedExternalToken(address)\":{\"notice\":\"Add another token to the supported tokens list\"},\"getMaxDividendDenominations()\":{\"notice\":\"Get the max dividend denominations value\"},\"getSupportedExternalTokens()\":{\"notice\":\"Get the supported tokens list as an array\"},\"getSystemId()\":{\"notice\":\"Gets the System context ID.\"},\"isFunctionLocked(bytes4)\":{\"notice\":\"Check if a function has been locked by a system admin\"},\"isObjectTokenizable(bytes32)\":{\"notice\":\"Check if object can be tokenized\"},\"isSupportedExternalToken(bytes32)\":{\"notice\":\"Is the specified tokenId an external ERC20 that is supported by the Nayms platform?\"},\"lockFunction(bytes4)\":{\"notice\":\"System Admin can lock a function\"},\"setMaxDividendDenominations(uint8)\":{\"notice\":\"Set `_newMax` as the max dividend denominations value.\"},\"setPolicyCommissionsBasisPoints((uint16,uint16,uint16))\":{\"notice\":\"Update policy commission basis points configuration.\"},\"setTradingCommissionsBasisPoints((uint16,uint16,uint16,uint16,uint16))\":{\"notice\":\"Update trading commission basis points configuration.\"},\"unlockFunction(bytes4)\":{\"notice\":\"System Admin can unlock a function\"}},\"notice\":\"Exposes methods that require administrative priviledges\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/diamonds/nayms/interfaces/IAdminFacet.sol\":\"IAdminFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\"]},\"sources\":{\"src/diamonds/nayms/interfaces/FreeStructs.sol\":{\"keccak256\":\"0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4\",\"dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD\"]},\"src/diamonds/nayms/interfaces/IAdminFacet.sol\":{\"keccak256\":\"0xe7008511e360617181eeec1ecf76743bf9253501962c84a4931a72eb65aa1a1b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4b3c7852635cda5c013408accfe40646a6180bfbd74ee77f9928167e4754b631\",\"dweb:/ipfs/QmTwYLEXEiWZzVooS1SAtev2GfSfKTdqoTGL8uXQeojyJa\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_tokenAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "addSupportedExternalToken"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getMaxDividendDenominations",
+          "outputs": [
+            {
+              "internalType": "uint8",
+              "name": "",
+              "type": "uint8"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getSupportedExternalTokens",
+          "outputs": [
+            {
+              "internalType": "address[]",
+              "name": "",
+              "type": "address[]"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "getSystemId",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes4",
+              "name": "functionSelector",
+              "type": "bytes4"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isFunctionLocked",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_objectId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "isObjectTokenizable",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_tokenId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isSupportedExternalToken",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "lockAllFundTransferFunctions"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes4",
+              "name": "functionSelector",
+              "type": "bytes4"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "lockFunction"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "_newMax",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setMaxDividendDenominations"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct PolicyCommissionsBasisPoints",
+              "name": "_policyCommissions",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint16",
+                  "name": "premiumCommissionNaymsLtdBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "premiumCommissionNDFBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "premiumCommissionSTMBP",
+                  "type": "uint16"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setPolicyCommissionsBasisPoints"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct TradingCommissionsBasisPoints",
+              "name": "_tradingCommissions",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint16",
+                  "name": "tradingCommissionTotalBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "tradingCommissionNaymsLtdBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "tradingCommissionNDFBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "tradingCommissionSTMBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "tradingCommissionMakerBP",
+                  "type": "uint16"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setTradingCommissionsBasisPoints"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes4",
+              "name": "functionSelector",
+              "type": "bytes4"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "unlockFunction"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "addSupportedExternalToken(address)": {
+            "params": {
+              "_tokenAddress": "address of the token to support"
+            }
+          },
+          "getMaxDividendDenominations()": {
+            "returns": {
+              "_0": "max dividend denominations"
+            }
+          },
+          "getSupportedExternalTokens()": {
+            "returns": {
+              "_0": "array containing address of all supported tokens"
+            }
+          },
+          "getSystemId()": {
+            "returns": {
+              "_0": "System Identifier"
+            }
+          },
+          "isFunctionLocked(bytes4)": {
+            "details": "This views FunctionLockedStorage.lock",
+            "params": {
+              "functionSelector": "the bytes4 function selector"
+            }
+          },
+          "isObjectTokenizable(bytes32)": {
+            "params": {
+              "_objectId": "ID of the object"
+            }
+          },
+          "isSupportedExternalToken(bytes32)": {
+            "params": {
+              "_tokenId": "token address converted to bytes32"
+            },
+            "returns": {
+              "_0": "whether token issupported or not"
+            }
+          },
+          "lockFunction(bytes4)": {
+            "details": "This toggles FunctionLockedStorage.lock to true",
+            "params": {
+              "functionSelector": "the bytes4 function selector"
+            }
+          },
+          "setMaxDividendDenominations(uint8)": {
+            "params": {
+              "_newMax": "new value to be used."
+            }
+          },
+          "setPolicyCommissionsBasisPoints((uint16,uint16,uint16))": {
+            "params": {
+              "_policyCommissions": "policy commissions configuration to set"
+            }
+          },
+          "setTradingCommissionsBasisPoints((uint16,uint16,uint16,uint16,uint16))": {
+            "params": {
+              "_tradingCommissions": "trading commissions configuration to set"
+            }
+          },
+          "unlockFunction(bytes4)": {
+            "details": "This toggles FunctionLockedStorage.lock to false",
+            "params": {
+              "functionSelector": "the bytes4 function selector"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "addSupportedExternalToken(address)": {
+            "notice": "Add another token to the supported tokens list"
+          },
+          "getMaxDividendDenominations()": {
+            "notice": "Get the max dividend denominations value"
+          },
+          "getSupportedExternalTokens()": {
+            "notice": "Get the supported tokens list as an array"
+          },
+          "getSystemId()": {
+            "notice": "Gets the System context ID."
+          },
+          "isFunctionLocked(bytes4)": {
+            "notice": "Check if a function has been locked by a system admin"
+          },
+          "isObjectTokenizable(bytes32)": {
+            "notice": "Check if object can be tokenized"
+          },
+          "isSupportedExternalToken(bytes32)": {
+            "notice": "Is the specified tokenId an external ERC20 that is supported by the Nayms platform?"
+          },
+          "lockFunction(bytes4)": {
+            "notice": "System Admin can lock a function"
+          },
+          "setMaxDividendDenominations(uint8)": {
+            "notice": "Set `_newMax` as the max dividend denominations value."
+          },
+          "setPolicyCommissionsBasisPoints((uint16,uint16,uint16))": {
+            "notice": "Update policy commission basis points configuration."
+          },
+          "setTradingCommissionsBasisPoints((uint16,uint16,uint16,uint16,uint16))": {
+            "notice": "Update trading commission basis points configuration."
+          },
+          "unlockFunction(bytes4)": {
+            "notice": "System Admin can unlock a function"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/diamonds/nayms/interfaces/IAdminFacet.sol": "IAdminFacet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/interfaces/FreeStructs.sol": {
+        "keccak256": "0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384",
+        "urls": [
+          "bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4",
+          "dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IAdminFacet.sol": {
+        "keccak256": "0xe7008511e360617181eeec1ecf76743bf9253501962c84a4931a72eb65aa1a1b",
+        "urls": [
+          "bzz-raw://4b3c7852635cda5c013408accfe40646a6180bfbd74ee77f9928167e4754b631",
+          "dweb:/ipfs/QmTwYLEXEiWZzVooS1SAtev2GfSfKTdqoTGL8uXQeojyJa"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/diamonds/nayms/interfaces/IAdminFacet.sol",
+    "id": 41522,
+    "exportedSymbols": {
+      "IAdminFacet": [
+        41521
+      ],
+      "PolicyCommissionsBasisPoints": [
+        41267
+      ],
+      "TradingCommissionsBasisPoints": [
+        41322
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:3144:57",
+    "nodes": [
+      {
+        "id": 41432,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:57",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 41435,
+        "nodeType": "ImportDirective",
+        "src": "57:96:57",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/interfaces/FreeStructs.sol",
+        "file": "./FreeStructs.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 41522,
+        "sourceUnit": 41323,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 41433,
+              "name": "PolicyCommissionsBasisPoints",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41267,
+              "src": "66:28:57",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 41434,
+              "name": "TradingCommissionsBasisPoints",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41322,
+              "src": "96:29:57",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 41521,
+        "nodeType": "ContractDefinition",
+        "src": "307:2868:57",
+        "nodes": [
+          {
+            "id": 41442,
+            "nodeType": "FunctionDefinition",
+            "src": "465:61:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41437,
+              "nodeType": "StructuredDocumentation",
+              "src": "335:125:57",
+              "text": " @notice Set `_newMax` as the max dividend denominations value.\n @param _newMax new value to be used."
+            },
+            "functionSelector": "5c74d6a4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setMaxDividendDenominations",
+            "nameLocation": "474:27:57",
+            "parameters": {
+              "id": 41440,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41439,
+                  "mutability": "mutable",
+                  "name": "_newMax",
+                  "nameLocation": "508:7:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41442,
+                  "src": "502:13:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 41438,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "502:5:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "501:15:57"
+            },
+            "returnParameters": {
+              "id": 41441,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "525:0:57"
+            },
+            "scope": 41521,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41449,
+            "nodeType": "FunctionDefinition",
+            "src": "689:108:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41443,
+              "nodeType": "StructuredDocumentation",
+              "src": "532:152:57",
+              "text": " @notice Update policy commission basis points configuration.\n @param _policyCommissions policy commissions configuration to set"
+            },
+            "functionSelector": "d57af28f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setPolicyCommissionsBasisPoints",
+            "nameLocation": "698:31:57",
+            "parameters": {
+              "id": 41447,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41446,
+                  "mutability": "mutable",
+                  "name": "_policyCommissions",
+                  "nameLocation": "768:18:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41449,
+                  "src": "730:56:57",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_calldata_ptr",
+                    "typeString": "struct PolicyCommissionsBasisPoints"
+                  },
+                  "typeName": {
+                    "id": 41445,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 41444,
+                      "name": "PolicyCommissionsBasisPoints",
+                      "nameLocations": [
+                        "730:28:57"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 41267,
+                      "src": "730:28:57"
+                    },
+                    "referencedDeclaration": 41267,
+                    "src": "730:28:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_storage_ptr",
+                      "typeString": "struct PolicyCommissionsBasisPoints"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "729:58:57"
+            },
+            "returnParameters": {
+              "id": 41448,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "796:0:57"
+            },
+            "scope": 41521,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41456,
+            "nodeType": "FunctionDefinition",
+            "src": "963:111:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41450,
+              "nodeType": "StructuredDocumentation",
+              "src": "803:155:57",
+              "text": " @notice Update trading commission basis points configuration.\n @param _tradingCommissions trading commissions configuration to set"
+            },
+            "functionSelector": "08a111ae",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setTradingCommissionsBasisPoints",
+            "nameLocation": "972:32:57",
+            "parameters": {
+              "id": 41454,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41453,
+                  "mutability": "mutable",
+                  "name": "_tradingCommissions",
+                  "nameLocation": "1044:19:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41456,
+                  "src": "1005:58:57",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_calldata_ptr",
+                    "typeString": "struct TradingCommissionsBasisPoints"
+                  },
+                  "typeName": {
+                    "id": 41452,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 41451,
+                      "name": "TradingCommissionsBasisPoints",
+                      "nameLocations": [
+                        "1005:29:57"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 41322,
+                      "src": "1005:29:57"
+                    },
+                    "referencedDeclaration": 41322,
+                    "src": "1005:29:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_storage_ptr",
+                      "typeString": "struct TradingCommissionsBasisPoints"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1004:60:57"
+            },
+            "returnParameters": {
+              "id": 41455,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1073:0:57"
+            },
+            "scope": 41521,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41462,
+            "nodeType": "FunctionDefinition",
+            "src": "1194:69:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41457,
+              "nodeType": "StructuredDocumentation",
+              "src": "1080:109:57",
+              "text": " @notice Get the max dividend denominations value\n @return max dividend denominations"
+            },
+            "functionSelector": "e9f0273c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getMaxDividendDenominations",
+            "nameLocation": "1203:27:57",
+            "parameters": {
+              "id": 41458,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1230:2:57"
+            },
+            "returnParameters": {
+              "id": 41461,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41460,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41462,
+                  "src": "1256:5:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 41459,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1256:5:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1255:7:57"
+            },
+            "scope": 41521,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41470,
+            "nodeType": "FunctionDefinition",
+            "src": "1490:81:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41463,
+              "nodeType": "StructuredDocumentation",
+              "src": "1269:216:57",
+              "text": " @notice Is the specified tokenId an external ERC20 that is supported by the Nayms platform?\n @param _tokenId token address converted to bytes32\n @return whether token issupported or not"
+            },
+            "functionSelector": "a0069289",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isSupportedExternalToken",
+            "nameLocation": "1499:24:57",
+            "parameters": {
+              "id": 41466,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41465,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nameLocation": "1532:8:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41470,
+                  "src": "1524:16:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41464,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1524:7:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1523:18:57"
+            },
+            "returnParameters": {
+              "id": 41469,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41468,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41470,
+                  "src": "1565:4:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 41467,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1565:4:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1564:6:57"
+            },
+            "scope": 41521,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41476,
+            "nodeType": "FunctionDefinition",
+            "src": "1715:67:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41471,
+              "nodeType": "StructuredDocumentation",
+              "src": "1577:133:57",
+              "text": " @notice Add another token to the supported tokens list\n @param _tokenAddress address of the token to support"
+            },
+            "functionSelector": "cb429501",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addSupportedExternalToken",
+            "nameLocation": "1724:25:57",
+            "parameters": {
+              "id": 41474,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41473,
+                  "mutability": "mutable",
+                  "name": "_tokenAddress",
+                  "nameLocation": "1758:13:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41476,
+                  "src": "1750:21:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 41472,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1750:7:57",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1749:23:57"
+            },
+            "returnParameters": {
+              "id": 41475,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1781:0:57"
+            },
+            "scope": 41521,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41483,
+            "nodeType": "FunctionDefinition",
+            "src": "1925:79:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41477,
+              "nodeType": "StructuredDocumentation",
+              "src": "1788:132:57",
+              "text": " @notice Get the supported tokens list as an array\n @return array containing address of all supported tokens"
+            },
+            "functionSelector": "bdd2620a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSupportedExternalTokens",
+            "nameLocation": "1934:26:57",
+            "parameters": {
+              "id": 41478,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1960:2:57"
+            },
+            "returnParameters": {
+              "id": 41482,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41481,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41483,
+                  "src": "1986:16:57",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 41479,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1986:7:57",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 41480,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1986:9:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1985:18:57"
+            },
+            "scope": 41521,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41489,
+            "nodeType": "FunctionDefinition",
+            "src": "2102:55:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41484,
+              "nodeType": "StructuredDocumentation",
+              "src": "2010:87:57",
+              "text": " @notice Gets the System context ID.\n @return System Identifier"
+            },
+            "functionSelector": "eb75c8e8",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSystemId",
+            "nameLocation": "2111:11:57",
+            "parameters": {
+              "id": 41485,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2122:2:57"
+            },
+            "returnParameters": {
+              "id": 41488,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41487,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41489,
+                  "src": "2148:7:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41486,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2148:7:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2147:9:57"
+            },
+            "scope": 41521,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41497,
+            "nodeType": "FunctionDefinition",
+            "src": "2268:72:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41490,
+              "nodeType": "StructuredDocumentation",
+              "src": "2163:100:57",
+              "text": " @notice Check if object can be tokenized\n @param _objectId ID of the object"
+            },
+            "functionSelector": "a62caf82",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isObjectTokenizable",
+            "nameLocation": "2277:19:57",
+            "parameters": {
+              "id": 41493,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41492,
+                  "mutability": "mutable",
+                  "name": "_objectId",
+                  "nameLocation": "2305:9:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41497,
+                  "src": "2297:17:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41491,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2297:7:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2296:19:57"
+            },
+            "returnParameters": {
+              "id": 41496,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41495,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41497,
+                  "src": "2334:4:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 41494,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2334:4:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2333:6:57"
+            },
+            "scope": 41521,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41503,
+            "nodeType": "FunctionDefinition",
+            "src": "2530:56:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41498,
+              "nodeType": "StructuredDocumentation",
+              "src": "2346:179:57",
+              "text": " @notice System Admin can lock a function\n @dev This toggles FunctionLockedStorage.lock to true\n @param functionSelector the bytes4 function selector"
+            },
+            "functionSelector": "34531828",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "lockFunction",
+            "nameLocation": "2539:12:57",
+            "parameters": {
+              "id": 41501,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41500,
+                  "mutability": "mutable",
+                  "name": "functionSelector",
+                  "nameLocation": "2559:16:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41503,
+                  "src": "2552:23:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 41499,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2552:6:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2551:25:57"
+            },
+            "returnParameters": {
+              "id": 41502,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2585:0:57"
+            },
+            "scope": 41521,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41509,
+            "nodeType": "FunctionDefinition",
+            "src": "2779:58:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41504,
+              "nodeType": "StructuredDocumentation",
+              "src": "2592:182:57",
+              "text": " @notice System Admin can unlock a function\n @dev This toggles FunctionLockedStorage.lock to false\n @param functionSelector the bytes4 function selector"
+            },
+            "functionSelector": "7f09d085",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unlockFunction",
+            "nameLocation": "2788:14:57",
+            "parameters": {
+              "id": 41507,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41506,
+                  "mutability": "mutable",
+                  "name": "functionSelector",
+                  "nameLocation": "2810:16:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41509,
+                  "src": "2803:23:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 41505,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2803:6:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2802:25:57"
+            },
+            "returnParameters": {
+              "id": 41508,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2836:0:57"
+            },
+            "scope": 41521,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41517,
+            "nodeType": "FunctionDefinition",
+            "src": "3038:80:57",
+            "nodes": [],
+            "documentation": {
+              "id": 41510,
+              "nodeType": "StructuredDocumentation",
+              "src": "2843:190:57",
+              "text": " @notice Check if a function has been locked by a system admin\n @dev This views FunctionLockedStorage.lock\n @param functionSelector the bytes4 function selector"
+            },
+            "functionSelector": "e6a19df2",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isFunctionLocked",
+            "nameLocation": "3047:16:57",
+            "parameters": {
+              "id": 41513,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41512,
+                  "mutability": "mutable",
+                  "name": "functionSelector",
+                  "nameLocation": "3071:16:57",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41517,
+                  "src": "3064:23:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 41511,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3064:6:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3063:25:57"
+            },
+            "returnParameters": {
+              "id": 41516,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41515,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41517,
+                  "src": "3112:4:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 41514,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3112:4:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3111:6:57"
+            },
+            "scope": 41521,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41520,
+            "nodeType": "FunctionDefinition",
+            "src": "3124:49:57",
+            "nodes": [],
+            "functionSelector": "a246e7a8",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "lockAllFundTransferFunctions",
+            "nameLocation": "3133:28:57",
+            "parameters": {
+              "id": 41518,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3161:2:57"
+            },
+            "returnParameters": {
+              "id": 41519,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3172:0:57"
+            },
+            "scope": 41521,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IAdminFacet",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 41436,
+          "nodeType": "StructuredDocumentation",
+          "src": "155:151:57",
+          "text": " @title Administration\n @notice Exposes methods that require administrative priviledges\n @dev Use it to configure various core parameters"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          41521
+        ],
+        "name": "IAdminFacet",
+        "nameLocation": "317:11:57",
+        "scope": 41522,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 57
+}

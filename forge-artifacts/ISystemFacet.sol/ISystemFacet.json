@@ -1,0 +1,1106 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_entityId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_entityAdmin",
+          "type": "bytes32"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "assetId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateralRatio",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxCapacity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "utilizedCapacity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "simplePolicyEnabled",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct Entity",
+          "name": "_entityData",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_dataHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "createEntity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getObjectMeta",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "parent",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "dataHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "tokenSymbol",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "tokenName",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenWrapper",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isObject",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_strIn",
+          "type": "string"
+        }
+      ],
+      "name": "stringToBytes32",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "result",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_objectId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "wrapToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "createEntity(bytes32,bytes32,(bytes32,uint256,uint256,uint256,bool),bytes32)": "53733f97",
+    "getObjectMeta(bytes32)": "cf0ccf9e",
+    "isObject(bytes32)": "524d8dd5",
+    "stringToBytes32(string)": "cfb51928",
+    "wrapToken(bytes32)": "7dfcdf2a"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_entityId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_entityAdmin\",\"type\":\"bytes32\"},{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"assetId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"collateralRatio\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxCapacity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"utilizedCapacity\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"simplePolicyEnabled\",\"type\":\"bool\"}],\"internalType\":\"struct Entity\",\"name\":\"_entityData\",\"type\":\"tuple\"},{\"internalType\":\"bytes32\",\"name\":\"_dataHash\",\"type\":\"bytes32\"}],\"name\":\"createEntity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_id\",\"type\":\"bytes32\"}],\"name\":\"getObjectMeta\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"parent\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"dataHash\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"tokenSymbol\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"tokenName\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"tokenWrapper\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_id\",\"type\":\"bytes32\"}],\"name\":\"isObject\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_strIn\",\"type\":\"string\"}],\"name\":\"stringToBytes32\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"result\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_objectId\",\"type\":\"bytes32\"}],\"name\":\"wrapToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Use it to perform system level operations\",\"kind\":\"dev\",\"methods\":{\"createEntity(bytes32,bytes32,(bytes32,uint256,uint256,uint256,bool),bytes32)\":{\"details\":\"An entity can be created with a zero max capacity! This is in the event where an entity cannot write any policies.\",\"params\":{\"_dataHash\":\"hash of the offchain data\",\"_entityAdmin\":\"Unique ID of the entity administrator\",\"_entityData\":\"remaining entity metadata\",\"_entityId\":\"Unique ID for the entity\"}},\"getObjectMeta(bytes32)\":{\"details\":\"Get meta of given object.\",\"params\":{\"_id\":\"object id.\"},\"returns\":{\"dataHash\":\"object data hash\",\"parent\":\"object parent\",\"tokenName\":\"object token name\",\"tokenSymbol\":\"object token symbol\",\"tokenWrapper\":\"object token ERC20 wrapper address\"}},\"isObject(bytes32)\":{\"details\":\"Get whether given id is an object in the system.\",\"params\":{\"_id\":\"object id.\"},\"returns\":{\"_0\":\"true if it is an object, false otherwise\"}},\"stringToBytes32(string)\":{\"params\":{\"_strIn\":\"a string\"}},\"wrapToken(bytes32)\":{\"params\":{\"_objectId\":\"ID of the tokenized object\"}}},\"title\":\"System\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"createEntity(bytes32,bytes32,(bytes32,uint256,uint256,uint256,bool),bytes32)\":{\"notice\":\"Create an entity\"},\"stringToBytes32(string)\":{\"notice\":\"Convert a string type to a bytes32 type\"},\"wrapToken(bytes32)\":{\"notice\":\"Wrap an object token as ERC20\"}},\"notice\":\"Use it to perform system level operations\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/diamonds/nayms/interfaces/ISystemFacet.sol\":\"ISystemFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\"]},\"sources\":{\"src/diamonds/nayms/interfaces/FreeStructs.sol\":{\"keccak256\":\"0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4\",\"dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD\"]},\"src/diamonds/nayms/interfaces/ISystemFacet.sol\":{\"keccak256\":\"0x3fbb24b05dd3e2dbfe8541af0dc9f175e562a77fcdc549848b170b9b14462f45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c626e5e5487847d9c8931f7fcab85b483164714704261432418dfac239311452\",\"dweb:/ipfs/QmTWqLGW2EoJ2oZJx8LjUbAfu4WHnv4A6uYAWdxEuQ89c5\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_entityId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_entityAdmin",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "struct Entity",
+              "name": "_entityData",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "assetId",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "collateralRatio",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "maxCapacity",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "utilizedCapacity",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "simplePolicyEnabled",
+                  "type": "bool"
+                }
+              ]
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_dataHash",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "createEntity"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_id",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getObjectMeta",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "parent",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "dataHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "string",
+              "name": "tokenSymbol",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "tokenName",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "tokenWrapper",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_id",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isObject",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "_strIn",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "stringToBytes32",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "result",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_objectId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "wrapToken"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "createEntity(bytes32,bytes32,(bytes32,uint256,uint256,uint256,bool),bytes32)": {
+            "details": "An entity can be created with a zero max capacity! This is in the event where an entity cannot write any policies.",
+            "params": {
+              "_dataHash": "hash of the offchain data",
+              "_entityAdmin": "Unique ID of the entity administrator",
+              "_entityData": "remaining entity metadata",
+              "_entityId": "Unique ID for the entity"
+            }
+          },
+          "getObjectMeta(bytes32)": {
+            "details": "Get meta of given object.",
+            "params": {
+              "_id": "object id."
+            },
+            "returns": {
+              "dataHash": "object data hash",
+              "parent": "object parent",
+              "tokenName": "object token name",
+              "tokenSymbol": "object token symbol",
+              "tokenWrapper": "object token ERC20 wrapper address"
+            }
+          },
+          "isObject(bytes32)": {
+            "details": "Get whether given id is an object in the system.",
+            "params": {
+              "_id": "object id."
+            },
+            "returns": {
+              "_0": "true if it is an object, false otherwise"
+            }
+          },
+          "stringToBytes32(string)": {
+            "params": {
+              "_strIn": "a string"
+            }
+          },
+          "wrapToken(bytes32)": {
+            "params": {
+              "_objectId": "ID of the tokenized object"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "createEntity(bytes32,bytes32,(bytes32,uint256,uint256,uint256,bool),bytes32)": {
+            "notice": "Create an entity"
+          },
+          "stringToBytes32(string)": {
+            "notice": "Convert a string type to a bytes32 type"
+          },
+          "wrapToken(bytes32)": {
+            "notice": "Wrap an object token as ERC20"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/diamonds/nayms/interfaces/ISystemFacet.sol": "ISystemFacet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/interfaces/FreeStructs.sol": {
+        "keccak256": "0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384",
+        "urls": [
+          "bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4",
+          "dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/ISystemFacet.sol": {
+        "keccak256": "0x3fbb24b05dd3e2dbfe8541af0dc9f175e562a77fcdc549848b170b9b14462f45",
+        "urls": [
+          "bzz-raw://c626e5e5487847d9c8931f7fcab85b483164714704261432418dfac239311452",
+          "dweb:/ipfs/QmTWqLGW2EoJ2oZJx8LjUbAfu4WHnv4A6uYAWdxEuQ89c5"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/diamonds/nayms/interfaces/ISystemFacet.sol",
+    "id": 41875,
+    "exportedSymbols": {
+      "Entity": [
+        41213
+      ],
+      "ISystemFacet": [
+        41874
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:1943:63",
+    "nodes": [
+      {
+        "id": 41819,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:63",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 41821,
+        "nodeType": "ImportDirective",
+        "src": "57:43:63",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/interfaces/FreeStructs.sol",
+        "file": "./FreeStructs.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 41875,
+        "sourceUnit": 41323,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 41820,
+              "name": "Entity",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41213,
+              "src": "66:6:63",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 41874,
+        "nodeType": "ContractDefinition",
+        "src": "230:1744:63",
+        "nodes": [
+          {
+            "id": 41835,
+            "nodeType": "FunctionDefinition",
+            "src": "650:156:63",
+            "nodes": [],
+            "documentation": {
+              "id": 41823,
+              "nodeType": "StructuredDocumentation",
+              "src": "259:386:63",
+              "text": " @notice Create an entity\n @dev An entity can be created with a zero max capacity! This is in the event where an entity cannot write any policies.\n @param _entityId Unique ID for the entity\n @param _entityAdmin Unique ID of the entity administrator\n @param _entityData remaining entity metadata\n @param _dataHash hash of the offchain data"
+            },
+            "functionSelector": "53733f97",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createEntity",
+            "nameLocation": "659:12:63",
+            "parameters": {
+              "id": 41833,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41825,
+                  "mutability": "mutable",
+                  "name": "_entityId",
+                  "nameLocation": "689:9:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41835,
+                  "src": "681:17:63",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41824,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "681:7:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41827,
+                  "mutability": "mutable",
+                  "name": "_entityAdmin",
+                  "nameLocation": "716:12:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41835,
+                  "src": "708:20:63",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41826,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "708:7:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41830,
+                  "mutability": "mutable",
+                  "name": "_entityData",
+                  "nameLocation": "752:11:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41835,
+                  "src": "738:25:63",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Entity_$41213_memory_ptr",
+                    "typeString": "struct Entity"
+                  },
+                  "typeName": {
+                    "id": 41829,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 41828,
+                      "name": "Entity",
+                      "nameLocations": [
+                        "738:6:63"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 41213,
+                      "src": "738:6:63"
+                    },
+                    "referencedDeclaration": 41213,
+                    "src": "738:6:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Entity_$41213_storage_ptr",
+                      "typeString": "struct Entity"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41832,
+                  "mutability": "mutable",
+                  "name": "_dataHash",
+                  "nameLocation": "781:9:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41835,
+                  "src": "773:17:63",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41831,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "773:7:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "671:125:63"
+            },
+            "returnParameters": {
+              "id": 41834,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "805:0:63"
+            },
+            "scope": 41874,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41843,
+            "nodeType": "FunctionDefinition",
+            "src": "913:86:63",
+            "nodes": [],
+            "documentation": {
+              "id": 41836,
+              "nodeType": "StructuredDocumentation",
+              "src": "812:96:63",
+              "text": " @notice Convert a string type to a bytes32 type\n @param _strIn a string"
+            },
+            "functionSelector": "cfb51928",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stringToBytes32",
+            "nameLocation": "922:15:63",
+            "parameters": {
+              "id": 41839,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41838,
+                  "mutability": "mutable",
+                  "name": "_strIn",
+                  "nameLocation": "952:6:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41843,
+                  "src": "938:20:63",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41837,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "938:6:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "937:22:63"
+            },
+            "returnParameters": {
+              "id": 41842,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41841,
+                  "mutability": "mutable",
+                  "name": "result",
+                  "nameLocation": "991:6:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41843,
+                  "src": "983:14:63",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41840,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "983:7:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "982:16:63"
+            },
+            "scope": 41874,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41851,
+            "nodeType": "FunctionDefinition",
+            "src": "1167:60:63",
+            "nodes": [],
+            "documentation": {
+              "id": 41844,
+              "nodeType": "StructuredDocumentation",
+              "src": "1005:157:63",
+              "text": " @dev Get whether given id is an object in the system.\n @param _id object id.\n @return true if it is an object, false otherwise"
+            },
+            "functionSelector": "524d8dd5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isObject",
+            "nameLocation": "1176:8:63",
+            "parameters": {
+              "id": 41847,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41846,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nameLocation": "1193:3:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41851,
+                  "src": "1185:11:63",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41845,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1185:7:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1184:13:63"
+            },
+            "returnParameters": {
+              "id": 41850,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41849,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41851,
+                  "src": "1221:4:63",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 41848,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1221:4:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1220:6:63"
+            },
+            "scope": 41874,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41867,
+            "nodeType": "FunctionDefinition",
+            "src": "1546:261:63",
+            "nodes": [],
+            "documentation": {
+              "id": 41852,
+              "nodeType": "StructuredDocumentation",
+              "src": "1233:308:63",
+              "text": " @dev Get meta of given object.\n @param _id object id.\n @return parent object parent\n @return dataHash object data hash\n @return tokenSymbol object token symbol\n @return tokenName object token name\n @return tokenWrapper object token ERC20 wrapper address"
+            },
+            "functionSelector": "cf0ccf9e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getObjectMeta",
+            "nameLocation": "1555:13:63",
+            "parameters": {
+              "id": 41855,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41854,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nameLocation": "1577:3:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41867,
+                  "src": "1569:11:63",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41853,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1569:7:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1568:13:63"
+            },
+            "returnParameters": {
+              "id": 41866,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41857,
+                  "mutability": "mutable",
+                  "name": "parent",
+                  "nameLocation": "1650:6:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41867,
+                  "src": "1642:14:63",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41856,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1642:7:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41859,
+                  "mutability": "mutable",
+                  "name": "dataHash",
+                  "nameLocation": "1678:8:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41867,
+                  "src": "1670:16:63",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41858,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1670:7:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41861,
+                  "mutability": "mutable",
+                  "name": "tokenSymbol",
+                  "nameLocation": "1714:11:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41867,
+                  "src": "1700:25:63",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41860,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1700:6:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41863,
+                  "mutability": "mutable",
+                  "name": "tokenName",
+                  "nameLocation": "1753:9:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41867,
+                  "src": "1739:23:63",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41862,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1739:6:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41865,
+                  "mutability": "mutable",
+                  "name": "tokenWrapper",
+                  "nameLocation": "1784:12:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41867,
+                  "src": "1776:20:63",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 41864,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1776:7:63",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1628:178:63"
+            },
+            "scope": 41874,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41873,
+            "nodeType": "FunctionDefinition",
+            "src": "1925:47:63",
+            "nodes": [],
+            "documentation": {
+              "id": 41868,
+              "nodeType": "StructuredDocumentation",
+              "src": "1813:107:63",
+              "text": " @notice Wrap an object token as ERC20\n @param _objectId ID of the tokenized object"
+            },
+            "functionSelector": "7dfcdf2a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "wrapToken",
+            "nameLocation": "1934:9:63",
+            "parameters": {
+              "id": 41871,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41870,
+                  "mutability": "mutable",
+                  "name": "_objectId",
+                  "nameLocation": "1952:9:63",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41873,
+                  "src": "1944:17:63",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41869,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1944:7:63",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1943:19:63"
+            },
+            "returnParameters": {
+              "id": 41872,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1971:0:63"
+            },
+            "scope": 41874,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISystemFacet",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 41822,
+          "nodeType": "StructuredDocumentation",
+          "src": "102:127:63",
+          "text": " @title System\n @notice Use it to perform system level operations\n @dev Use it to perform system level operations"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          41874
+        ],
+        "name": "ISystemFacet",
+        "nameLocation": "240:12:63",
+        "scope": 41875,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 63
+}

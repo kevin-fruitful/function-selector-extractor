@@ -1,0 +1,695 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_externalTokenId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getAddressFromExternalTokenId",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_userId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getEntity",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "entityId",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getUserIdFromAddress",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "userId",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_userId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_entityId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "setEntity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getAddressFromExternalTokenId(bytes32)": "3f1b887f",
+    "getEntity(bytes32)": "53b66f36",
+    "getUserIdFromAddress(address)": "9cb481b2",
+    "setEntity(bytes32,bytes32)": "afab5f15"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_externalTokenId\",\"type\":\"bytes32\"}],\"name\":\"getAddressFromExternalTokenId\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_userId\",\"type\":\"bytes32\"}],\"name\":\"getEntity\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"entityId\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"getUserIdFromAddress\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"userId\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_userId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_entityId\",\"type\":\"bytes32\"}],\"name\":\"setEntity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Use manage user entity\",\"kind\":\"dev\",\"methods\":{\"getAddressFromExternalTokenId(bytes32)\":{\"details\":\"Convert the bytes32 external token ID to its respective ERC20 contract address\",\"params\":{\"_externalTokenId\":\"The ID assigned to an external token\"},\"returns\":{\"tokenAddress\":\"Contract address\"}},\"getEntity(bytes32)\":{\"details\":\"Gets the entity related to the user\",\"params\":{\"_userId\":\"Unique platform ID of the user account\"},\"returns\":{\"entityId\":\"Unique platform ID of the entity\"}},\"getUserIdFromAddress(address)\":{\"details\":\"Convert address to platform ID\",\"params\":{\"addr\":\"Account address\"},\"returns\":{\"userId\":\"Unique platform ID\"}},\"setEntity(bytes32,bytes32)\":{\"details\":\"Assign the user an entity. The entity must exist in order to associate it with a user.\",\"params\":{\"_entityId\":\"Unique platform ID of the entity\",\"_userId\":\"Unique platform ID of the user account\"}}},\"title\":\"Users\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getAddressFromExternalTokenId(bytes32)\":{\"notice\":\"Get the token address from ID of the external token\"},\"getEntity(bytes32)\":{\"notice\":\"Get the entity for the user\"},\"getUserIdFromAddress(address)\":{\"notice\":\"Get the platform ID of `addr` account\"},\"setEntity(bytes32,bytes32)\":{\"notice\":\"Set the entity for the user\"}},\"notice\":\"Manage user entity\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/diamonds/nayms/interfaces/IUserFacet.sol\":\"IUserFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin/=lib/ozv4/contracts/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\",\":v3-core-08/=lib/v3-core-08/contracts/\",\":v3-peri-08/=lib/v3-peri-08/contracts/\"]},\"sources\":{\"src/diamonds/nayms/interfaces/IUserFacet.sol\":{\"keccak256\":\"0x3b7ed45fc97adf42268310737d3a5f2c07e9fa4d6105efbc3d16363c0ce4a839\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e996ea5a861ab4bd5da3a0e9bd4d0824cd12cdc21bc9563feb0ae24a0ae0e9bc\",\"dweb:/ipfs/Qmcaqi2NdUM8SJAupkznNQ3ey2DUE5JhXa7frG6AH3kw5o\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_externalTokenId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "getAddressFromExternalTokenId",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "tokenAddress",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_userId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEntity",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "entityId",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "getUserIdFromAddress",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "userId",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_userId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_entityId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setEntity"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "getAddressFromExternalTokenId(bytes32)": {
+            "details": "Convert the bytes32 external token ID to its respective ERC20 contract address",
+            "params": {
+              "_externalTokenId": "The ID assigned to an external token"
+            },
+            "returns": {
+              "tokenAddress": "Contract address"
+            }
+          },
+          "getEntity(bytes32)": {
+            "details": "Gets the entity related to the user",
+            "params": {
+              "_userId": "Unique platform ID of the user account"
+            },
+            "returns": {
+              "entityId": "Unique platform ID of the entity"
+            }
+          },
+          "getUserIdFromAddress(address)": {
+            "details": "Convert address to platform ID",
+            "params": {
+              "addr": "Account address"
+            },
+            "returns": {
+              "userId": "Unique platform ID"
+            }
+          },
+          "setEntity(bytes32,bytes32)": {
+            "details": "Assign the user an entity. The entity must exist in order to associate it with a user.",
+            "params": {
+              "_entityId": "Unique platform ID of the entity",
+              "_userId": "Unique platform ID of the user account"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "getAddressFromExternalTokenId(bytes32)": {
+            "notice": "Get the token address from ID of the external token"
+          },
+          "getEntity(bytes32)": {
+            "notice": "Get the entity for the user"
+          },
+          "getUserIdFromAddress(address)": {
+            "notice": "Get the platform ID of `addr` account"
+          },
+          "setEntity(bytes32,bytes32)": {
+            "notice": "Set the entity for the user"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin/=lib/ozv4/contracts/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/",
+        ":v3-core-08/=lib/v3-core-08/contracts/",
+        ":v3-peri-08/=lib/v3-peri-08/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/diamonds/nayms/interfaces/IUserFacet.sol": "IUserFacet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/interfaces/IUserFacet.sol": {
+        "keccak256": "0x3b7ed45fc97adf42268310737d3a5f2c07e9fa4d6105efbc3d16363c0ce4a839",
+        "urls": [
+          "bzz-raw://e996ea5a861ab4bd5da3a0e9bd4d0824cd12cdc21bc9563feb0ae24a0ae0e9bc",
+          "dweb:/ipfs/Qmcaqi2NdUM8SJAupkznNQ3ey2DUE5JhXa7frG6AH3kw5o"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/diamonds/nayms/interfaces/IUserFacet.sol",
+    "id": 41894,
+    "exportedSymbols": {
+      "IUserFacet": [
+        41893
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:1468:66",
+    "nodes": [
+      {
+        "id": 41859,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:66",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 41893,
+        "nodeType": "ContractDefinition",
+        "src": "142:1357:66",
+        "nodes": [
+          {
+            "id": 41868,
+            "nodeType": "FunctionDefinition",
+            "src": "357:83:66",
+            "nodes": [],
+            "documentation": {
+              "id": 41861,
+              "nodeType": "StructuredDocumentation",
+              "src": "169:183:66",
+              "text": " @notice Get the platform ID of `addr` account\n @dev Convert address to platform ID\n @param addr Account address\n @return userId Unique platform ID"
+            },
+            "functionSelector": "9cb481b2",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUserIdFromAddress",
+            "nameLocation": "366:20:66",
+            "parameters": {
+              "id": 41864,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41863,
+                  "mutability": "mutable",
+                  "name": "addr",
+                  "nameLocation": "395:4:66",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41868,
+                  "src": "387:12:66",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 41862,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "387:7:66",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "386:14:66"
+            },
+            "returnParameters": {
+              "id": 41867,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41866,
+                  "mutability": "mutable",
+                  "name": "userId",
+                  "nameLocation": "432:6:66",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41868,
+                  "src": "424:14:66",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41865,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "424:7:66",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "423:16:66"
+            },
+            "scope": 41893,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41876,
+            "nodeType": "FunctionDefinition",
+            "src": "733:110:66",
+            "nodes": [],
+            "documentation": {
+              "id": 41869,
+              "nodeType": "StructuredDocumentation",
+              "src": "446:282:66",
+              "text": " @notice Get the token address from ID of the external token\n @dev Convert the bytes32 external token ID to its respective ERC20 contract address\n @param _externalTokenId The ID assigned to an external token\n @return tokenAddress Contract address"
+            },
+            "functionSelector": "3f1b887f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAddressFromExternalTokenId",
+            "nameLocation": "742:29:66",
+            "parameters": {
+              "id": 41872,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41871,
+                  "mutability": "mutable",
+                  "name": "_externalTokenId",
+                  "nameLocation": "780:16:66",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41876,
+                  "src": "772:24:66",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41870,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "772:7:66",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "771:26:66"
+            },
+            "returnParameters": {
+              "id": 41875,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41874,
+                  "mutability": "mutable",
+                  "name": "tokenAddress",
+                  "nameLocation": "829:12:66",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41876,
+                  "src": "821:20:66",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 41873,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "821:7:66",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "820:22:66"
+            },
+            "scope": 41893,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41884,
+            "nodeType": "FunctionDefinition",
+            "src": "1125:64:66",
+            "nodes": [],
+            "documentation": {
+              "id": 41877,
+              "nodeType": "StructuredDocumentation",
+              "src": "849:271:66",
+              "text": " @notice Set the entity for the user\n @dev Assign the user an entity. The entity must exist in order to associate it with a user.\n @param _userId Unique platform ID of the user account\n @param _entityId Unique platform ID of the entity"
+            },
+            "functionSelector": "afab5f15",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setEntity",
+            "nameLocation": "1134:9:66",
+            "parameters": {
+              "id": 41882,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41879,
+                  "mutability": "mutable",
+                  "name": "_userId",
+                  "nameLocation": "1152:7:66",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41884,
+                  "src": "1144:15:66",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41878,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1144:7:66",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41881,
+                  "mutability": "mutable",
+                  "name": "_entityId",
+                  "nameLocation": "1169:9:66",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41884,
+                  "src": "1161:17:66",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41880,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1161:7:66",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1143:36:66"
+            },
+            "returnParameters": {
+              "id": 41883,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1188:0:66"
+            },
+            "scope": 41893,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41892,
+            "nodeType": "FunctionDefinition",
+            "src": "1420:77:66",
+            "nodes": [],
+            "documentation": {
+              "id": 41885,
+              "nodeType": "StructuredDocumentation",
+              "src": "1195:220:66",
+              "text": " @notice Get the entity for the user\n @dev Gets the entity related to the user\n @param _userId Unique platform ID of the user account\n @return entityId Unique platform ID of the entity"
+            },
+            "functionSelector": "53b66f36",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEntity",
+            "nameLocation": "1429:9:66",
+            "parameters": {
+              "id": 41888,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41887,
+                  "mutability": "mutable",
+                  "name": "_userId",
+                  "nameLocation": "1447:7:66",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41892,
+                  "src": "1439:15:66",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41886,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1439:7:66",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1438:17:66"
+            },
+            "returnParameters": {
+              "id": 41891,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41890,
+                  "mutability": "mutable",
+                  "name": "entityId",
+                  "nameLocation": "1487:8:66",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41892,
+                  "src": "1479:16:66",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41889,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1479:7:66",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1478:18:66"
+            },
+            "scope": 41893,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IUserFacet",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 41860,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:84:66",
+          "text": " @title Users\n @notice Manage user entity\n @dev Use manage user entity"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          41893
+        ],
+        "name": "IUserFacet",
+        "nameLocation": "152:10:66",
+        "scope": 41894,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 66
+}

@@ -1,0 +1,618 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50610126806100206000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806318160ddd14603757806370a0823114604f575b600080fd5b603d6094565b60405190815260200160405180910390f35b603d605a36600460c2565b6001600160a01b031660009081527f1ab5ce5b595c6e94c5fba2e588bf4eafa8b384a4fb6e188b892768e695c1bfcf602052604090205490565b600060bd7f1ab5ce5b595c6e94c5fba2e588bf4eafa8b384a4fb6e188b892768e695c1bfcd5490565b905090565b60006020828403121560d357600080fd5b81356001600160a01b038116811460e957600080fd5b939250505056fea264697066735822122015caaba8afeebf016b04075e436b78cb188b8d16aff84183ef72fdce5c272bde64736f6c63430008110033",
+    "sourceMap": "334:514:48:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806318160ddd14603757806370a0823114604f575b600080fd5b603d6094565b60405190815260200160405180910390f35b603d605a36600460c2565b6001600160a01b031660009081527f1ab5ce5b595c6e94c5fba2e588bf4eafa8b384a4fb6e188b892768e695c1bfcf602052604090205490565b600060bd7f1ab5ce5b595c6e94c5fba2e588bf4eafa8b384a4fb6e188b892768e695c1bfcd5490565b905090565b60006020828403121560d357600080fd5b81356001600160a01b038116811460e957600080fd5b939250505056fea264697066735822122015caaba8afeebf016b04075e436b78cb188b8d16aff84183ef72fdce5c272bde64736f6c63430008110033",
+    "sourceMap": "334:514:48:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;469:107;;;:::i;:::-;;;160:25:123;;;148:2;133:18;469:107:48;;;;;;;727:119;;;;;;:::i;:::-;-1:-1:-1;;;;;525:16:75;783:7:48;525:16:75;;;:10;:16;;;;;;;727:119:48;469:107;515:7;541:28;353:13:75;;;217:156;541:28:48;534:35;;469:107;:::o;196:286:123:-;255:6;308:2;296:9;287:7;283:23;279:32;276:52;;;324:1;321;314:12;276:52;350:23;;-1:-1:-1;;;;;402:31:123;;392:42;;382:70;;448:1;445;438:12;382:70;471:5;196:286;-1:-1:-1;;;196:286:123:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "balanceOf(address)": "70a08231",
+    "totalSupply()": "18160ddd"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Use it to access and manipulate Nayms token.\",\"kind\":\"dev\",\"methods\":{\"balanceOf(address)\":{\"details\":\"Get token balance of given wallet.\",\"params\":{\"addr\":\"wallet whose balance to get.\"},\"returns\":{\"_0\":\"balance of wallet.\"}},\"totalSupply()\":{\"details\":\"Get total supply of token.\",\"returns\":{\"_0\":\"total supply.\"}}},\"title\":\"Nayms token facet.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Use it to access and manipulate Nayms token.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/diamonds/nayms/facets/NaymsTokenFacet.sol\":\"NaymsTokenFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\"]},\"sources\":{\"src/diamonds/nayms/AppStorage.sol\":{\"keccak256\":\"0xea212ff0174b72ed18d8f4288df97a202eebe977d5858e525b748e596f279edf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f8e0b7c0f3cb0e886f221aaa3f5f4fbe2f4d9d17ca2e5fe8ab2095b8951740c6\",\"dweb:/ipfs/QmQme6aQVAn39Bp5upLuncPm8JZ6Pa7D6udPSwPK5GQbTx\"]},\"src/diamonds/nayms/facets/NaymsTokenFacet.sol\":{\"keccak256\":\"0x04e7f985f81ad8a82e70ab1bcde707acf1458b1fe39f681dbc604a72a855a054\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dd45fd6280c420d369df293b2d1ab1cf65eca8afd505c6c300aee85af2b98cc4\",\"dweb:/ipfs/QmTyoVU3vSabY58Sj3SSkBER2esGMfy3etbAJMXiwD5rJU\"]},\"src/diamonds/nayms/interfaces/FreeStructs.sol\":{\"keccak256\":\"0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4\",\"dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD\"]},\"src/diamonds/nayms/interfaces/INaymsTokenFacet.sol\":{\"keccak256\":\"0xfdd01e5e0cd4dfea9196a3fa6dca3d277e394c7e1f6ea972e12620e04dcfd6aa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://850e6bfc293916409884dcd223a8afba6cf8c1fd545935e5eb40cbe64fd79039\",\"dweb:/ipfs/QmYtHEdHZbQfrxkD417EcJbwe1tiCpLRWE2Rgm7yJTQ3UG\"]},\"src/diamonds/nayms/libs/LibNaymsToken.sol\":{\"keccak256\":\"0x8261f7c3726cdfc50499da97cb9c29baeb3868da8a10dfb030f56449a7325705\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f8cdfc78a5d1d994592fb25eee0b096ca55008da90fb727d1a8bfda36f1c4aad\",\"dweb:/ipfs/QmdwA9YiU6SZ6Qr1YjFjt4iGRDQp4Ddkoq7pUYqpid2wWz\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "balanceOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "totalSupply",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "balanceOf(address)": {
+            "details": "Get token balance of given wallet.",
+            "params": {
+              "addr": "wallet whose balance to get."
+            },
+            "returns": {
+              "_0": "balance of wallet."
+            }
+          },
+          "totalSupply()": {
+            "details": "Get total supply of token.",
+            "returns": {
+              "_0": "total supply."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/diamonds/nayms/facets/NaymsTokenFacet.sol": "NaymsTokenFacet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/AppStorage.sol": {
+        "keccak256": "0xea212ff0174b72ed18d8f4288df97a202eebe977d5858e525b748e596f279edf",
+        "urls": [
+          "bzz-raw://f8e0b7c0f3cb0e886f221aaa3f5f4fbe2f4d9d17ca2e5fe8ab2095b8951740c6",
+          "dweb:/ipfs/QmQme6aQVAn39Bp5upLuncPm8JZ6Pa7D6udPSwPK5GQbTx"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/facets/NaymsTokenFacet.sol": {
+        "keccak256": "0x04e7f985f81ad8a82e70ab1bcde707acf1458b1fe39f681dbc604a72a855a054",
+        "urls": [
+          "bzz-raw://dd45fd6280c420d369df293b2d1ab1cf65eca8afd505c6c300aee85af2b98cc4",
+          "dweb:/ipfs/QmTyoVU3vSabY58Sj3SSkBER2esGMfy3etbAJMXiwD5rJU"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/FreeStructs.sol": {
+        "keccak256": "0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384",
+        "urls": [
+          "bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4",
+          "dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/INaymsTokenFacet.sol": {
+        "keccak256": "0xfdd01e5e0cd4dfea9196a3fa6dca3d277e394c7e1f6ea972e12620e04dcfd6aa",
+        "urls": [
+          "bzz-raw://850e6bfc293916409884dcd223a8afba6cf8c1fd545935e5eb40cbe64fd79039",
+          "dweb:/ipfs/QmYtHEdHZbQfrxkD417EcJbwe1tiCpLRWE2Rgm7yJTQ3UG"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/libs/LibNaymsToken.sol": {
+        "keccak256": "0x8261f7c3726cdfc50499da97cb9c29baeb3868da8a10dfb030f56449a7325705",
+        "urls": [
+          "bzz-raw://f8cdfc78a5d1d994592fb25eee0b096ca55008da90fb727d1a8bfda36f1c4aad",
+          "dweb:/ipfs/QmdwA9YiU6SZ6Qr1YjFjt4iGRDQp4Ddkoq7pUYqpid2wWz"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/diamonds/nayms/facets/NaymsTokenFacet.sol",
+    "id": 40254,
+    "exportedSymbols": {
+      "INaymsTokenFacet": [
+        41745
+      ],
+      "LibNaymsToken": [
+        47139
+      ],
+      "NaymsTokenFacet": [
+        40253
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:817:48",
+    "nodes": [
+      {
+        "id": 40220,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:48",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 40222,
+        "nodeType": "ImportDirective",
+        "src": "57:70:48",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/interfaces/INaymsTokenFacet.sol",
+        "file": "../interfaces/INaymsTokenFacet.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 40254,
+        "sourceUnit": 41746,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 40221,
+              "name": "INaymsTokenFacet",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41745,
+              "src": "66:16:48",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 40224,
+        "nodeType": "ImportDirective",
+        "src": "128:58:48",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/libs/LibNaymsToken.sol",
+        "file": "../libs/LibNaymsToken.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 40254,
+        "sourceUnit": 47140,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 40223,
+              "name": "LibNaymsToken",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 47139,
+              "src": "137:13:48",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 40253,
+        "nodeType": "ContractDefinition",
+        "src": "334:514:48",
+        "nodes": [
+          {
+            "id": 40238,
+            "nodeType": "FunctionDefinition",
+            "src": "469:107:48",
+            "nodes": [],
+            "body": {
+              "id": 40237,
+              "nodeType": "Block",
+              "src": "524:52:48",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 40233,
+                        "name": "LibNaymsToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 47139,
+                        "src": "541:13:48",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_LibNaymsToken_$47139_$",
+                          "typeString": "type(library LibNaymsToken)"
+                        }
+                      },
+                      "id": 40234,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "555:12:48",
+                      "memberName": "_totalSupply",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 47118,
+                      "src": "541:26:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 40235,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "541:28:48",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 40232,
+                  "id": 40236,
+                  "nodeType": "Return",
+                  "src": "534:35:48"
+                }
+              ]
+            },
+            "baseFunctions": [
+              41736
+            ],
+            "documentation": {
+              "id": 40228,
+              "nodeType": "StructuredDocumentation",
+              "src": "385:79:48",
+              "text": " @dev Get total supply of token.\n @return total supply."
+            },
+            "functionSelector": "18160ddd",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalSupply",
+            "nameLocation": "478:11:48",
+            "parameters": {
+              "id": 40229,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "489:2:48"
+            },
+            "returnParameters": {
+              "id": 40232,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40231,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40238,
+                  "src": "515:7:48",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 40230,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "515:7:48",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "514:9:48"
+            },
+            "scope": 40253,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 40252,
+            "nodeType": "FunctionDefinition",
+            "src": "727:119:48",
+            "nodes": [],
+            "body": {
+              "id": 40251,
+              "nodeType": "Block",
+              "src": "792:54:48",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 40248,
+                        "name": "addr",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 40241,
+                        "src": "834:4:48",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 40246,
+                        "name": "LibNaymsToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 47139,
+                        "src": "809:13:48",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_LibNaymsToken_$47139_$",
+                          "typeString": "type(library LibNaymsToken)"
+                        }
+                      },
+                      "id": 40247,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "823:10:48",
+                      "memberName": "_balanceOf",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 47138,
+                      "src": "809:24:48",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (address) view returns (uint256)"
+                      }
+                    },
+                    "id": 40249,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "809:30:48",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 40245,
+                  "id": 40250,
+                  "nodeType": "Return",
+                  "src": "802:37:48"
+                }
+              ]
+            },
+            "baseFunctions": [
+              41744
+            ],
+            "documentation": {
+              "id": 40239,
+              "nodeType": "StructuredDocumentation",
+              "src": "582:140:48",
+              "text": " @dev Get token balance of given wallet.\n @param addr wallet whose balance to get.\n @return balance of wallet."
+            },
+            "functionSelector": "70a08231",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "balanceOf",
+            "nameLocation": "736:9:48",
+            "parameters": {
+              "id": 40242,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40241,
+                  "mutability": "mutable",
+                  "name": "addr",
+                  "nameLocation": "754:4:48",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40252,
+                  "src": "746:12:48",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 40240,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "746:7:48",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "745:14:48"
+            },
+            "returnParameters": {
+              "id": 40245,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40244,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40252,
+                  "src": "783:7:48",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 40243,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "783:7:48",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "782:9:48"
+            },
+            "scope": 40253,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 40226,
+              "name": "INaymsTokenFacet",
+              "nameLocations": [
+                "362:16:48"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 41745,
+              "src": "362:16:48"
+            },
+            "id": 40227,
+            "nodeType": "InheritanceSpecifier",
+            "src": "362:16:48"
+          }
+        ],
+        "canonicalName": "NaymsTokenFacet",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 40225,
+          "nodeType": "StructuredDocumentation",
+          "src": "188:145:48",
+          "text": " @title Nayms token facet.\n @notice Use it to access and manipulate Nayms token.\n @dev Use it to access and manipulate Nayms token."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          40253,
+          41745
+        ],
+        "name": "NaymsTokenFacet",
+        "nameLocation": "343:15:48",
+        "scope": 40254,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 48
+}

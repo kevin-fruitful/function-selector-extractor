@@ -1,0 +1,1976 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_objectId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_contextId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "_role",
+          "type": "string"
+        }
+      ],
+      "name": "assignRole",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_assignerId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_objectId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_contextId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "_role",
+          "type": "string"
+        }
+      ],
+      "name": "canAssign",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "role",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "group",
+          "type": "string"
+        }
+      ],
+      "name": "canGroupAssignRole",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "objectId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "contextId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getRoleInContext",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_objectId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_contextId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "_group",
+          "type": "string"
+        }
+      ],
+      "name": "isInGroup",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_objectId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_contextId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "_group",
+          "type": "string"
+        }
+      ],
+      "name": "isParentInGroup",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "role",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "group",
+          "type": "string"
+        }
+      ],
+      "name": "isRoleInGroup",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_objectId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_contextId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "unassignRole",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_role",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_assignerGroup",
+          "type": "string"
+        }
+      ],
+      "name": "updateRoleAssigner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_role",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_group",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "_roleInGroup",
+          "type": "bool"
+        }
+      ],
+      "name": "updateRoleGroup",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "assignRole(bytes32,bytes32,string)": "5e1ac8fa",
+    "canAssign(bytes32,bytes32,bytes32,string)": "1219dee2",
+    "canGroupAssignRole(string,string)": "af76f046",
+    "getRoleInContext(bytes32,bytes32)": "47c07483",
+    "isInGroup(bytes32,bytes32,string)": "d774b4e3",
+    "isParentInGroup(bytes32,bytes32,string)": "c8422402",
+    "isRoleInGroup(string,string)": "7273e796",
+    "unassignRole(bytes32,bytes32)": "c1b2bc96",
+    "updateRoleAssigner(string,string)": "6362aeb4",
+    "updateRoleGroup(string,string,bool)": "ff3406ce"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_objectId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_contextId\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"_role\",\"type\":\"string\"}],\"name\":\"assignRole\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_assignerId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_objectId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_contextId\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"_role\",\"type\":\"string\"}],\"name\":\"canAssign\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"role\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"group\",\"type\":\"string\"}],\"name\":\"canGroupAssignRole\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"objectId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"contextId\",\"type\":\"bytes32\"}],\"name\":\"getRoleInContext\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_objectId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_contextId\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"_group\",\"type\":\"string\"}],\"name\":\"isInGroup\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_objectId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_contextId\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"_group\",\"type\":\"string\"}],\"name\":\"isParentInGroup\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"role\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"group\",\"type\":\"string\"}],\"name\":\"isRoleInGroup\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_objectId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_contextId\",\"type\":\"bytes32\"}],\"name\":\"unassignRole\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_role\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_assignerGroup\",\"type\":\"string\"}],\"name\":\"updateRoleAssigner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_role\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_group\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"_roleInGroup\",\"type\":\"bool\"}],\"name\":\"updateRoleGroup\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Use it to (un)assign or check role membership\",\"kind\":\"dev\",\"methods\":{\"assignRole(bytes32,bytes32,string)\":{\"details\":\"Any object ID can be a context, system is a special context with highest priority\",\"params\":{\"_contextId\":\"ID of the context in which a role is being assigned\",\"_objectId\":\"ID of an object that is being assigned a role\",\"_role\":\"Name of the role being assigned\"}},\"canAssign(bytes32,bytes32,bytes32,string)\":{\"details\":\"Check permission to assign to a role\",\"params\":{\"_assignerId\":\"The object ID of the user who is assigning a role to  another object.\",\"_contextId\":\"ID of the context in which permission is checked\",\"_objectId\":\"ID of an object that is being checked for assigning rights\",\"_role\":\"name of the role to check\"},\"returns\":{\"_0\":\"true if user the right to assign, false otherwise\"}},\"canGroupAssignRole(string,string)\":{\"details\":\"Get whether given group can assign given role.\",\"params\":{\"group\":\"the group.\",\"role\":\"the role.\"},\"returns\":{\"_0\":\"true if role can be assigned by group, false otherwise.\"}},\"getRoleInContext(bytes32,bytes32)\":{\"params\":{\"contextId\":\"ID of the context in which the objectId's role is being checked\",\"objectId\":\"ID of an object that is being checked for its assigned role in a specific context\"},\"returns\":{\"_0\":\"roleId objectId's role in the contextId\"}},\"isInGroup(bytes32,bytes32,string)\":{\"details\":\"Assigning a role to the object makes it a member of a corresponding role group\",\"params\":{\"_contextId\":\"Context in which membership should be checked\",\"_group\":\"name of the role group\",\"_objectId\":\"ID of an object that is being checked for role group membership\"},\"returns\":{\"_0\":\"true if object with given ID is a member, false otherwise\"}},\"isParentInGroup(bytes32,bytes32,string)\":{\"details\":\"Objects can have a parent object, i.e. entity is a parent of a user\",\"params\":{\"_contextId\":\"Context in which the role group membership is being checked\",\"_group\":\"name of the role group\",\"_objectId\":\"ID of an object whose parent is being checked for role group membership\"},\"returns\":{\"_0\":\"true if object's parent is a member of this role group, false otherwise\"}},\"isRoleInGroup(string,string)\":{\"details\":\"Get whether role is in group.\",\"params\":{\"group\":\"the group.\",\"role\":\"the role.\"},\"returns\":{\"_0\":\"true if role is in group, false otherwise.\"}},\"unassignRole(bytes32,bytes32)\":{\"details\":\"Any object ID can be a context, system is a special context with highest priority\",\"params\":{\"_contextId\":\"ID of the context in which a role membership is being revoked\",\"_objectId\":\"ID of an object that is being unassigned from a role\"}},\"updateRoleAssigner(string,string)\":{\"details\":\"Update who has permission to assign this role\",\"params\":{\"_assignerGroup\":\"Group who can assign members to this role\",\"_role\":\"name of the role\"}},\"updateRoleGroup(string,string,bool)\":{\"details\":\"Update role group memebership\",\"params\":{\"_group\":\"name of the group\",\"_role\":\"name of the role\",\"_roleInGroup\":\"is member of\"}}},\"title\":\"Access Control List\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"assignRole(bytes32,bytes32,string)\":{\"notice\":\"Assign a `_roleId` to the object in given context\"},\"canAssign(bytes32,bytes32,bytes32,string)\":{\"notice\":\"Check whether a user can assign specific object to the `_role` role in given context\"},\"canGroupAssignRole(string,string)\":{\"notice\":\"Get whether given group can assign given role.\"},\"getRoleInContext(bytes32,bytes32)\":{\"notice\":\"Get a user's (an objectId's) assigned role in a specific context\"},\"isInGroup(bytes32,bytes32,string)\":{\"notice\":\"Checks if an object belongs to `_group` group in given context\"},\"isParentInGroup(bytes32,bytes32,string)\":{\"notice\":\"Check whether a parent object belongs to the `_group` group in given context\"},\"isRoleInGroup(string,string)\":{\"notice\":\"Get whether role is in group.\"},\"unassignRole(bytes32,bytes32)\":{\"notice\":\"Unassign object from a role in given context\"},\"updateRoleAssigner(string,string)\":{\"notice\":\"Update who can assign `_role` role\"},\"updateRoleGroup(string,string,bool)\":{\"notice\":\"Update role group memebership for `_role` role and `_group` group\"}},\"notice\":\"Use it to authorize various actions on the contracts\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/diamonds/nayms/interfaces/IACLFacet.sol\":\"IACLFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin/=lib/ozv4/contracts/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\",\":v3-core-08/=lib/v3-core-08/contracts/\",\":v3-peri-08/=lib/v3-peri-08/contracts/\"]},\"sources\":{\"src/diamonds/nayms/interfaces/IACLFacet.sol\":{\"keccak256\":\"0xd72d59aa31c0834a96493e2a896bc9ee2963f906ab5c907184aeb1e7b8263176\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e55525f0117636d55524b0f56513c4c14e5d533994fbf303d05813ba27705931\",\"dweb:/ipfs/QmXiUgcRkULmBTeSXDv96sb584H9eQNX3wqN88qUVUBFdh\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_objectId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_contextId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "string",
+              "name": "_role",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "assignRole"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_assignerId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_objectId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_contextId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "string",
+              "name": "_role",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "canAssign",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "role",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "group",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "canGroupAssignRole",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "objectId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "contextId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getRoleInContext",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_objectId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_contextId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "string",
+              "name": "_group",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isInGroup",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_objectId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_contextId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "string",
+              "name": "_group",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isParentInGroup",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "role",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "group",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isRoleInGroup",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_objectId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_contextId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "unassignRole"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "_role",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_assignerGroup",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "updateRoleAssigner"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "_role",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_group",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "_roleInGroup",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "updateRoleGroup"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "assignRole(bytes32,bytes32,string)": {
+            "details": "Any object ID can be a context, system is a special context with highest priority",
+            "params": {
+              "_contextId": "ID of the context in which a role is being assigned",
+              "_objectId": "ID of an object that is being assigned a role",
+              "_role": "Name of the role being assigned"
+            }
+          },
+          "canAssign(bytes32,bytes32,bytes32,string)": {
+            "details": "Check permission to assign to a role",
+            "params": {
+              "_assignerId": "The object ID of the user who is assigning a role to  another object.",
+              "_contextId": "ID of the context in which permission is checked",
+              "_objectId": "ID of an object that is being checked for assigning rights",
+              "_role": "name of the role to check"
+            },
+            "returns": {
+              "_0": "true if user the right to assign, false otherwise"
+            }
+          },
+          "canGroupAssignRole(string,string)": {
+            "details": "Get whether given group can assign given role.",
+            "params": {
+              "group": "the group.",
+              "role": "the role."
+            },
+            "returns": {
+              "_0": "true if role can be assigned by group, false otherwise."
+            }
+          },
+          "getRoleInContext(bytes32,bytes32)": {
+            "params": {
+              "contextId": "ID of the context in which the objectId's role is being checked",
+              "objectId": "ID of an object that is being checked for its assigned role in a specific context"
+            },
+            "returns": {
+              "_0": "roleId objectId's role in the contextId"
+            }
+          },
+          "isInGroup(bytes32,bytes32,string)": {
+            "details": "Assigning a role to the object makes it a member of a corresponding role group",
+            "params": {
+              "_contextId": "Context in which membership should be checked",
+              "_group": "name of the role group",
+              "_objectId": "ID of an object that is being checked for role group membership"
+            },
+            "returns": {
+              "_0": "true if object with given ID is a member, false otherwise"
+            }
+          },
+          "isParentInGroup(bytes32,bytes32,string)": {
+            "details": "Objects can have a parent object, i.e. entity is a parent of a user",
+            "params": {
+              "_contextId": "Context in which the role group membership is being checked",
+              "_group": "name of the role group",
+              "_objectId": "ID of an object whose parent is being checked for role group membership"
+            },
+            "returns": {
+              "_0": "true if object's parent is a member of this role group, false otherwise"
+            }
+          },
+          "isRoleInGroup(string,string)": {
+            "details": "Get whether role is in group.",
+            "params": {
+              "group": "the group.",
+              "role": "the role."
+            },
+            "returns": {
+              "_0": "true if role is in group, false otherwise."
+            }
+          },
+          "unassignRole(bytes32,bytes32)": {
+            "details": "Any object ID can be a context, system is a special context with highest priority",
+            "params": {
+              "_contextId": "ID of the context in which a role membership is being revoked",
+              "_objectId": "ID of an object that is being unassigned from a role"
+            }
+          },
+          "updateRoleAssigner(string,string)": {
+            "details": "Update who has permission to assign this role",
+            "params": {
+              "_assignerGroup": "Group who can assign members to this role",
+              "_role": "name of the role"
+            }
+          },
+          "updateRoleGroup(string,string,bool)": {
+            "details": "Update role group memebership",
+            "params": {
+              "_group": "name of the group",
+              "_role": "name of the role",
+              "_roleInGroup": "is member of"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "assignRole(bytes32,bytes32,string)": {
+            "notice": "Assign a `_roleId` to the object in given context"
+          },
+          "canAssign(bytes32,bytes32,bytes32,string)": {
+            "notice": "Check whether a user can assign specific object to the `_role` role in given context"
+          },
+          "canGroupAssignRole(string,string)": {
+            "notice": "Get whether given group can assign given role."
+          },
+          "getRoleInContext(bytes32,bytes32)": {
+            "notice": "Get a user's (an objectId's) assigned role in a specific context"
+          },
+          "isInGroup(bytes32,bytes32,string)": {
+            "notice": "Checks if an object belongs to `_group` group in given context"
+          },
+          "isParentInGroup(bytes32,bytes32,string)": {
+            "notice": "Check whether a parent object belongs to the `_group` group in given context"
+          },
+          "isRoleInGroup(string,string)": {
+            "notice": "Get whether role is in group."
+          },
+          "unassignRole(bytes32,bytes32)": {
+            "notice": "Unassign object from a role in given context"
+          },
+          "updateRoleAssigner(string,string)": {
+            "notice": "Update who can assign `_role` role"
+          },
+          "updateRoleGroup(string,string,bool)": {
+            "notice": "Update role group memebership for `_role` role and `_group` group"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin/=lib/ozv4/contracts/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/",
+        ":v3-core-08/=lib/v3-core-08/contracts/",
+        ":v3-peri-08/=lib/v3-peri-08/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/diamonds/nayms/interfaces/IACLFacet.sol": "IACLFacet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/interfaces/IACLFacet.sol": {
+        "keccak256": "0xd72d59aa31c0834a96493e2a896bc9ee2963f906ab5c907184aeb1e7b8263176",
+        "urls": [
+          "bzz-raw://e55525f0117636d55524b0f56513c4c14e5d533994fbf303d05813ba27705931",
+          "dweb:/ipfs/QmXiUgcRkULmBTeSXDv96sb584H9eQNX3wqN88qUVUBFdh"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/diamonds/nayms/interfaces/IACLFacet.sol",
+    "id": 41296,
+    "exportedSymbols": {
+      "IACLFacet": [
+        41295
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:4922:56",
+    "nodes": [
+      {
+        "id": 41189,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:56",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 41295,
+        "nodeType": "ContractDefinition",
+        "src": "213:4740:56",
+        "nodes": [
+          {
+            "id": 41200,
+            "nodeType": "FunctionDefinition",
+            "src": "613:119:56",
+            "nodes": [],
+            "documentation": {
+              "id": 41191,
+              "nodeType": "StructuredDocumentation",
+              "src": "239:369:56",
+              "text": " @notice Assign a `_roleId` to the object in given context\n @dev Any object ID can be a context, system is a special context with highest priority\n @param _objectId ID of an object that is being assigned a role\n @param _contextId ID of the context in which a role is being assigned\n @param _role Name of the role being assigned"
+            },
+            "functionSelector": "5e1ac8fa",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "assignRole",
+            "nameLocation": "622:10:56",
+            "parameters": {
+              "id": 41198,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41193,
+                  "mutability": "mutable",
+                  "name": "_objectId",
+                  "nameLocation": "650:9:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41200,
+                  "src": "642:17:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41192,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "642:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41195,
+                  "mutability": "mutable",
+                  "name": "_contextId",
+                  "nameLocation": "677:10:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41200,
+                  "src": "669:18:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41194,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "669:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41197,
+                  "mutability": "mutable",
+                  "name": "_role",
+                  "nameLocation": "711:5:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41200,
+                  "src": "697:19:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41196,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "697:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "632:90:56"
+            },
+            "returnParameters": {
+              "id": 41199,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "731:0:56"
+            },
+            "scope": 41295,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41208,
+            "nodeType": "FunctionDefinition",
+            "src": "1072:70:56",
+            "nodes": [],
+            "documentation": {
+              "id": 41201,
+              "nodeType": "StructuredDocumentation",
+              "src": "738:329:56",
+              "text": " @notice Unassign object from a role in given context\n @dev Any object ID can be a context, system is a special context with highest priority\n @param _objectId ID of an object that is being unassigned from a role\n @param _contextId ID of the context in which a role membership is being revoked"
+            },
+            "functionSelector": "c1b2bc96",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unassignRole",
+            "nameLocation": "1081:12:56",
+            "parameters": {
+              "id": 41206,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41203,
+                  "mutability": "mutable",
+                  "name": "_objectId",
+                  "nameLocation": "1102:9:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41208,
+                  "src": "1094:17:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41202,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1094:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41205,
+                  "mutability": "mutable",
+                  "name": "_contextId",
+                  "nameLocation": "1121:10:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41208,
+                  "src": "1113:18:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41204,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1113:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1093:39:56"
+            },
+            "returnParameters": {
+              "id": 41207,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1141:0:56"
+            },
+            "scope": 41295,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41220,
+            "nodeType": "FunctionDefinition",
+            "src": "1609:139:56",
+            "nodes": [],
+            "documentation": {
+              "id": 41209,
+              "nodeType": "StructuredDocumentation",
+              "src": "1148:456:56",
+              "text": " @notice Checks if an object belongs to `_group` group in given context\n @dev Assigning a role to the object makes it a member of a corresponding role group\n @param _objectId ID of an object that is being checked for role group membership\n @param _contextId Context in which membership should be checked\n @param _group name of the role group\n @return true if object with given ID is a member, false otherwise"
+            },
+            "functionSelector": "d774b4e3",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isInGroup",
+            "nameLocation": "1618:9:56",
+            "parameters": {
+              "id": 41216,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41211,
+                  "mutability": "mutable",
+                  "name": "_objectId",
+                  "nameLocation": "1645:9:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41220,
+                  "src": "1637:17:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41210,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1637:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41213,
+                  "mutability": "mutable",
+                  "name": "_contextId",
+                  "nameLocation": "1672:10:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41220,
+                  "src": "1664:18:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41212,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1664:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41215,
+                  "mutability": "mutable",
+                  "name": "_group",
+                  "nameLocation": "1706:6:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41220,
+                  "src": "1692:20:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41214,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1692:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1627:91:56"
+            },
+            "returnParameters": {
+              "id": 41219,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41218,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41220,
+                  "src": "1742:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 41217,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1742:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1741:6:56"
+            },
+            "scope": 41295,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41232,
+            "nodeType": "FunctionDefinition",
+            "src": "2254:145:56",
+            "nodes": [],
+            "documentation": {
+              "id": 41221,
+              "nodeType": "StructuredDocumentation",
+              "src": "1754:495:56",
+              "text": " @notice Check whether a parent object belongs to the `_group` group in given context\n @dev Objects can have a parent object, i.e. entity is a parent of a user\n @param _objectId ID of an object whose parent is being checked for role group membership\n @param _contextId Context in which the role group membership is being checked\n @param _group name of the role group\n @return true if object's parent is a member of this role group, false otherwise"
+            },
+            "functionSelector": "c8422402",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isParentInGroup",
+            "nameLocation": "2263:15:56",
+            "parameters": {
+              "id": 41228,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41223,
+                  "mutability": "mutable",
+                  "name": "_objectId",
+                  "nameLocation": "2296:9:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41232,
+                  "src": "2288:17:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41222,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2288:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41225,
+                  "mutability": "mutable",
+                  "name": "_contextId",
+                  "nameLocation": "2323:10:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41232,
+                  "src": "2315:18:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41224,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2315:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41227,
+                  "mutability": "mutable",
+                  "name": "_group",
+                  "nameLocation": "2357:6:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41232,
+                  "src": "2343:20:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41226,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2343:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2278:91:56"
+            },
+            "returnParameters": {
+              "id": 41231,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41230,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41232,
+                  "src": "2393:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 41229,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2393:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2392:6:56"
+            },
+            "scope": 41295,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41246,
+            "nodeType": "FunctionDefinition",
+            "src": "2934:167:56",
+            "nodes": [],
+            "documentation": {
+              "id": 41233,
+              "nodeType": "StructuredDocumentation",
+              "src": "2405:524:56",
+              "text": " @notice Check whether a user can assign specific object to the `_role` role in given context\n @dev Check permission to assign to a role\n @param _assignerId The object ID of the user who is assigning a role to  another object.\n @param _objectId ID of an object that is being checked for assigning rights\n @param _contextId ID of the context in which permission is checked\n @param _role name of the role to check\n @return true if user the right to assign, false otherwise"
+            },
+            "functionSelector": "1219dee2",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canAssign",
+            "nameLocation": "2943:9:56",
+            "parameters": {
+              "id": 41242,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41235,
+                  "mutability": "mutable",
+                  "name": "_assignerId",
+                  "nameLocation": "2970:11:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41246,
+                  "src": "2962:19:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41234,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2962:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41237,
+                  "mutability": "mutable",
+                  "name": "_objectId",
+                  "nameLocation": "2999:9:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41246,
+                  "src": "2991:17:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41236,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2991:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41239,
+                  "mutability": "mutable",
+                  "name": "_contextId",
+                  "nameLocation": "3026:10:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41246,
+                  "src": "3018:18:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41238,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3018:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41241,
+                  "mutability": "mutable",
+                  "name": "_role",
+                  "nameLocation": "3060:5:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41246,
+                  "src": "3046:19:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41240,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3046:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2952:119:56"
+            },
+            "returnParameters": {
+              "id": 41245,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41244,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41246,
+                  "src": "3095:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 41243,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3095:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3094:6:56"
+            },
+            "scope": 41295,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41256,
+            "nodeType": "FunctionDefinition",
+            "src": "3451:95:56",
+            "nodes": [],
+            "documentation": {
+              "id": 41247,
+              "nodeType": "StructuredDocumentation",
+              "src": "3107:339:56",
+              "text": " @notice Get a user's (an objectId's) assigned role in a specific context\n @param objectId ID of an object that is being checked for its assigned role in a specific context\n @param contextId ID of the context in which the objectId's role is being checked\n @return roleId objectId's role in the contextId"
+            },
+            "functionSelector": "47c07483",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRoleInContext",
+            "nameLocation": "3460:16:56",
+            "parameters": {
+              "id": 41252,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41249,
+                  "mutability": "mutable",
+                  "name": "objectId",
+                  "nameLocation": "3485:8:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41256,
+                  "src": "3477:16:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41248,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3477:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41251,
+                  "mutability": "mutable",
+                  "name": "contextId",
+                  "nameLocation": "3503:9:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41256,
+                  "src": "3495:17:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41250,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3495:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3476:37:56"
+            },
+            "returnParameters": {
+              "id": 41255,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41254,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41256,
+                  "src": "3537:7:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41253,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3537:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3536:9:56"
+            },
+            "scope": 41295,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41266,
+            "nodeType": "FunctionDefinition",
+            "src": "3773:93:56",
+            "nodes": [],
+            "documentation": {
+              "id": 41257,
+              "nodeType": "StructuredDocumentation",
+              "src": "3552:216:56",
+              "text": " @notice Get whether role is in group.\n @dev Get whether role is in group.\n @param role the role.\n @param group the group.\n @return true if role is in group, false otherwise."
+            },
+            "functionSelector": "7273e796",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isRoleInGroup",
+            "nameLocation": "3782:13:56",
+            "parameters": {
+              "id": 41262,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41259,
+                  "mutability": "mutable",
+                  "name": "role",
+                  "nameLocation": "3810:4:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41266,
+                  "src": "3796:18:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41258,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3796:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41261,
+                  "mutability": "mutable",
+                  "name": "group",
+                  "nameLocation": "3830:5:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41266,
+                  "src": "3816:19:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41260,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3816:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3795:41:56"
+            },
+            "returnParameters": {
+              "id": 41265,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41264,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41266,
+                  "src": "3860:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 41263,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3860:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3859:6:56"
+            },
+            "scope": 41295,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41276,
+            "nodeType": "FunctionDefinition",
+            "src": "4140:98:56",
+            "nodes": [],
+            "documentation": {
+              "id": 41267,
+              "nodeType": "StructuredDocumentation",
+              "src": "3872:263:56",
+              "text": " @notice Get whether given group can assign given role.\n @dev Get whether given group can assign given role.\n @param role the role.\n @param group the group.\n @return true if role can be assigned by group, false otherwise."
+            },
+            "functionSelector": "af76f046",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canGroupAssignRole",
+            "nameLocation": "4149:18:56",
+            "parameters": {
+              "id": 41272,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41269,
+                  "mutability": "mutable",
+                  "name": "role",
+                  "nameLocation": "4182:4:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41276,
+                  "src": "4168:18:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41268,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4168:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41271,
+                  "mutability": "mutable",
+                  "name": "group",
+                  "nameLocation": "4202:5:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41276,
+                  "src": "4188:19:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41270,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4188:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4167:41:56"
+            },
+            "returnParameters": {
+              "id": 41275,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41274,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41276,
+                  "src": "4232:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 41273,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4232:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4231:6:56"
+            },
+            "scope": 41295,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41284,
+            "nodeType": "FunctionDefinition",
+            "src": "4476:88:56",
+            "nodes": [],
+            "documentation": {
+              "id": 41277,
+              "nodeType": "StructuredDocumentation",
+              "src": "4244:227:56",
+              "text": " @notice Update who can assign `_role` role\n @dev Update who has permission to assign this role\n @param _role name of the role\n @param _assignerGroup Group who can assign members to this role"
+            },
+            "functionSelector": "6362aeb4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateRoleAssigner",
+            "nameLocation": "4485:18:56",
+            "parameters": {
+              "id": 41282,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41279,
+                  "mutability": "mutable",
+                  "name": "_role",
+                  "nameLocation": "4518:5:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41284,
+                  "src": "4504:19:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41278,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4504:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41281,
+                  "mutability": "mutable",
+                  "name": "_assignerGroup",
+                  "nameLocation": "4539:14:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41284,
+                  "src": "4525:28:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41280,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4525:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4503:51:56"
+            },
+            "returnParameters": {
+              "id": 41283,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4563:0:56"
+            },
+            "scope": 41295,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41294,
+            "nodeType": "FunctionDefinition",
+            "src": "4825:126:56",
+            "nodes": [],
+            "documentation": {
+              "id": 41285,
+              "nodeType": "StructuredDocumentation",
+              "src": "4570:250:56",
+              "text": " @notice Update role group memebership for `_role` role and `_group` group\n @dev Update role group memebership\n @param _role name of the role\n @param _group name of the group\n @param _roleInGroup is member of"
+            },
+            "functionSelector": "ff3406ce",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateRoleGroup",
+            "nameLocation": "4834:15:56",
+            "parameters": {
+              "id": 41292,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41287,
+                  "mutability": "mutable",
+                  "name": "_role",
+                  "nameLocation": "4873:5:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41294,
+                  "src": "4859:19:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41286,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4859:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41289,
+                  "mutability": "mutable",
+                  "name": "_group",
+                  "nameLocation": "4902:6:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41294,
+                  "src": "4888:20:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41288,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4888:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41291,
+                  "mutability": "mutable",
+                  "name": "_roleInGroup",
+                  "nameLocation": "4923:12:56",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41294,
+                  "src": "4918:17:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 41290,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4918:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4849:92:56"
+            },
+            "returnParameters": {
+              "id": 41293,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4950:0:56"
+            },
+            "scope": 41295,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IACLFacet",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 41190,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:155:56",
+          "text": " @title Access Control List\n @notice Use it to authorize various actions on the contracts\n @dev Use it to (un)assign or check role membership"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          41295
+        ],
+        "name": "IACLFacet",
+        "nameLocation": "223:9:56",
+        "scope": 41296,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 56
+}

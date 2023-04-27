@@ -1,0 +1,2708 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "IS_SCRIPT",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "naymsDiamondAddress",
+          "type": "address"
+        }
+      ],
+      "name": "premiums",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "naymsDiamondAddress",
+          "type": "address"
+        }
+      ],
+      "name": "trading",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "naymsDiamondAddress",
+          "type": "address"
+        }
+      ],
+      "name": "tradingAndPremium",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405260048054600160ff199182168117909255600c8054909116909117905534801561002d57600080fd5b506107578061003d6000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80636fe9b4f9146100515780639bddb69a14610066578063dee4a46714610079578063f8ccbf471461008c575b600080fd5b61006461005f366004610622565b6100ad565b005b610064610074366004610622565b6101ae565b610064610087366004610622565b610339565b600c546100999060ff1681565b604051901515815260200160405180910390f35b7f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b0316637fb5297f6040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561010b57600080fd5b505af115801561011f573d6000803e3d6000fd5b5050505061012c81610339565b610135816101ae565b7f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b03166376eadd366040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561019357600080fd5b505af11580156101a7573d6000803e3d6000fd5b5050505050565b60408051606081018252602880825260208201818152828401918252925163d57af28f60e01b8152825161ffff90811660048301529351841660248201529051909216604483015282916001600160a01b0383169063d57af28f90606401600060405180830381600087803b15801561022657600080fd5b505af115801561023a573d6000803e3d6000fd5b5050505061025f6040518060600160405280602a81526020016106f8602a9139610572565b6102a66040518060400160405280602081526020017f202d207072656d69756d436f6d6d697373696f6e4e61796d734c746442503a20815250826000015161ffff166105b8565b6102ed6040518060400160405280601b81526020017f202d207072656d69756d436f6d6d697373696f6e4e444642503a200000000000815250826020015161ffff166105b8565b6103346040518060400160405280601b81526020017f202d207072656d69756d436f6d6d697373696f6e53544d42503a200000000000815250826040015161ffff166105b8565b505050565b6040805160a08101825260288152611388602082019081526109c482840181815260608401918252600060808501908152945163045088d760e11b8152845161ffff9081166004830152935184166024820152905183166044820152905182166064820152925116608483015282916001600160a01b038316906308a111ae9060a401600060405180830381600087803b1580156103d657600080fd5b505af11580156103ea573d6000803e3d6000fd5b5050505061040f6040518060600160405280602a81526020016106ce602a9139610572565b6104566040518060400160405280601d81526020017f202d2074726164696e67436f6d6d697373696f6e546f74616c42503a20000000815250826000015161ffff166105b8565b61049d6040518060400160405280602081526020017f202d2074726164696e67436f6d6d697373696f6e4e61796d734c746442503a20815250826020015161ffff166105b8565b6104e46040518060400160405280601981526020017f202d2074726164696e67436f6d6d697373696f6e4e4446425000000000000000815250826040015161ffff166105b8565b61052b6040518060400160405280601981526020017f202d2074726164696e67436f6d6d697373696f6e53544d425000000000000000815250826060015161ffff166105b8565b6103346040518060400160405280601d81526020017f202d2074726164696e67436f6d6d697373696f6e4d616b657242503a20000000815250826080015161ffff166105b8565b6105b5816040516024016105869190610698565b60408051601f198184030181529190526020810180516001600160e01b031663104c13eb60e21b179052610601565b50565b6105fd82826040516024016105ce9291906106ab565b60408051601f198184030181529190526020810180516001600160e01b0316632d839cb360e21b179052610601565b5050565b80516a636f6e736f6c652e6c6f67602083016000808483855afa5050505050565b60006020828403121561063457600080fd5b81356001600160a01b038116811461064b57600080fd5b9392505050565b6000815180845260005b818110156106785760208185018101518683018201520161065c565b506000602082860101526020601f19601f83011685010191505092915050565b60208152600061064b6020830184610652565b6040815260006106be6040830185610652565b9050826020830152939250505056fe0a0a54726164696e6720636f6d6d697373696f6e732075706461746564207375636365737366756c6c790a0a5072656d69756d20636f6d6d697373696f6e732075706461746564207375636365737366756c6c79a2646970667358221220e900fedd6e244a2dfa574a0ae727c4097e49fc341f97f499ac773a408ae704d464736f6c63430008110033",
+    "sourceMap": "316:1943:30:-:0;;;3288:44:4;;;3328:4;-1:-1:-1;;3288:44:4;;;;;;;;758:28:2;;;;;;;;;;;316:1943:30;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80636fe9b4f9146100515780639bddb69a14610066578063dee4a46714610079578063f8ccbf471461008c575b600080fd5b61006461005f366004610622565b6100ad565b005b610064610074366004610622565b6101ae565b610064610087366004610622565b610339565b600c546100999060ff1681565b604051901515815260200160405180910390f35b7f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b0316637fb5297f6040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561010b57600080fd5b505af115801561011f573d6000803e3d6000fd5b5050505061012c81610339565b610135816101ae565b7f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b03166376eadd366040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561019357600080fd5b505af11580156101a7573d6000803e3d6000fd5b5050505050565b60408051606081018252602880825260208201818152828401918252925163d57af28f60e01b8152825161ffff90811660048301529351841660248201529051909216604483015282916001600160a01b0383169063d57af28f90606401600060405180830381600087803b15801561022657600080fd5b505af115801561023a573d6000803e3d6000fd5b5050505061025f6040518060600160405280602a81526020016106f8602a9139610572565b6102a66040518060400160405280602081526020017f202d207072656d69756d436f6d6d697373696f6e4e61796d734c746442503a20815250826000015161ffff166105b8565b6102ed6040518060400160405280601b81526020017f202d207072656d69756d436f6d6d697373696f6e4e444642503a200000000000815250826020015161ffff166105b8565b6103346040518060400160405280601b81526020017f202d207072656d69756d436f6d6d697373696f6e53544d42503a200000000000815250826040015161ffff166105b8565b505050565b6040805160a08101825260288152611388602082019081526109c482840181815260608401918252600060808501908152945163045088d760e11b8152845161ffff9081166004830152935184166024820152905183166044820152905182166064820152925116608483015282916001600160a01b038316906308a111ae9060a401600060405180830381600087803b1580156103d657600080fd5b505af11580156103ea573d6000803e3d6000fd5b5050505061040f6040518060600160405280602a81526020016106ce602a9139610572565b6104566040518060400160405280601d81526020017f202d2074726164696e67436f6d6d697373696f6e546f74616c42503a20000000815250826000015161ffff166105b8565b61049d6040518060400160405280602081526020017f202d2074726164696e67436f6d6d697373696f6e4e61796d734c746442503a20815250826020015161ffff166105b8565b6104e46040518060400160405280601981526020017f202d2074726164696e67436f6d6d697373696f6e4e4446425000000000000000815250826040015161ffff166105b8565b61052b6040518060400160405280601981526020017f202d2074726164696e67436f6d6d697373696f6e53544d425000000000000000815250826060015161ffff166105b8565b6103346040518060400160405280601d81526020017f202d2074726164696e67436f6d6d697373696f6e4d616b657242503a20000000815250826080015161ffff166105b8565b6105b5816040516024016105869190610698565b60408051601f198184030181529190526020810180516001600160e01b031663104c13eb60e21b179052610601565b50565b6105fd82826040516024016105ce9291906106ab565b60408051601f198184030181529190526020810180516001600160e01b0316632d839cb360e21b179052610601565b5050565b80516a636f6e736f6c652e6c6f67602083016000808483855afa5050505050565b60006020828403121561063457600080fd5b81356001600160a01b038116811461064b57600080fd5b9392505050565b6000815180845260005b818110156106785760208185018101518683018201520161065c565b506000602082860101526020601f19601f83011685010191505092915050565b60208152600061064b6020830184610652565b6040815260006106be6040830185610652565b9050826020830152939250505056fe0a0a54726164696e6720636f6d6d697373696f6e732075706461746564207375636365737366756c6c790a0a5072656d69756d20636f6d6d697373696f6e732075706461746564207375636365737366756c6c79a2646970667358221220e900fedd6e244a2dfa574a0ae727c4097e49fc341f97f499ac773a408ae704d464736f6c63430008110033",
+    "sourceMap": "316:1943:30:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;359:204;;;;;;:::i;:::-;;:::i;:::-;;1533:724;;;;;;:::i;:::-;;:::i;569:958::-;;;;;;:::i;:::-;;:::i;758:28:2:-;;;;;;;;;;;;470:14:123;;463:22;445:41;;433:2;418:18;758:28:2;;;;;;;359:204:30;317:28:1;309:37;;-1:-1:-1;;;;;432:17:30;;:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;461:28;469:19;461:7;:28::i;:::-;499:29;508:19;499:8;:29::i;:::-;317:28:1;309:37;;-1:-1:-1;;;;;538:16:30;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;359:204;:::o;1533:724::-;1718:159;;;;;;;;1788:2;1718:159;;;;;;;;;;;;;;;1888:41;;-1:-1:-1;;;1888:41:30;;784:13:123;;747:6;780:22;;;1888:41:30;;;762::123;845:24;;841:33;;819:20;;;812:63;917:24;;913:33;;;891:20;;;884:63;1619:19:30;;-1:-1:-1;;;;;1888:37:30;;;;;710:18:123;;1888:41:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1940:60;;;;;;;;;;;;;;;;;;:12;:60::i;:::-;2010:80;;;;;;;;;;;;;;;;;;2059:2;:30;;;2010:80;;:12;:80::i;:::-;2100:70;;;;;;;;;;;;;;;;;;2144:2;:25;;;2100:70;;:12;:70::i;:::-;2180;;;;;;;;;;;;;;;;;;2224:2;:25;;;2180:70;;:12;:70::i;:::-;1587:670;;1533:724;:::o;569:958::-;727:255;;;;;;;;797:2;727:255;;842:4;727:255;;;;;;884:4;727:255;;;;;;;;;;;;-1:-1:-1;727:255:30;;;;;;993:42;;-1:-1:-1;;;993:42:30;;1248:13:123;;1211:6;1244:22;;;993:42:30;;;1226:41:123;1309:24;;1305:33;;1283:20;;;1276:63;1381:24;;1377:33;;1355:20;;;1348:63;1453:24;;1449:33;;1427:20;;;1420:63;1525:24;;1521:33;1499:20;;;1492:63;654:19:30;;-1:-1:-1;;;;;993:38:30;;;;;1173:19:123;;993:42:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1046:60;;;;;;;;;;;;;;;;;;:12;:60::i;:::-;1116:74;;;;;;;;;;;;;;;;;;1162:2;:27;;;1116:74;;:12;:74::i;:::-;1200:80;;;;;;;;;;;;;;;;;;1249:2;:30;;;1200:80;;:12;:80::i;:::-;1290:68;;;;;;;;;;;;;;;;;;1332:2;:25;;;1290:68;;:12;:68::i;:::-;1368;;;;;;;;;;;;;;;;;;1410:2;:25;;;1368:68;;:12;:68::i;:::-;1446:74;;;;;;;;;;;;;;;;;;1492:2;:27;;;1446:74;;:12;:74::i;6228:121:16:-;6283:59;6338:2;6299:42;;;;;;;;:::i;:::-;;;;-1:-1:-1;;6299:42:16;;;;;;;;;;;;;;-1:-1:-1;;;;;6299:42:16;-1:-1:-1;;;6299:42:16;;;6283:15;:59::i;:::-;6228:121;:::o;7176:145::-;7243:71;7306:2;7310;7259:54;;;;;;;;;:::i;:::-;;;;-1:-1:-1;;7259:54:16;;;;;;;;;;;;;;-1:-1:-1;;;;;7259:54:16;-1:-1:-1;;;7259:54:16;;;7243:15;:71::i;:::-;7176:145;;:::o;641:376::-;735:14;;591:42;908:2;895:16;;711:21;;735:14;895:16;591:42;944:5;933:68;924:77;;861:150;;641:376;:::o;14:286:123:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;168:23;;-1:-1:-1;;;;;220:31:123;;210:42;;200:70;;266:1;263;256:12;200:70;289:5;14:286;-1:-1:-1;;;14:286:123:o;1566:423::-;1608:3;1646:5;1640:12;1673:6;1668:3;1661:19;1698:1;1708:162;1722:6;1719:1;1716:13;1708:162;;;1784:4;1840:13;;;1836:22;;1830:29;1812:11;;;1808:20;;1801:59;1737:12;1708:162;;;1712:3;1915:1;1908:4;1899:6;1894:3;1890:16;1886:27;1879:38;1978:4;1971:2;1967:7;1962:2;1954:6;1950:15;1946:29;1941:3;1937:39;1933:50;1926:57;;;1566:423;;;;:::o;1994:220::-;2143:2;2132:9;2125:21;2106:4;2163:45;2204:2;2193:9;2189:18;2181:6;2163:45;:::i;2219:291::-;2396:2;2385:9;2378:21;2359:4;2416:45;2457:2;2446:9;2442:18;2434:6;2416:45;:::i;:::-;2408:53;;2497:6;2492:2;2481:9;2477:18;2470:34;2219:291;;;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "IS_SCRIPT()": "f8ccbf47",
+    "premiums(address)": "9bddb69a",
+    "trading(address)": "dee4a467",
+    "tradingAndPremium(address)": "6fe9b4f9"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"IS_SCRIPT\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"naymsDiamondAddress\",\"type\":\"address\"}],\"name\":\"premiums\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"naymsDiamondAddress\",\"type\":\"address\"}],\"name\":\"trading\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"naymsDiamondAddress\",\"type\":\"address\"}],\"name\":\"tradingAndPremium\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"script/UpdateCommissions.sol\":\"UpdateCommissions\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\"]},\"sources\":{\"lib/forge-std/src/Base.sol\":{\"keccak256\":\"0x609e3a00319169988cc8272e837f350a9ba77cf8f8f62e4897a8e4a8a5f0fb27\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b24435e35ba5b080ebd6e8976c23fb735c7212d042be8462ffd2ea50c5250363\",\"dweb:/ipfs/QmPeVvN7FS4oMmCuYAeRdZihTfrG4tA7Vvunuvv59a6wre\"]},\"lib/forge-std/src/Script.sol\":{\"keccak256\":\"0xd566affaba92598bcd059dcb3714a968aeedb365ec0d666815e8b38519e0f433\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2fb5f7a97d2a7a06e10c198b60f05e64176eb4ef306b72800c168e7a7ec51693\",\"dweb:/ipfs/Qmcep4r7YEU3BwFJNTTxZsdCVzBYdtcVp8oDtmwLoZGRzP\"]},\"lib/forge-std/src/StdChains.sol\":{\"keccak256\":\"0x097b75f7171af89f433407e040d11b22fc26e2fe03793c2cfe18cad390d7af8b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://19d1dca7b398e517499ffa65ad44df69cdd016f37dc57e2d07d50279d3ddee17\",\"dweb:/ipfs/QmfMFR25367GB5PoBi1KZxWs1hZcJtC3eANiioG3dKj8ah\"]},\"lib/forge-std/src/StdCheats.sol\":{\"keccak256\":\"0x0e6f32877ab26a83c9334eb5a000bf326bd2a0b04fea8647e045cea9c445f534\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8965978bfa66ddab8db95449a96ee47d44c62ebcb4271ab293e847f359a2ba7d\",\"dweb:/ipfs/QmazxpekoHnno4ySoNUct7NcKx6UJR7UvcMtJ9JYsBDEUh\"]},\"lib/forge-std/src/StdJson.sol\":{\"keccak256\":\"0x9e2a7521190c462a0667706385f1c52a816220a9813ca8ac520fba7ba45d660b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7d23017fe6570b28130a731b86179352b93a5fb5af32f11559837afc1186293c\",\"dweb:/ipfs/QmR3p6zG5Kmcr8gKocFCSopLHfXv1AziPJbH17nKyMxwxV\"]},\"lib/forge-std/src/StdMath.sol\":{\"keccak256\":\"0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92\",\"dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC\"]},\"lib/forge-std/src/StdStorage.sol\":{\"keccak256\":\"0xd1517df281f973dba8b7ba52c02d3df552b60d91b8f47e4669049da648778673\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://52e43264f58a5dcfd985f3c99aa81064805aa8f1c2b4c6521fd63d45cdbba8d5\",\"dweb:/ipfs/QmUMTF6cRjt5tCQrrgQDXVRmHQLjevNsTvLFdaA1m9TBj9\"]},\"lib/forge-std/src/StdUtils.sol\":{\"keccak256\":\"0x6584855fecbe5b6a9f8ebdb26b37c58532c5bc5cc6e1737dfa7c8a045087be55\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://40a35a4d292b4fed02e11d5f25fb474f10a7c4eb99f75b5383dc23fcb6e55d3c\",\"dweb:/ipfs/QmYZ2nz1EmNh4xLWf4YybZoa1Da1z3Wq3w4pneMhkouMi4\"]},\"lib/forge-std/src/Vm.sol\":{\"keccak256\":\"0x8a81219d889270a97a367f260f5352882d5ca84d065d1461ae0cbe4b1205f7f0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0731ba2ebb83df97746878648e1f9630a67b944da857842fd276968b437bc77d\",\"dweb:/ipfs/QmaB7DvHSfFRUeGf9DTEduyG8qzPUgFkT8GAGf38Bh44Fy\"]},\"lib/forge-std/src/console.sol\":{\"keccak256\":\"0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70\",\"dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec\"]},\"lib/forge-std/src/console2.sol\":{\"keccak256\":\"0xcd5706f5a7025825d9fd389c89b49bf571f9abaea8a062dc4048320b5b43bf46\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c066485a7d4bd18d44efb4c89274b0959e8066b9a480383a2ce07d7f31555f88\",\"dweb:/ipfs/QmckeYfA5FtAjcxaytq69Dpj6uY57tbQ61kNPPxXi9kgbW\"]},\"lib/forge-std/src/interfaces/IMulticall3.sol\":{\"keccak256\":\"0x7aac1389150499a922d1f9ef5749c908cef127cb2075b92fa17e9cb611263d0a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d95ebb7c7c463e08ebc12dab639945752fb2480acfc6e86da32f72732a7fd0c0\",\"dweb:/ipfs/QmNXK8P8oPWwajsQHvAHw3JPyQidPLCGQN3hWu1Lk6PBL2\"]},\"script/UpdateCommissions.sol\":{\"keccak256\":\"0x83af61e3ae922e966700351653a748c99bf042e4b7d40c168d48d013983caaf7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://75bc4dcb812f68038da677712c541c1a04168bdfd4380c8d0c45d5ffa030ab17\",\"dweb:/ipfs/QmVYUHXbh8mP3sDghLjRZecZzMySq5JbYDn9WF96ohjDNV\"]},\"src/diamonds/nayms/INayms.sol\":{\"keccak256\":\"0x5e4923ab77351098cd809238e56b71e940514730e652520aa85ae0deec4bdadd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://befcf0b889c99292d49a724d4b59d61fd52e1fd7cbb4f8ed64d6fc6a2c732ed1\",\"dweb:/ipfs/QmecX5Mfx8mDWLn4axucUHSG6MBD7h9cFho2x1QHLx2umi\"]},\"src/diamonds/nayms/interfaces/FreeStructs.sol\":{\"keccak256\":\"0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4\",\"dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD\"]},\"src/diamonds/nayms/interfaces/IACLFacet.sol\":{\"keccak256\":\"0xd72d59aa31c0834a96493e2a896bc9ee2963f906ab5c907184aeb1e7b8263176\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e55525f0117636d55524b0f56513c4c14e5d533994fbf303d05813ba27705931\",\"dweb:/ipfs/QmXiUgcRkULmBTeSXDv96sb584H9eQNX3wqN88qUVUBFdh\"]},\"src/diamonds/nayms/interfaces/IAdminFacet.sol\":{\"keccak256\":\"0xe7008511e360617181eeec1ecf76743bf9253501962c84a4931a72eb65aa1a1b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4b3c7852635cda5c013408accfe40646a6180bfbd74ee77f9928167e4754b631\",\"dweb:/ipfs/QmTwYLEXEiWZzVooS1SAtev2GfSfKTdqoTGL8uXQeojyJa\"]},\"src/diamonds/nayms/interfaces/IEntityFacet.sol\":{\"keccak256\":\"0xce32aa04ea48b38030d2b8650d0989b37cde6e48bcbbb133ff8e7e7ffd0f78e4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c970eb23c90a71386c7524abf0faca59dada315598df56826312ef15065556f5\",\"dweb:/ipfs/QmZCxwYYyPQyKgrpR7cqKWSw8aCbDHCYCi4JZUVdkKrQRY\"]},\"src/diamonds/nayms/interfaces/IGovernanceFacet.sol\":{\"keccak256\":\"0x521a78755df804dc302abec66a068c8529c7976893f7b5e9de6d8b5f463044bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c7d94ca1e30c4302f6125b97306a29ee6bf1a141acb8447fbdd18630f342c666\",\"dweb:/ipfs/QmZZRkAVWLhXMbc31m5e3MZJVZ7JUKiXAnNDBm5Ap7isaN\"]},\"src/diamonds/nayms/interfaces/IMarketFacet.sol\":{\"keccak256\":\"0xf5bd6475cc57cf8e6b1b4517cfd3e1ccdeea590ba398a0a828c9a02bfd7ce047\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d5beace8be7754de703ded6d95f04a6d75a291d993a0afa7a6f3addebb8769f2\",\"dweb:/ipfs/QmULQVQQQro6YxQE6SF6TKS2G3BhXuzyJKyGXZrKR3LXNH\"]},\"src/diamonds/nayms/interfaces/INaymsTokenFacet.sol\":{\"keccak256\":\"0xfdd01e5e0cd4dfea9196a3fa6dca3d277e394c7e1f6ea972e12620e04dcfd6aa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://850e6bfc293916409884dcd223a8afba6cf8c1fd545935e5eb40cbe64fd79039\",\"dweb:/ipfs/QmYtHEdHZbQfrxkD417EcJbwe1tiCpLRWE2Rgm7yJTQ3UG\"]},\"src/diamonds/nayms/interfaces/ISimplePolicyFacet.sol\":{\"keccak256\":\"0xa19aacc7591f778a17b6238212567584d4f261dd035ea1a5430cc4acde135b9c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://796c08003a00a8fac916d3dd60f753b7eac13f0bcf063af738045008684d9369\",\"dweb:/ipfs/QmVntDBDnY7xXKVDh1hniz84v8XHcrXf8tm4pgANAnH7Ts\"]},\"src/diamonds/nayms/interfaces/ISystemFacet.sol\":{\"keccak256\":\"0x3fbb24b05dd3e2dbfe8541af0dc9f175e562a77fcdc549848b170b9b14462f45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c626e5e5487847d9c8931f7fcab85b483164714704261432418dfac239311452\",\"dweb:/ipfs/QmTWqLGW2EoJ2oZJx8LjUbAfu4WHnv4A6uYAWdxEuQ89c5\"]},\"src/diamonds/nayms/interfaces/ITokenizedVaultFacet.sol\":{\"keccak256\":\"0x02a9fc017690a2fd1424a67f2ecae15cd741fc381e3c755d141ca5dbfb78f368\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2e654d4947bfddda09340711ac961871527ba9587d300100036604b97d9668e7\",\"dweb:/ipfs/QmUg32HGvV17CHwu2tThPpVrojQwhuXEnfFe2WFwvqkqzF\"]},\"src/diamonds/nayms/interfaces/ITokenizedVaultIOFacet.sol\":{\"keccak256\":\"0x6e524d2ab08929f2d31c1f1dd3c5c6c3f3317b80f22c8536b4ba7421369b1f87\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://646c0316fce39694cf11b020aa0b28496f31f2925cc31e795793977ac363fa12\",\"dweb:/ipfs/QmT9C9Ee5UuqzF9V6Rv7heJvoLGKXrd3KjYDQnzDyEVZs6\"]},\"src/diamonds/nayms/interfaces/IUserFacet.sol\":{\"keccak256\":\"0x3b7ed45fc97adf42268310737d3a5f2c07e9fa4d6105efbc3d16363c0ce4a839\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e996ea5a861ab4bd5da3a0e9bd4d0824cd12cdc21bc9563feb0ae24a0ae0e9bc\",\"dweb:/ipfs/Qmcaqi2NdUM8SJAupkznNQ3ey2DUE5JhXa7frG6AH3kw5o\"]},\"src/diamonds/shared/interfaces/IDiamondCut.sol\":{\"keccak256\":\"0x9f5fae94fa7eb7878762079d230687bd7184c60a0f1fdddf9775742bd5c495f1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8fd5f10ef1d46dc0c902fd83de013dc5fef5e144b168bfa9a418d6598bb1eb4b\",\"dweb:/ipfs/QmVgzifBPGZxxfwt2CuQMpVEdEmQWZNwpaJ2Nwfx3cvpn3\"]},\"src/diamonds/shared/interfaces/IDiamondLoupe.sol\":{\"keccak256\":\"0x27ca2115c56b2f09b4b4e24dc023e1d2ec0d6e1c603bdb30929d5bbda411cee0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0bc3bd5ac85edff564ecbe8896cf8be85a656f141c25c9705f02fad717cb6f9c\",\"dweb:/ipfs/QmYnQYgFapFvm7zwZMFFfGnERyd37mfVqHx8aT3HcCTDg2\"]},\"src/diamonds/shared/interfaces/IERC165.sol\":{\"keccak256\":\"0x13c14966128e5d95c060726fdfe204873e97df95d8092b65532e84d28bbeb6a4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://182cd2a57a4973dfe33b602219f92f46d8b5c93c2447c29299472740f4f39d9e\",\"dweb:/ipfs/QmTudnwW2V64G5FhetwDwmYTi7AaoFeksEXfV9Eq2SbDpc\"]},\"src/diamonds/shared/interfaces/IERC173.sol\":{\"keccak256\":\"0xfa7177a2353c17ceef7fb133fb547c7ce4fb9ad17f8fdcaca754fcec9c10f871\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd9f221cf880daa211ca7d9697a35de3a92311b1853048a9a62d49567cda947b\",\"dweb:/ipfs/QmWyV5Np2Dfxxs9PfoGGC24YJ1KsHBhP9ijsGrwQ5DpJ3Z\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "IS_SCRIPT",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "naymsDiamondAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "premiums"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "naymsDiamondAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "trading"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "naymsDiamondAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "tradingAndPremium"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "script/UpdateCommissions.sol": "UpdateCommissions"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/forge-std/src/Base.sol": {
+        "keccak256": "0x609e3a00319169988cc8272e837f350a9ba77cf8f8f62e4897a8e4a8a5f0fb27",
+        "urls": [
+          "bzz-raw://b24435e35ba5b080ebd6e8976c23fb735c7212d042be8462ffd2ea50c5250363",
+          "dweb:/ipfs/QmPeVvN7FS4oMmCuYAeRdZihTfrG4tA7Vvunuvv59a6wre"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/Script.sol": {
+        "keccak256": "0xd566affaba92598bcd059dcb3714a968aeedb365ec0d666815e8b38519e0f433",
+        "urls": [
+          "bzz-raw://2fb5f7a97d2a7a06e10c198b60f05e64176eb4ef306b72800c168e7a7ec51693",
+          "dweb:/ipfs/Qmcep4r7YEU3BwFJNTTxZsdCVzBYdtcVp8oDtmwLoZGRzP"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdChains.sol": {
+        "keccak256": "0x097b75f7171af89f433407e040d11b22fc26e2fe03793c2cfe18cad390d7af8b",
+        "urls": [
+          "bzz-raw://19d1dca7b398e517499ffa65ad44df69cdd016f37dc57e2d07d50279d3ddee17",
+          "dweb:/ipfs/QmfMFR25367GB5PoBi1KZxWs1hZcJtC3eANiioG3dKj8ah"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdCheats.sol": {
+        "keccak256": "0x0e6f32877ab26a83c9334eb5a000bf326bd2a0b04fea8647e045cea9c445f534",
+        "urls": [
+          "bzz-raw://8965978bfa66ddab8db95449a96ee47d44c62ebcb4271ab293e847f359a2ba7d",
+          "dweb:/ipfs/QmazxpekoHnno4ySoNUct7NcKx6UJR7UvcMtJ9JYsBDEUh"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdJson.sol": {
+        "keccak256": "0x9e2a7521190c462a0667706385f1c52a816220a9813ca8ac520fba7ba45d660b",
+        "urls": [
+          "bzz-raw://7d23017fe6570b28130a731b86179352b93a5fb5af32f11559837afc1186293c",
+          "dweb:/ipfs/QmR3p6zG5Kmcr8gKocFCSopLHfXv1AziPJbH17nKyMxwxV"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdMath.sol": {
+        "keccak256": "0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2",
+        "urls": [
+          "bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92",
+          "dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdStorage.sol": {
+        "keccak256": "0xd1517df281f973dba8b7ba52c02d3df552b60d91b8f47e4669049da648778673",
+        "urls": [
+          "bzz-raw://52e43264f58a5dcfd985f3c99aa81064805aa8f1c2b4c6521fd63d45cdbba8d5",
+          "dweb:/ipfs/QmUMTF6cRjt5tCQrrgQDXVRmHQLjevNsTvLFdaA1m9TBj9"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdUtils.sol": {
+        "keccak256": "0x6584855fecbe5b6a9f8ebdb26b37c58532c5bc5cc6e1737dfa7c8a045087be55",
+        "urls": [
+          "bzz-raw://40a35a4d292b4fed02e11d5f25fb474f10a7c4eb99f75b5383dc23fcb6e55d3c",
+          "dweb:/ipfs/QmYZ2nz1EmNh4xLWf4YybZoa1Da1z3Wq3w4pneMhkouMi4"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/Vm.sol": {
+        "keccak256": "0x8a81219d889270a97a367f260f5352882d5ca84d065d1461ae0cbe4b1205f7f0",
+        "urls": [
+          "bzz-raw://0731ba2ebb83df97746878648e1f9630a67b944da857842fd276968b437bc77d",
+          "dweb:/ipfs/QmaB7DvHSfFRUeGf9DTEduyG8qzPUgFkT8GAGf38Bh44Fy"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/console.sol": {
+        "keccak256": "0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba",
+        "urls": [
+          "bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70",
+          "dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/console2.sol": {
+        "keccak256": "0xcd5706f5a7025825d9fd389c89b49bf571f9abaea8a062dc4048320b5b43bf46",
+        "urls": [
+          "bzz-raw://c066485a7d4bd18d44efb4c89274b0959e8066b9a480383a2ce07d7f31555f88",
+          "dweb:/ipfs/QmckeYfA5FtAjcxaytq69Dpj6uY57tbQ61kNPPxXi9kgbW"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/interfaces/IMulticall3.sol": {
+        "keccak256": "0x7aac1389150499a922d1f9ef5749c908cef127cb2075b92fa17e9cb611263d0a",
+        "urls": [
+          "bzz-raw://d95ebb7c7c463e08ebc12dab639945752fb2480acfc6e86da32f72732a7fd0c0",
+          "dweb:/ipfs/QmNXK8P8oPWwajsQHvAHw3JPyQidPLCGQN3hWu1Lk6PBL2"
+        ],
+        "license": "MIT"
+      },
+      "script/UpdateCommissions.sol": {
+        "keccak256": "0x83af61e3ae922e966700351653a748c99bf042e4b7d40c168d48d013983caaf7",
+        "urls": [
+          "bzz-raw://75bc4dcb812f68038da677712c541c1a04168bdfd4380c8d0c45d5ffa030ab17",
+          "dweb:/ipfs/QmVYUHXbh8mP3sDghLjRZecZzMySq5JbYDn9WF96ohjDNV"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/INayms.sol": {
+        "keccak256": "0x5e4923ab77351098cd809238e56b71e940514730e652520aa85ae0deec4bdadd",
+        "urls": [
+          "bzz-raw://befcf0b889c99292d49a724d4b59d61fd52e1fd7cbb4f8ed64d6fc6a2c732ed1",
+          "dweb:/ipfs/QmecX5Mfx8mDWLn4axucUHSG6MBD7h9cFho2x1QHLx2umi"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/FreeStructs.sol": {
+        "keccak256": "0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384",
+        "urls": [
+          "bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4",
+          "dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IACLFacet.sol": {
+        "keccak256": "0xd72d59aa31c0834a96493e2a896bc9ee2963f906ab5c907184aeb1e7b8263176",
+        "urls": [
+          "bzz-raw://e55525f0117636d55524b0f56513c4c14e5d533994fbf303d05813ba27705931",
+          "dweb:/ipfs/QmXiUgcRkULmBTeSXDv96sb584H9eQNX3wqN88qUVUBFdh"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IAdminFacet.sol": {
+        "keccak256": "0xe7008511e360617181eeec1ecf76743bf9253501962c84a4931a72eb65aa1a1b",
+        "urls": [
+          "bzz-raw://4b3c7852635cda5c013408accfe40646a6180bfbd74ee77f9928167e4754b631",
+          "dweb:/ipfs/QmTwYLEXEiWZzVooS1SAtev2GfSfKTdqoTGL8uXQeojyJa"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IEntityFacet.sol": {
+        "keccak256": "0xce32aa04ea48b38030d2b8650d0989b37cde6e48bcbbb133ff8e7e7ffd0f78e4",
+        "urls": [
+          "bzz-raw://c970eb23c90a71386c7524abf0faca59dada315598df56826312ef15065556f5",
+          "dweb:/ipfs/QmZCxwYYyPQyKgrpR7cqKWSw8aCbDHCYCi4JZUVdkKrQRY"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IGovernanceFacet.sol": {
+        "keccak256": "0x521a78755df804dc302abec66a068c8529c7976893f7b5e9de6d8b5f463044bf",
+        "urls": [
+          "bzz-raw://c7d94ca1e30c4302f6125b97306a29ee6bf1a141acb8447fbdd18630f342c666",
+          "dweb:/ipfs/QmZZRkAVWLhXMbc31m5e3MZJVZ7JUKiXAnNDBm5Ap7isaN"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IMarketFacet.sol": {
+        "keccak256": "0xf5bd6475cc57cf8e6b1b4517cfd3e1ccdeea590ba398a0a828c9a02bfd7ce047",
+        "urls": [
+          "bzz-raw://d5beace8be7754de703ded6d95f04a6d75a291d993a0afa7a6f3addebb8769f2",
+          "dweb:/ipfs/QmULQVQQQro6YxQE6SF6TKS2G3BhXuzyJKyGXZrKR3LXNH"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/INaymsTokenFacet.sol": {
+        "keccak256": "0xfdd01e5e0cd4dfea9196a3fa6dca3d277e394c7e1f6ea972e12620e04dcfd6aa",
+        "urls": [
+          "bzz-raw://850e6bfc293916409884dcd223a8afba6cf8c1fd545935e5eb40cbe64fd79039",
+          "dweb:/ipfs/QmYtHEdHZbQfrxkD417EcJbwe1tiCpLRWE2Rgm7yJTQ3UG"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/ISimplePolicyFacet.sol": {
+        "keccak256": "0xa19aacc7591f778a17b6238212567584d4f261dd035ea1a5430cc4acde135b9c",
+        "urls": [
+          "bzz-raw://796c08003a00a8fac916d3dd60f753b7eac13f0bcf063af738045008684d9369",
+          "dweb:/ipfs/QmVntDBDnY7xXKVDh1hniz84v8XHcrXf8tm4pgANAnH7Ts"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/ISystemFacet.sol": {
+        "keccak256": "0x3fbb24b05dd3e2dbfe8541af0dc9f175e562a77fcdc549848b170b9b14462f45",
+        "urls": [
+          "bzz-raw://c626e5e5487847d9c8931f7fcab85b483164714704261432418dfac239311452",
+          "dweb:/ipfs/QmTWqLGW2EoJ2oZJx8LjUbAfu4WHnv4A6uYAWdxEuQ89c5"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/ITokenizedVaultFacet.sol": {
+        "keccak256": "0x02a9fc017690a2fd1424a67f2ecae15cd741fc381e3c755d141ca5dbfb78f368",
+        "urls": [
+          "bzz-raw://2e654d4947bfddda09340711ac961871527ba9587d300100036604b97d9668e7",
+          "dweb:/ipfs/QmUg32HGvV17CHwu2tThPpVrojQwhuXEnfFe2WFwvqkqzF"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/ITokenizedVaultIOFacet.sol": {
+        "keccak256": "0x6e524d2ab08929f2d31c1f1dd3c5c6c3f3317b80f22c8536b4ba7421369b1f87",
+        "urls": [
+          "bzz-raw://646c0316fce39694cf11b020aa0b28496f31f2925cc31e795793977ac363fa12",
+          "dweb:/ipfs/QmT9C9Ee5UuqzF9V6Rv7heJvoLGKXrd3KjYDQnzDyEVZs6"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IUserFacet.sol": {
+        "keccak256": "0x3b7ed45fc97adf42268310737d3a5f2c07e9fa4d6105efbc3d16363c0ce4a839",
+        "urls": [
+          "bzz-raw://e996ea5a861ab4bd5da3a0e9bd4d0824cd12cdc21bc9563feb0ae24a0ae0e9bc",
+          "dweb:/ipfs/Qmcaqi2NdUM8SJAupkznNQ3ey2DUE5JhXa7frG6AH3kw5o"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/interfaces/IDiamondCut.sol": {
+        "keccak256": "0x9f5fae94fa7eb7878762079d230687bd7184c60a0f1fdddf9775742bd5c495f1",
+        "urls": [
+          "bzz-raw://8fd5f10ef1d46dc0c902fd83de013dc5fef5e144b168bfa9a418d6598bb1eb4b",
+          "dweb:/ipfs/QmVgzifBPGZxxfwt2CuQMpVEdEmQWZNwpaJ2Nwfx3cvpn3"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/interfaces/IDiamondLoupe.sol": {
+        "keccak256": "0x27ca2115c56b2f09b4b4e24dc023e1d2ec0d6e1c603bdb30929d5bbda411cee0",
+        "urls": [
+          "bzz-raw://0bc3bd5ac85edff564ecbe8896cf8be85a656f141c25c9705f02fad717cb6f9c",
+          "dweb:/ipfs/QmYnQYgFapFvm7zwZMFFfGnERyd37mfVqHx8aT3HcCTDg2"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/interfaces/IERC165.sol": {
+        "keccak256": "0x13c14966128e5d95c060726fdfe204873e97df95d8092b65532e84d28bbeb6a4",
+        "urls": [
+          "bzz-raw://182cd2a57a4973dfe33b602219f92f46d8b5c93c2447c29299472740f4f39d9e",
+          "dweb:/ipfs/QmTudnwW2V64G5FhetwDwmYTi7AaoFeksEXfV9Eq2SbDpc"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/shared/interfaces/IERC173.sol": {
+        "keccak256": "0xfa7177a2353c17ceef7fb133fb547c7ce4fb9ad17f8fdcaca754fcec9c10f871",
+        "urls": [
+          "bzz-raw://bd9f221cf880daa211ca7d9697a35de3a92311b1853048a9a62d49567cda947b",
+          "dweb:/ipfs/QmWyV5Np2Dfxxs9PfoGGC24YJ1KsHBhP9ijsGrwQ5DpJ3Z"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "script/UpdateCommissions.sol",
+    "id": 33458,
+    "exportedSymbols": {
+      "IDiamondCut": [
+        50383
+      ],
+      "INayms": [
+        38413
+      ],
+      "PolicyCommissionsBasisPoints": [
+        41267
+      ],
+      "Script": [
+        2400
+      ],
+      "ScriptBase": [
+        2363
+      ],
+      "StdChains": [
+        4496
+      ],
+      "StdCheatsSafe": [
+        6093
+      ],
+      "StdStorage": [
+        7812
+      ],
+      "StdUtils": [
+        11263
+      ],
+      "TradingCommissionsBasisPoints": [
+        41322
+      ],
+      "UpdateCommissions": [
+        33457
+      ],
+      "VmSafe": [
+        12277
+      ],
+      "console": [
+        20710
+      ],
+      "console2": [
+        28806
+      ],
+      "stdJson": [
+        7638
+      ],
+      "stdMath": [
+        7780
+      ],
+      "stdStorageSafe": [
+        8704
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2228:30",
+    "nodes": [
+      {
+        "id": 33288,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:30",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 33289,
+        "nodeType": "ImportDirective",
+        "src": "57:32:30",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/src/console2.sol",
+        "file": "forge-std/console2.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 33458,
+        "sourceUnit": 28807,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 33290,
+        "nodeType": "ImportDirective",
+        "src": "90:30:30",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/src/Script.sol",
+        "file": "forge-std/Script.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 33458,
+        "sourceUnit": 2401,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 33293,
+        "nodeType": "ImportDirective",
+        "src": "121:68:30",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/INayms.sol",
+        "file": "src/diamonds/nayms/INayms.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 33458,
+        "sourceUnit": 38414,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 33291,
+              "name": "INayms",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 38413,
+              "src": "130:6:30",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 33292,
+              "name": "IDiamondCut",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 50383,
+              "src": "138:11:30",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 33296,
+        "nodeType": "ImportDirective",
+        "src": "190:124:30",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/interfaces/FreeStructs.sol",
+        "file": "src/diamonds/nayms/interfaces/FreeStructs.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 33458,
+        "sourceUnit": 41323,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 33294,
+              "name": "PolicyCommissionsBasisPoints",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41267,
+              "src": "199:28:30",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 33295,
+              "name": "TradingCommissionsBasisPoints",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41322,
+              "src": "229:29:30",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 33457,
+        "nodeType": "ContractDefinition",
+        "src": "316:1943:30",
+        "nodes": [
+          {
+            "id": 33322,
+            "nodeType": "FunctionDefinition",
+            "src": "359:204:30",
+            "nodes": [],
+            "body": {
+              "id": 33321,
+              "nodeType": "Block",
+              "src": "422:141:30",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 33303,
+                        "name": "vm",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2344,
+                        "src": "432:2:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Vm_$12646",
+                          "typeString": "contract Vm"
+                        }
+                      },
+                      "id": 33305,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "435:14:30",
+                      "memberName": "startBroadcast",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 11718,
+                      "src": "432:17:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                        "typeString": "function () external"
+                      }
+                    },
+                    "id": 33306,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "432:19:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33307,
+                  "nodeType": "ExpressionStatement",
+                  "src": "432:19:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 33309,
+                        "name": "naymsDiamondAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33300,
+                        "src": "469:19:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 33308,
+                      "name": "trading",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 33398,
+                      "src": "461:7:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 33310,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "461:28:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33311,
+                  "nodeType": "ExpressionStatement",
+                  "src": "461:28:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 33313,
+                        "name": "naymsDiamondAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33300,
+                        "src": "508:19:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 33312,
+                      "name": "premiums",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 33456,
+                      "src": "499:8:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 33314,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "499:29:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33315,
+                  "nodeType": "ExpressionStatement",
+                  "src": "499:29:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 33316,
+                        "name": "vm",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2344,
+                        "src": "538:2:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Vm_$12646",
+                          "typeString": "contract Vm"
+                        }
+                      },
+                      "id": 33318,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "541:13:30",
+                      "memberName": "stopBroadcast",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 11731,
+                      "src": "538:16:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                        "typeString": "function () external"
+                      }
+                    },
+                    "id": 33319,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "538:18:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33320,
+                  "nodeType": "ExpressionStatement",
+                  "src": "538:18:30"
+                }
+              ]
+            },
+            "functionSelector": "6fe9b4f9",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tradingAndPremium",
+            "nameLocation": "368:17:30",
+            "parameters": {
+              "id": 33301,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33300,
+                  "mutability": "mutable",
+                  "name": "naymsDiamondAddress",
+                  "nameLocation": "394:19:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33322,
+                  "src": "386:27:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33299,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "386:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "385:29:30"
+            },
+            "returnParameters": {
+              "id": 33302,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "422:0:30"
+            },
+            "scope": 33457,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 33398,
+            "nodeType": "FunctionDefinition",
+            "src": "569:958:30",
+            "nodes": [],
+            "body": {
+              "id": 33397,
+              "nodeType": "Block",
+              "src": "622:905:30",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    33329
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 33329,
+                      "mutability": "mutable",
+                      "name": "nayms",
+                      "nameLocation": "639:5:30",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 33397,
+                      "src": "632:12:30",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_INayms_$38413",
+                        "typeString": "contract INayms"
+                      },
+                      "typeName": {
+                        "id": 33328,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 33327,
+                          "name": "INayms",
+                          "nameLocations": [
+                            "632:6:30"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 38413,
+                          "src": "632:6:30"
+                        },
+                        "referencedDeclaration": 38413,
+                        "src": "632:6:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_INayms_$38413",
+                          "typeString": "contract INayms"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 33333,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 33331,
+                        "name": "naymsDiamondAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33324,
+                        "src": "654:19:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 33330,
+                      "name": "INayms",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 38413,
+                      "src": "647:6:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_INayms_$38413_$",
+                        "typeString": "type(contract INayms)"
+                      }
+                    },
+                    "id": 33332,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "647:27:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_INayms_$38413",
+                      "typeString": "contract INayms"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "632:42:30"
+                },
+                {
+                  "assignments": [
+                    33336
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 33336,
+                      "mutability": "mutable",
+                      "name": "tc",
+                      "nameLocation": "722:2:30",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 33397,
+                      "src": "685:39:30",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_memory_ptr",
+                        "typeString": "struct TradingCommissionsBasisPoints"
+                      },
+                      "typeName": {
+                        "id": 33335,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 33334,
+                          "name": "TradingCommissionsBasisPoints",
+                          "nameLocations": [
+                            "685:29:30"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 41322,
+                          "src": "685:29:30"
+                        },
+                        "referencedDeclaration": 41322,
+                        "src": "685:29:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_storage_ptr",
+                          "typeString": "struct TradingCommissionsBasisPoints"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 33344,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "hexValue": "3430",
+                        "id": 33338,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "797:2:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_40_by_1",
+                          "typeString": "int_const 40"
+                        },
+                        "value": "40"
+                      },
+                      {
+                        "hexValue": "35303030",
+                        "id": 33339,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "842:4:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_5000_by_1",
+                          "typeString": "int_const 5000"
+                        },
+                        "value": "5000"
+                      },
+                      {
+                        "hexValue": "32353030",
+                        "id": 33340,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "884:4:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2500_by_1",
+                          "typeString": "int_const 2500"
+                        },
+                        "value": "2500"
+                      },
+                      {
+                        "hexValue": "32353030",
+                        "id": 33341,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "926:4:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2500_by_1",
+                          "typeString": "int_const 2500"
+                        },
+                        "value": "2500"
+                      },
+                      {
+                        "hexValue": "30",
+                        "id": 33342,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "970:1:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_40_by_1",
+                          "typeString": "int_const 40"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_5000_by_1",
+                          "typeString": "int_const 5000"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_2500_by_1",
+                          "typeString": "int_const 2500"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_2500_by_1",
+                          "typeString": "int_const 2500"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        }
+                      ],
+                      "id": 33337,
+                      "name": "TradingCommissionsBasisPoints",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 41322,
+                      "src": "727:29:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_TradingCommissionsBasisPoints_$41322_storage_ptr_$",
+                        "typeString": "type(struct TradingCommissionsBasisPoints storage pointer)"
+                      }
+                    },
+                    "id": 33343,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "nameLocations": [
+                      "771:24:30",
+                      "813:27:30",
+                      "860:22:30",
+                      "902:22:30",
+                      "944:24:30"
+                    ],
+                    "names": [
+                      "tradingCommissionTotalBP",
+                      "tradingCommissionNaymsLtdBP",
+                      "tradingCommissionNDFBP",
+                      "tradingCommissionSTMBP",
+                      "tradingCommissionMakerBP"
+                    ],
+                    "nodeType": "FunctionCall",
+                    "src": "727:255:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_memory_ptr",
+                      "typeString": "struct TradingCommissionsBasisPoints memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "685:297:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 33348,
+                        "name": "tc",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33336,
+                        "src": "1032:2:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_memory_ptr",
+                          "typeString": "struct TradingCommissionsBasisPoints memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_memory_ptr",
+                          "typeString": "struct TradingCommissionsBasisPoints memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 33345,
+                        "name": "nayms",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33329,
+                        "src": "993:5:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_INayms_$38413",
+                          "typeString": "contract INayms"
+                        }
+                      },
+                      "id": 33347,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "999:32:30",
+                      "memberName": "setTradingCommissionsBasisPoints",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 41456,
+                      "src": "993:38:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_struct$_TradingCommissionsBasisPoints_$41322_memory_ptr_$returns$__$",
+                        "typeString": "function (struct TradingCommissionsBasisPoints memory) external"
+                      }
+                    },
+                    "id": 33349,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "993:42:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33350,
+                  "nodeType": "ExpressionStatement",
+                  "src": "993:42:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "0a0a54726164696e6720636f6d6d697373696f6e732075706461746564207375636365737366756c6c79",
+                        "id": 33354,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1059:46:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_01c0d63a0b376a6bfcef144a80e350172c1b5fef355c27495a356f72b7e1f0b6",
+                          "typeString": "literal_string hex\"0a0a54726164696e6720636f6d6d697373696f6e732075706461746564207375636365737366756c6c79\""
+                        },
+                        "value": "\n\nTrading commissions updated successfully"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_01c0d63a0b376a6bfcef144a80e350172c1b5fef355c27495a356f72b7e1f0b6",
+                          "typeString": "literal_string hex\"0a0a54726164696e6720636f6d6d697373696f6e732075706461746564207375636365737366756c6c79\""
+                        }
+                      ],
+                      "expression": {
+                        "id": 33351,
+                        "name": "console2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28806,
+                        "src": "1046:8:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console2_$28806_$",
+                          "typeString": "type(library console2)"
+                        }
+                      },
+                      "id": 33353,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1055:3:30",
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21320,
+                      "src": "1046:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory) view"
+                      }
+                    },
+                    "id": 33355,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1046:60:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33356,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1046:60:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "202d2074726164696e67436f6d6d697373696f6e546f74616c42503a20",
+                        "id": 33360,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1129:31:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_17a7050127fe488b8b99a8ddb985a1dcd946f344f4ac9b592183e54b82bb7c7d",
+                          "typeString": "literal_string \" - tradingCommissionTotalBP: \""
+                        },
+                        "value": " - tradingCommissionTotalBP: "
+                      },
+                      {
+                        "expression": {
+                          "id": 33361,
+                          "name": "tc",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33336,
+                          "src": "1162:2:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_memory_ptr",
+                            "typeString": "struct TradingCommissionsBasisPoints memory"
+                          }
+                        },
+                        "id": 33362,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1165:24:30",
+                        "memberName": "tradingCommissionTotalBP",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 41313,
+                        "src": "1162:27:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_17a7050127fe488b8b99a8ddb985a1dcd946f344f4ac9b592183e54b82bb7c7d",
+                          "typeString": "literal_string \" - tradingCommissionTotalBP: \""
+                        },
+                        {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      ],
+                      "expression": {
+                        "id": 33357,
+                        "name": "console2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28806,
+                        "src": "1116:8:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console2_$28806_$",
+                          "typeString": "type(library console2)"
+                        }
+                      },
+                      "id": 33359,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1125:3:30",
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21433,
+                      "src": "1116:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256) view"
+                      }
+                    },
+                    "id": 33363,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1116:74:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33364,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1116:74:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "202d2074726164696e67436f6d6d697373696f6e4e61796d734c746442503a20",
+                        "id": 33368,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1213:34:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_8970e845d3a5f1ad3b40eca9e0d66d3c9a8804c5462a25286106c7bcd54387ec",
+                          "typeString": "literal_string \" - tradingCommissionNaymsLtdBP: \""
+                        },
+                        "value": " - tradingCommissionNaymsLtdBP: "
+                      },
+                      {
+                        "expression": {
+                          "id": 33369,
+                          "name": "tc",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33336,
+                          "src": "1249:2:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_memory_ptr",
+                            "typeString": "struct TradingCommissionsBasisPoints memory"
+                          }
+                        },
+                        "id": 33370,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1252:27:30",
+                        "memberName": "tradingCommissionNaymsLtdBP",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 41315,
+                        "src": "1249:30:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_8970e845d3a5f1ad3b40eca9e0d66d3c9a8804c5462a25286106c7bcd54387ec",
+                          "typeString": "literal_string \" - tradingCommissionNaymsLtdBP: \""
+                        },
+                        {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      ],
+                      "expression": {
+                        "id": 33365,
+                        "name": "console2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28806,
+                        "src": "1200:8:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console2_$28806_$",
+                          "typeString": "type(library console2)"
+                        }
+                      },
+                      "id": 33367,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1209:3:30",
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21433,
+                      "src": "1200:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256) view"
+                      }
+                    },
+                    "id": 33371,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1200:80:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33372,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1200:80:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "202d2074726164696e67436f6d6d697373696f6e4e44464250",
+                        "id": 33376,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1303:27:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_b17a44af557c51d2614afc0331dee8258bec84086deba53d229f4b468f0d46fb",
+                          "typeString": "literal_string \" - tradingCommissionNDFBP\""
+                        },
+                        "value": " - tradingCommissionNDFBP"
+                      },
+                      {
+                        "expression": {
+                          "id": 33377,
+                          "name": "tc",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33336,
+                          "src": "1332:2:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_memory_ptr",
+                            "typeString": "struct TradingCommissionsBasisPoints memory"
+                          }
+                        },
+                        "id": 33378,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1335:22:30",
+                        "memberName": "tradingCommissionNDFBP",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 41317,
+                        "src": "1332:25:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_b17a44af557c51d2614afc0331dee8258bec84086deba53d229f4b468f0d46fb",
+                          "typeString": "literal_string \" - tradingCommissionNDFBP\""
+                        },
+                        {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      ],
+                      "expression": {
+                        "id": 33373,
+                        "name": "console2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28806,
+                        "src": "1290:8:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console2_$28806_$",
+                          "typeString": "type(library console2)"
+                        }
+                      },
+                      "id": 33375,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1299:3:30",
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21433,
+                      "src": "1290:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256) view"
+                      }
+                    },
+                    "id": 33379,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1290:68:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33380,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1290:68:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "202d2074726164696e67436f6d6d697373696f6e53544d4250",
+                        "id": 33384,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1381:27:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_75a9c6f8216c08065fed415a1312c99e444e70246615469fc763df73aa232f8f",
+                          "typeString": "literal_string \" - tradingCommissionSTMBP\""
+                        },
+                        "value": " - tradingCommissionSTMBP"
+                      },
+                      {
+                        "expression": {
+                          "id": 33385,
+                          "name": "tc",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33336,
+                          "src": "1410:2:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_memory_ptr",
+                            "typeString": "struct TradingCommissionsBasisPoints memory"
+                          }
+                        },
+                        "id": 33386,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1413:22:30",
+                        "memberName": "tradingCommissionSTMBP",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 41319,
+                        "src": "1410:25:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_75a9c6f8216c08065fed415a1312c99e444e70246615469fc763df73aa232f8f",
+                          "typeString": "literal_string \" - tradingCommissionSTMBP\""
+                        },
+                        {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      ],
+                      "expression": {
+                        "id": 33381,
+                        "name": "console2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28806,
+                        "src": "1368:8:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console2_$28806_$",
+                          "typeString": "type(library console2)"
+                        }
+                      },
+                      "id": 33383,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1377:3:30",
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21433,
+                      "src": "1368:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256) view"
+                      }
+                    },
+                    "id": 33387,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1368:68:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33388,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1368:68:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "202d2074726164696e67436f6d6d697373696f6e4d616b657242503a20",
+                        "id": 33392,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1459:31:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_10f21fc751d497d118f70662b20726f80e018e2d994425d217c979bec3f5bc1d",
+                          "typeString": "literal_string \" - tradingCommissionMakerBP: \""
+                        },
+                        "value": " - tradingCommissionMakerBP: "
+                      },
+                      {
+                        "expression": {
+                          "id": 33393,
+                          "name": "tc",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33336,
+                          "src": "1492:2:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_TradingCommissionsBasisPoints_$41322_memory_ptr",
+                            "typeString": "struct TradingCommissionsBasisPoints memory"
+                          }
+                        },
+                        "id": 33394,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1495:24:30",
+                        "memberName": "tradingCommissionMakerBP",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 41321,
+                        "src": "1492:27:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_10f21fc751d497d118f70662b20726f80e018e2d994425d217c979bec3f5bc1d",
+                          "typeString": "literal_string \" - tradingCommissionMakerBP: \""
+                        },
+                        {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      ],
+                      "expression": {
+                        "id": 33389,
+                        "name": "console2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28806,
+                        "src": "1446:8:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console2_$28806_$",
+                          "typeString": "type(library console2)"
+                        }
+                      },
+                      "id": 33391,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1455:3:30",
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21433,
+                      "src": "1446:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256) view"
+                      }
+                    },
+                    "id": 33395,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1446:74:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33396,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1446:74:30"
+                }
+              ]
+            },
+            "functionSelector": "dee4a467",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "trading",
+            "nameLocation": "578:7:30",
+            "parameters": {
+              "id": 33325,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33324,
+                  "mutability": "mutable",
+                  "name": "naymsDiamondAddress",
+                  "nameLocation": "594:19:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33398,
+                  "src": "586:27:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33323,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "586:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "585:29:30"
+            },
+            "returnParameters": {
+              "id": 33326,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "622:0:30"
+            },
+            "scope": 33457,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 33456,
+            "nodeType": "FunctionDefinition",
+            "src": "1533:724:30",
+            "nodes": [],
+            "body": {
+              "id": 33455,
+              "nodeType": "Block",
+              "src": "1587:670:30",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    33405
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 33405,
+                      "mutability": "mutable",
+                      "name": "nayms",
+                      "nameLocation": "1604:5:30",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 33455,
+                      "src": "1597:12:30",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_INayms_$38413",
+                        "typeString": "contract INayms"
+                      },
+                      "typeName": {
+                        "id": 33404,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 33403,
+                          "name": "INayms",
+                          "nameLocations": [
+                            "1597:6:30"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 38413,
+                          "src": "1597:6:30"
+                        },
+                        "referencedDeclaration": 38413,
+                        "src": "1597:6:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_INayms_$38413",
+                          "typeString": "contract INayms"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 33409,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 33407,
+                        "name": "naymsDiamondAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33400,
+                        "src": "1619:19:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 33406,
+                      "name": "INayms",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 38413,
+                      "src": "1612:6:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_INayms_$38413_$",
+                        "typeString": "type(contract INayms)"
+                      }
+                    },
+                    "id": 33408,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1612:27:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_INayms_$38413",
+                      "typeString": "contract INayms"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1597:42:30"
+                },
+                {
+                  "assignments": [
+                    33412
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 33412,
+                      "mutability": "mutable",
+                      "name": "pc",
+                      "nameLocation": "1713:2:30",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 33455,
+                      "src": "1677:38:30",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_memory_ptr",
+                        "typeString": "struct PolicyCommissionsBasisPoints"
+                      },
+                      "typeName": {
+                        "id": 33411,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 33410,
+                          "name": "PolicyCommissionsBasisPoints",
+                          "nameLocations": [
+                            "1677:28:30"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 41267,
+                          "src": "1677:28:30"
+                        },
+                        "referencedDeclaration": 41267,
+                        "src": "1677:28:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_storage_ptr",
+                          "typeString": "struct PolicyCommissionsBasisPoints"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 33418,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "hexValue": "3430",
+                        "id": 33414,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1788:2:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_40_by_1",
+                          "typeString": "int_const 40"
+                        },
+                        "value": "40"
+                      },
+                      {
+                        "hexValue": "3430",
+                        "id": 33415,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1826:2:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_40_by_1",
+                          "typeString": "int_const 40"
+                        },
+                        "value": "40"
+                      },
+                      {
+                        "hexValue": "3430",
+                        "id": 33416,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1864:2:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_40_by_1",
+                          "typeString": "int_const 40"
+                        },
+                        "value": "40"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_40_by_1",
+                          "typeString": "int_const 40"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_40_by_1",
+                          "typeString": "int_const 40"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_40_by_1",
+                          "typeString": "int_const 40"
+                        }
+                      ],
+                      "id": 33413,
+                      "name": "PolicyCommissionsBasisPoints",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 41267,
+                      "src": "1718:28:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_PolicyCommissionsBasisPoints_$41267_storage_ptr_$",
+                        "typeString": "type(struct PolicyCommissionsBasisPoints storage pointer)"
+                      }
+                    },
+                    "id": 33417,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "nameLocations": [
+                      "1759:27:30",
+                      "1802:22:30",
+                      "1840:22:30"
+                    ],
+                    "names": [
+                      "premiumCommissionNaymsLtdBP",
+                      "premiumCommissionNDFBP",
+                      "premiumCommissionSTMBP"
+                    ],
+                    "nodeType": "FunctionCall",
+                    "src": "1718:159:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_memory_ptr",
+                      "typeString": "struct PolicyCommissionsBasisPoints memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1677:200:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 33422,
+                        "name": "pc",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33412,
+                        "src": "1926:2:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_memory_ptr",
+                          "typeString": "struct PolicyCommissionsBasisPoints memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_memory_ptr",
+                          "typeString": "struct PolicyCommissionsBasisPoints memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 33419,
+                        "name": "nayms",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 33405,
+                        "src": "1888:5:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_INayms_$38413",
+                          "typeString": "contract INayms"
+                        }
+                      },
+                      "id": 33421,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1894:31:30",
+                      "memberName": "setPolicyCommissionsBasisPoints",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 41449,
+                      "src": "1888:37:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_struct$_PolicyCommissionsBasisPoints_$41267_memory_ptr_$returns$__$",
+                        "typeString": "function (struct PolicyCommissionsBasisPoints memory) external"
+                      }
+                    },
+                    "id": 33423,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1888:41:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33424,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1888:41:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "0a0a5072656d69756d20636f6d6d697373696f6e732075706461746564207375636365737366756c6c79",
+                        "id": 33428,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1953:46:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_4dd20e6faf130c00151719008728fd47d4cc01bd07cf58acf55fcf9b4aa0b82c",
+                          "typeString": "literal_string hex\"0a0a5072656d69756d20636f6d6d697373696f6e732075706461746564207375636365737366756c6c79\""
+                        },
+                        "value": "\n\nPremium commissions updated successfully"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_4dd20e6faf130c00151719008728fd47d4cc01bd07cf58acf55fcf9b4aa0b82c",
+                          "typeString": "literal_string hex\"0a0a5072656d69756d20636f6d6d697373696f6e732075706461746564207375636365737366756c6c79\""
+                        }
+                      ],
+                      "expression": {
+                        "id": 33425,
+                        "name": "console2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28806,
+                        "src": "1940:8:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console2_$28806_$",
+                          "typeString": "type(library console2)"
+                        }
+                      },
+                      "id": 33427,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1949:3:30",
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21320,
+                      "src": "1940:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory) view"
+                      }
+                    },
+                    "id": 33429,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1940:60:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33430,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1940:60:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "202d207072656d69756d436f6d6d697373696f6e4e61796d734c746442503a20",
+                        "id": 33434,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2023:34:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_14908c81060eb1da55610dbce71afacafa0c7d3ff5c7a80920f695787e2272ca",
+                          "typeString": "literal_string \" - premiumCommissionNaymsLtdBP: \""
+                        },
+                        "value": " - premiumCommissionNaymsLtdBP: "
+                      },
+                      {
+                        "expression": {
+                          "id": 33435,
+                          "name": "pc",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33412,
+                          "src": "2059:2:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_memory_ptr",
+                            "typeString": "struct PolicyCommissionsBasisPoints memory"
+                          }
+                        },
+                        "id": 33436,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "2062:27:30",
+                        "memberName": "premiumCommissionNaymsLtdBP",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 41262,
+                        "src": "2059:30:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_14908c81060eb1da55610dbce71afacafa0c7d3ff5c7a80920f695787e2272ca",
+                          "typeString": "literal_string \" - premiumCommissionNaymsLtdBP: \""
+                        },
+                        {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      ],
+                      "expression": {
+                        "id": 33431,
+                        "name": "console2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28806,
+                        "src": "2010:8:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console2_$28806_$",
+                          "typeString": "type(library console2)"
+                        }
+                      },
+                      "id": 33433,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "2019:3:30",
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21433,
+                      "src": "2010:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256) view"
+                      }
+                    },
+                    "id": 33437,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2010:80:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33438,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2010:80:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "202d207072656d69756d436f6d6d697373696f6e4e444642503a20",
+                        "id": 33442,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2113:29:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_e9f2bda9712a7ccbef924eef0c36c6cdcdb0f248b63fdccfa21069c4cefda400",
+                          "typeString": "literal_string \" - premiumCommissionNDFBP: \""
+                        },
+                        "value": " - premiumCommissionNDFBP: "
+                      },
+                      {
+                        "expression": {
+                          "id": 33443,
+                          "name": "pc",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33412,
+                          "src": "2144:2:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_memory_ptr",
+                            "typeString": "struct PolicyCommissionsBasisPoints memory"
+                          }
+                        },
+                        "id": 33444,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "2147:22:30",
+                        "memberName": "premiumCommissionNDFBP",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 41264,
+                        "src": "2144:25:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_e9f2bda9712a7ccbef924eef0c36c6cdcdb0f248b63fdccfa21069c4cefda400",
+                          "typeString": "literal_string \" - premiumCommissionNDFBP: \""
+                        },
+                        {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      ],
+                      "expression": {
+                        "id": 33439,
+                        "name": "console2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28806,
+                        "src": "2100:8:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console2_$28806_$",
+                          "typeString": "type(library console2)"
+                        }
+                      },
+                      "id": 33441,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "2109:3:30",
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21433,
+                      "src": "2100:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256) view"
+                      }
+                    },
+                    "id": 33445,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2100:70:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33446,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2100:70:30"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "202d207072656d69756d436f6d6d697373696f6e53544d42503a20",
+                        "id": 33450,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2193:29:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_66779e36d520f3be820095c1cb0a8124c62d7e6318291eac0caec75971f9a1e3",
+                          "typeString": "literal_string \" - premiumCommissionSTMBP: \""
+                        },
+                        "value": " - premiumCommissionSTMBP: "
+                      },
+                      {
+                        "expression": {
+                          "id": 33451,
+                          "name": "pc",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33412,
+                          "src": "2224:2:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_memory_ptr",
+                            "typeString": "struct PolicyCommissionsBasisPoints memory"
+                          }
+                        },
+                        "id": 33452,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "2227:22:30",
+                        "memberName": "premiumCommissionSTMBP",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 41266,
+                        "src": "2224:25:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_66779e36d520f3be820095c1cb0a8124c62d7e6318291eac0caec75971f9a1e3",
+                          "typeString": "literal_string \" - premiumCommissionSTMBP: \""
+                        },
+                        {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      ],
+                      "expression": {
+                        "id": 33447,
+                        "name": "console2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28806,
+                        "src": "2180:8:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_console2_$28806_$",
+                          "typeString": "type(library console2)"
+                        }
+                      },
+                      "id": 33449,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "2189:3:30",
+                      "memberName": "log",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21433,
+                      "src": "2180:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256) view"
+                      }
+                    },
+                    "id": 33453,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2180:70:30",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 33454,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2180:70:30"
+                }
+              ]
+            },
+            "functionSelector": "9bddb69a",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "premiums",
+            "nameLocation": "1542:8:30",
+            "parameters": {
+              "id": 33401,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33400,
+                  "mutability": "mutable",
+                  "name": "naymsDiamondAddress",
+                  "nameLocation": "1559:19:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 33456,
+                  "src": "1551:27:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33399,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1551:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1550:29:30"
+            },
+            "returnParameters": {
+              "id": 33402,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1587:0:30"
+            },
+            "scope": 33457,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 33297,
+              "name": "Script",
+              "nameLocations": [
+                "346:6:30"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 2400,
+              "src": "346:6:30"
+            },
+            "id": 33298,
+            "nodeType": "InheritanceSpecifier",
+            "src": "346:6:30"
+          }
+        ],
+        "canonicalName": "UpdateCommissions",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          33457,
+          2400,
+          2363,
+          2348,
+          11263,
+          6093,
+          4496
+        ],
+        "name": "UpdateCommissions",
+        "nameLocation": "325:17:30",
+        "scope": 33458,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 30
+}

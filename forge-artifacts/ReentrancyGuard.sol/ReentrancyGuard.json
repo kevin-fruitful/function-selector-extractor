@@ -1,0 +1,641 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Contract module that helps prevent reentrant calls to a function. Inheriting from `ReentrancyGuard` will make the {nonReentrant} modifier available, which can be applied to functions to make sure there are no nested (reentrant) calls to them. Note that because there is a single `nonReentrant` guard, functions marked as `nonReentrant` may not call one another. This can be worked around by making those functions `private`, and then adding `external` `nonReentrant` entry points to them. TIP: If you would like to learn more about reentrancy and alternative ways to protect against it, check out our blog post https://blog.openzeppelin.com/reentrancy-after-istanbul/[Reentrancy After Istanbul].\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/utils/ReentrancyGuard.sol\":\"ReentrancyGuard\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\"]},\"sources\":{\"src/diamonds/nayms/AppStorage.sol\":{\"keccak256\":\"0xea212ff0174b72ed18d8f4288df97a202eebe977d5858e525b748e596f279edf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f8e0b7c0f3cb0e886f221aaa3f5f4fbe2f4d9d17ca2e5fe8ab2095b8951740c6\",\"dweb:/ipfs/QmQme6aQVAn39Bp5upLuncPm8JZ6Pa7D6udPSwPK5GQbTx\"]},\"src/diamonds/nayms/interfaces/FreeStructs.sol\":{\"keccak256\":\"0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4\",\"dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD\"]},\"src/utils/ReentrancyGuard.sol\":{\"keccak256\":\"0xa5e9cf016e387adab639172486c0d249d1a8a8a67d4f36254b81229d9b3f9e98\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b295db277d2b2723281cbee4795c1fcba805b75153af2419e68d1ded02dd0c8d\",\"dweb:/ipfs/QmVt7i8hzWMbXmMiVwDp8ps9i6Bz1uHtrMHadEBoMnCYjy\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/utils/ReentrancyGuard.sol": "ReentrancyGuard"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/AppStorage.sol": {
+        "keccak256": "0xea212ff0174b72ed18d8f4288df97a202eebe977d5858e525b748e596f279edf",
+        "urls": [
+          "bzz-raw://f8e0b7c0f3cb0e886f221aaa3f5f4fbe2f4d9d17ca2e5fe8ab2095b8951740c6",
+          "dweb:/ipfs/QmQme6aQVAn39Bp5upLuncPm8JZ6Pa7D6udPSwPK5GQbTx"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/FreeStructs.sol": {
+        "keccak256": "0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384",
+        "urls": [
+          "bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4",
+          "dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD"
+        ],
+        "license": "MIT"
+      },
+      "src/utils/ReentrancyGuard.sol": {
+        "keccak256": "0xa5e9cf016e387adab639172486c0d249d1a8a8a67d4f36254b81229d9b3f9e98",
+        "urls": [
+          "bzz-raw://b295db277d2b2723281cbee4795c1fcba805b75153af2419e68d1ded02dd0c8d",
+          "dweb:/ipfs/QmVt7i8hzWMbXmMiVwDp8ps9i6Bz1uHtrMHadEBoMnCYjy"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/utils/ReentrancyGuard.sol",
+    "id": 52985,
+    "exportedSymbols": {
+      "LibAppStorage": [
+        38349
+      ],
+      "ReentrancyGuard": [
+        52984
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2790:95",
+    "nodes": [
+      {
+        "id": 52943,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:95",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 52945,
+        "nodeType": "ImportDirective",
+        "src": "57:66:95",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/AppStorage.sol",
+        "file": "src/diamonds/nayms/AppStorage.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 52985,
+        "sourceUnit": 38350,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 52944,
+              "name": "LibAppStorage",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 38349,
+              "src": "66:13:95",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 52984,
+        "nodeType": "ContractDefinition",
+        "src": "1006:1815:95",
+        "nodes": [
+          {
+            "id": 52949,
+            "nodeType": "VariableDeclaration",
+            "src": "1794:41:95",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "_NOT_ENTERED",
+            "nameLocation": "1819:12:95",
+            "scope": 52984,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 52947,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1794:7:95",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "31",
+              "id": 52948,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1834:1:95",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1_by_1",
+                "typeString": "int_const 1"
+              },
+              "value": "1"
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 52952,
+            "nodeType": "VariableDeclaration",
+            "src": "1841:37:95",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "_ENTERED",
+            "nameLocation": "1866:8:95",
+            "scope": 52984,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 52950,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1841:7:95",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "32",
+              "id": 52951,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1877:1:95",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_2_by_1",
+                "typeString": "int_const 2"
+              },
+              "value": "2"
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 52983,
+            "nodeType": "ModifierDefinition",
+            "src": "2254:565:95",
+            "nodes": [],
+            "body": {
+              "id": 52982,
+              "nodeType": "Block",
+              "src": "2278:541:95",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 52961,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "arguments": [],
+                            "expression": {
+                              "argumentTypes": [],
+                              "expression": {
+                                "id": 52956,
+                                "name": "LibAppStorage",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 38349,
+                                "src": "2367:13:95",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_LibAppStorage_$38349_$",
+                                  "typeString": "type(library LibAppStorage)"
+                                }
+                              },
+                              "id": 52957,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberLocation": "2381:14:95",
+                              "memberName": "diamondStorage",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 38336,
+                              "src": "2367:28:95",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_AppStorage_$38309_storage_ptr_$",
+                                "typeString": "function () pure returns (struct AppStorage storage pointer)"
+                              }
+                            },
+                            "id": 52958,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "nameLocations": [],
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "2367:30:95",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_AppStorage_$38309_storage_ptr",
+                              "typeString": "struct AppStorage storage pointer"
+                            }
+                          },
+                          "id": 52959,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "2398:16:95",
+                          "memberName": "reentrancyStatus",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 38123,
+                          "src": "2367:47:95",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "id": 52960,
+                          "name": "_ENTERED",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 52952,
+                          "src": "2418:8:95",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "2367:59:95",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "5265656e7472616e637947756172643a207265656e7472616e742063616c6c",
+                        "id": 52962,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2428:33:95",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_ebf73bba305590e4764d5cb53b69bffd6d4d092d1a67551cb346f8cfcdab8619",
+                          "typeString": "literal_string \"ReentrancyGuard: reentrant call\""
+                        },
+                        "value": "ReentrancyGuard: reentrant call"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_ebf73bba305590e4764d5cb53b69bffd6d4d092d1a67551cb346f8cfcdab8619",
+                          "typeString": "literal_string \"ReentrancyGuard: reentrant call\""
+                        }
+                      ],
+                      "id": 52955,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "2359:7:95",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 52963,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2359:103:95",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 52964,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2359:103:95"
+                },
+                {
+                  "expression": {
+                    "id": 52971,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "id": 52965,
+                            "name": "LibAppStorage",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 38349,
+                            "src": "2537:13:95",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_LibAppStorage_$38349_$",
+                              "typeString": "type(library LibAppStorage)"
+                            }
+                          },
+                          "id": 52967,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "2551:14:95",
+                          "memberName": "diamondStorage",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 38336,
+                          "src": "2537:28:95",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_AppStorage_$38309_storage_ptr_$",
+                            "typeString": "function () pure returns (struct AppStorage storage pointer)"
+                          }
+                        },
+                        "id": 52968,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2537:30:95",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AppStorage_$38309_storage_ptr",
+                          "typeString": "struct AppStorage storage pointer"
+                        }
+                      },
+                      "id": 52969,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "2568:16:95",
+                      "memberName": "reentrancyStatus",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 38123,
+                      "src": "2537:47:95",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 52970,
+                      "name": "_ENTERED",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52952,
+                      "src": "2587:8:95",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "2537:58:95",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 52972,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2537:58:95"
+                },
+                {
+                  "id": 52973,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "2606:1:95"
+                },
+                {
+                  "expression": {
+                    "id": 52980,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "id": 52974,
+                            "name": "LibAppStorage",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 38349,
+                            "src": "2750:13:95",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_LibAppStorage_$38349_$",
+                              "typeString": "type(library LibAppStorage)"
+                            }
+                          },
+                          "id": 52976,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "2764:14:95",
+                          "memberName": "diamondStorage",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 38336,
+                          "src": "2750:28:95",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_AppStorage_$38309_storage_ptr_$",
+                            "typeString": "function () pure returns (struct AppStorage storage pointer)"
+                          }
+                        },
+                        "id": 52977,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2750:30:95",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AppStorage_$38309_storage_ptr",
+                          "typeString": "struct AppStorage storage pointer"
+                        }
+                      },
+                      "id": 52978,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "2781:16:95",
+                      "memberName": "reentrancyStatus",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 38123,
+                      "src": "2750:47:95",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 52979,
+                      "name": "_NOT_ENTERED",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52949,
+                      "src": "2800:12:95",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "2750:62:95",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 52981,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2750:62:95"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 52953,
+              "nodeType": "StructuredDocumentation",
+              "src": "1885:364:95",
+              "text": " @dev Prevents a contract from calling itself, directly or indirectly.\n Calling a `nonReentrant` function from another `nonReentrant`\n function is not supported. It is possible to prevent this from happening\n by making the `nonReentrant` function external, and make it call a\n `private` function that does the actual work."
+            },
+            "name": "nonReentrant",
+            "nameLocation": "2263:12:95",
+            "parameters": {
+              "id": 52954,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2275:2:95"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "ReentrancyGuard",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 52946,
+          "nodeType": "StructuredDocumentation",
+          "src": "255:750:95",
+          "text": " @dev Contract module that helps prevent reentrant calls to a function.\n Inheriting from `ReentrancyGuard` will make the {nonReentrant} modifier\n available, which can be applied to functions to make sure there are no nested\n (reentrant) calls to them.\n Note that because there is a single `nonReentrant` guard, functions marked as\n `nonReentrant` may not call one another. This can be worked around by making\n those functions `private`, and then adding `external` `nonReentrant` entry\n points to them.\n TIP: If you would like to learn more about reentrancy and alternative ways\n to protect against it, check out our blog post\n https://blog.openzeppelin.com/reentrancy-after-istanbul/[Reentrancy After Istanbul]."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          52984
+        ],
+        "name": "ReentrancyGuard",
+        "nameLocation": "1024:15:95",
+        "scope": 52985,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 95
+}

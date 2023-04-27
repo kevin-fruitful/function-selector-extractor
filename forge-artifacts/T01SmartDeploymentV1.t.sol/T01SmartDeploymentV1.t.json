@@ -1,0 +1,21 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "test/T01SmartDeploymentV1.t.sol",
+    "id": 54961,
+    "exportedSymbols": {},
+    "nodeType": "SourceUnit",
+    "src": "13491:0:100",
+    "nodes": [],
+    "license": "MIT"
+  },
+  "id": 100
+}

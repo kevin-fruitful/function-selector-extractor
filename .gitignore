@@ -1,0 +1,68 @@
+.env
+coverage
+coverage.json
+lcov.info
+lcov*.info
+typechain
+results.sarif
+anvil*.json
+
+# SECURITY
+nayms_mnemonic.txt
+# Java files
+*.class
+
+# IDE files (IntelliJ IDEA, Eclipse)
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.vscode/
+
+# Maven build output directory
+target/
+
+# Gradle build output directory
+build/
+.gradle/
+
+# Gradle wrapper files
+gradle/wrapper/gradle-wrapper.jar
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.ldb
+
+# Unit test reports
+TEST-*.xml
+
+# Application properties
+application*.properties
+application*.yml
+
+# Other
+*.bak
+*.swp
+*.swo
+*.orig
+*.patch
+*.rej
+*.pyc
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# JUnit, TestNG specific
+test-output/
+
+.history

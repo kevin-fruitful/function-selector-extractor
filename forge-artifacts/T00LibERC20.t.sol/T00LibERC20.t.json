@@ -1,0 +1,21 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "test/T00LibERC20.t.sol",
+    "id": 46678,
+    "exportedSymbols": {},
+    "nodeType": "SourceUnit",
+    "src": "4808:0:82",
+    "nodes": [],
+    "license": "MIT"
+  },
+  "id": 82
+}

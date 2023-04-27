@@ -1,0 +1,1824 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_entityId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_tokenId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getLockedBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_entityId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_tokenId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_dividendTokenId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getWithdrawableDividend",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "_entityPayout",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "accountId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "tokenId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "internalBalanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "from",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "tokenId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "internalBurn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "tokenId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "internalTokenSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "to",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "tokenId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "internalTransferFromEntity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "guid",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "payDividendFromEntity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "ownerId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "tokenId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "withdrawAllDividends",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "ownerId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "tokenId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "dividendTokenId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "withdrawDividend",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "from",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "to",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "tokenId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "wrapperInternalTransferFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getLockedBalance(bytes32,bytes32)": "7baa1dde",
+    "getWithdrawableDividend(bytes32,bytes32,bytes32)": "d588b132",
+    "internalBalanceOf(bytes32,bytes32)": "5c923301",
+    "internalBurn(bytes32,bytes32,uint256)": "c9787589",
+    "internalTokenSupply(bytes32)": "e208f10a",
+    "internalTransferFromEntity(bytes32,bytes32,uint256)": "a6cd857d",
+    "payDividendFromEntity(bytes32,uint256)": "aa47d5cb",
+    "withdrawAllDividends(bytes32,bytes32)": "ad747f2f",
+    "withdrawDividend(bytes32,bytes32,bytes32)": "33f6dfd8",
+    "wrapperInternalTransferFrom(bytes32,bytes32,bytes32,uint256)": "1ed7db65"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_entityId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_tokenId\",\"type\":\"bytes32\"}],\"name\":\"getLockedBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_entityId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_tokenId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_dividendTokenId\",\"type\":\"bytes32\"}],\"name\":\"getWithdrawableDividend\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"_entityPayout\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"accountId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"tokenId\",\"type\":\"bytes32\"}],\"name\":\"internalBalanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"from\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"tokenId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"internalBurn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"tokenId\",\"type\":\"bytes32\"}],\"name\":\"internalTokenSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"to\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"tokenId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"internalTransferFromEntity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"guid\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"payDividendFromEntity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ownerId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"tokenId\",\"type\":\"bytes32\"}],\"name\":\"withdrawAllDividends\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ownerId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"tokenId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"dividendTokenId\",\"type\":\"bytes32\"}],\"name\":\"withdrawDividend\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"from\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"to\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"tokenId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"wrapperInternalTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getLockedBalance(bytes32,bytes32)\":{\"params\":{\"_entityId\":\"Unique platform ID of the entity.\",\"_tokenId\":\"The ID assigned to an external token.\"},\"returns\":{\"amount\":\"of tokens that the entity has for sale in the marketplace.\"}},\"getWithdrawableDividend(bytes32,bytes32,bytes32)\":{\"details\":\"Divident available for an entity to withdraw\",\"params\":{\"_dividendTokenId\":\"Unique ID of dividend token\",\"_entityId\":\"Unique ID of the entity\",\"_tokenId\":\"Unique ID of token\"},\"returns\":{\"_entityPayout\":\"accumulated dividend\"}},\"internalBalanceOf(bytes32,bytes32)\":{\"details\":\"Internal balance for given account\",\"params\":{\"tokenId\":\"Internal ID of the asset\"},\"returns\":{\"_0\":\"current balance\"}},\"internalTokenSupply(bytes32)\":{\"details\":\"Total supply of platform asset\",\"params\":{\"tokenId\":\"Internal ID of the asset\"},\"returns\":{\"_0\":\"current balance\"}},\"internalTransferFromEntity(bytes32,bytes32,uint256)\":{\"details\":\"Transfer tokens internally\",\"params\":{\"to\":\"token receiver\",\"tokenId\":\"Internal ID of the token\"}},\"payDividendFromEntity(bytes32,uint256)\":{\"details\":\"Transfer dividends to the entity\",\"params\":{\"amount\":\"the mamount of the dividend token to be distributed to NAYMS token holders.\",\"guid\":\"Globally unique identifier of a dividend distribution.\"}},\"withdrawAllDividends(bytes32,bytes32)\":{\"details\":\"Dividends can be available in more than one dividend denomination. This method will withdraw all available dividends in the different dividend denominations.\",\"params\":{\"ownerId\":\"Unique ID of the dividend receiver\",\"tokenId\":\"Unique ID of token\"}},\"withdrawDividend(bytes32,bytes32,bytes32)\":{\"details\":\"Transfer dividends to the entity\",\"params\":{\"dividendTokenId\":\"Unique ID of dividend token\",\"ownerId\":\"Unique ID of the dividend receiver\",\"tokenId\":\"Unique ID of token\"}},\"wrapperInternalTransferFrom(bytes32,bytes32,bytes32,uint256)\":{\"details\":\"Transfer tokens internally between two IDs\",\"params\":{\"from\":\"token sender\",\"to\":\"token receiver\",\"tokenId\":\"Internal ID of the token\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getLockedBalance(bytes32,bytes32)\":{\"notice\":\"Get the amount of tokens that an entity has for sale in the marketplace.\"},\"getWithdrawableDividend(bytes32,bytes32,bytes32)\":{\"notice\":\"Get withdrawable dividend amount\"},\"internalBalanceOf(bytes32,bytes32)\":{\"notice\":\"Gets balance of an account within platform\"},\"internalTokenSupply(bytes32)\":{\"notice\":\"Current supply for the asset\"},\"internalTransferFromEntity(bytes32,bytes32,uint256)\":{\"notice\":\"Internal transfer of `amount` tokens\"},\"payDividendFromEntity(bytes32,uint256)\":{\"notice\":\"Pay `amount` of dividends\"},\"withdrawAllDividends(bytes32,bytes32)\":{\"notice\":\"Withdraws a user's available dividends.\"},\"withdrawDividend(bytes32,bytes32,bytes32)\":{\"notice\":\"Withdraw available dividend\"},\"wrapperInternalTransferFrom(bytes32,bytes32,bytes32,uint256)\":{\"notice\":\"Internal transfer of `amount` tokens `from` -> `to`\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/diamonds/nayms/interfaces/ITokenizedVaultFacet.sol\":\"ITokenizedVaultFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin/=lib/ozv4/contracts/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\",\":v3-core-08/=lib/v3-core-08/contracts/\",\":v3-peri-08/=lib/v3-peri-08/contracts/\"]},\"sources\":{\"src/diamonds/nayms/interfaces/ITokenizedVaultFacet.sol\":{\"keccak256\":\"0x02a9fc017690a2fd1424a67f2ecae15cd741fc381e3c755d141ca5dbfb78f368\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2e654d4947bfddda09340711ac961871527ba9587d300100036604b97d9668e7\",\"dweb:/ipfs/QmUg32HGvV17CHwu2tThPpVrojQwhuXEnfFe2WFwvqkqzF\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_entityId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_tokenId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getLockedBalance",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_entityId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_tokenId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_dividendTokenId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getWithdrawableDividend",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "_entityPayout",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "accountId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "tokenId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "internalBalanceOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "from",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "tokenId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "internalBurn"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "tokenId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "internalTokenSupply",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "to",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "tokenId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "internalTransferFromEntity"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "guid",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "payDividendFromEntity"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "ownerId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "tokenId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "withdrawAllDividends"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "ownerId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "tokenId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "dividendTokenId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "withdrawDividend"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "from",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "to",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "tokenId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "wrapperInternalTransferFrom"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "getLockedBalance(bytes32,bytes32)": {
+            "params": {
+              "_entityId": "Unique platform ID of the entity.",
+              "_tokenId": "The ID assigned to an external token."
+            },
+            "returns": {
+              "amount": "of tokens that the entity has for sale in the marketplace."
+            }
+          },
+          "getWithdrawableDividend(bytes32,bytes32,bytes32)": {
+            "details": "Divident available for an entity to withdraw",
+            "params": {
+              "_dividendTokenId": "Unique ID of dividend token",
+              "_entityId": "Unique ID of the entity",
+              "_tokenId": "Unique ID of token"
+            },
+            "returns": {
+              "_entityPayout": "accumulated dividend"
+            }
+          },
+          "internalBalanceOf(bytes32,bytes32)": {
+            "details": "Internal balance for given account",
+            "params": {
+              "tokenId": "Internal ID of the asset"
+            },
+            "returns": {
+              "_0": "current balance"
+            }
+          },
+          "internalTokenSupply(bytes32)": {
+            "details": "Total supply of platform asset",
+            "params": {
+              "tokenId": "Internal ID of the asset"
+            },
+            "returns": {
+              "_0": "current balance"
+            }
+          },
+          "internalTransferFromEntity(bytes32,bytes32,uint256)": {
+            "details": "Transfer tokens internally",
+            "params": {
+              "to": "token receiver",
+              "tokenId": "Internal ID of the token"
+            }
+          },
+          "payDividendFromEntity(bytes32,uint256)": {
+            "details": "Transfer dividends to the entity",
+            "params": {
+              "amount": "the mamount of the dividend token to be distributed to NAYMS token holders.",
+              "guid": "Globally unique identifier of a dividend distribution."
+            }
+          },
+          "withdrawAllDividends(bytes32,bytes32)": {
+            "details": "Dividends can be available in more than one dividend denomination. This method will withdraw all available dividends in the different dividend denominations.",
+            "params": {
+              "ownerId": "Unique ID of the dividend receiver",
+              "tokenId": "Unique ID of token"
+            }
+          },
+          "withdrawDividend(bytes32,bytes32,bytes32)": {
+            "details": "Transfer dividends to the entity",
+            "params": {
+              "dividendTokenId": "Unique ID of dividend token",
+              "ownerId": "Unique ID of the dividend receiver",
+              "tokenId": "Unique ID of token"
+            }
+          },
+          "wrapperInternalTransferFrom(bytes32,bytes32,bytes32,uint256)": {
+            "details": "Transfer tokens internally between two IDs",
+            "params": {
+              "from": "token sender",
+              "to": "token receiver",
+              "tokenId": "Internal ID of the token"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "getLockedBalance(bytes32,bytes32)": {
+            "notice": "Get the amount of tokens that an entity has for sale in the marketplace."
+          },
+          "getWithdrawableDividend(bytes32,bytes32,bytes32)": {
+            "notice": "Get withdrawable dividend amount"
+          },
+          "internalBalanceOf(bytes32,bytes32)": {
+            "notice": "Gets balance of an account within platform"
+          },
+          "internalTokenSupply(bytes32)": {
+            "notice": "Current supply for the asset"
+          },
+          "internalTransferFromEntity(bytes32,bytes32,uint256)": {
+            "notice": "Internal transfer of `amount` tokens"
+          },
+          "payDividendFromEntity(bytes32,uint256)": {
+            "notice": "Pay `amount` of dividends"
+          },
+          "withdrawAllDividends(bytes32,bytes32)": {
+            "notice": "Withdraws a user's available dividends."
+          },
+          "withdrawDividend(bytes32,bytes32,bytes32)": {
+            "notice": "Withdraw available dividend"
+          },
+          "wrapperInternalTransferFrom(bytes32,bytes32,bytes32,uint256)": {
+            "notice": "Internal transfer of `amount` tokens `from` -> `to`"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin/=lib/ozv4/contracts/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/",
+        ":v3-core-08/=lib/v3-core-08/contracts/",
+        ":v3-peri-08/=lib/v3-peri-08/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/diamonds/nayms/interfaces/ITokenizedVaultFacet.sol": "ITokenizedVaultFacet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/interfaces/ITokenizedVaultFacet.sol": {
+        "keccak256": "0x02a9fc017690a2fd1424a67f2ecae15cd741fc381e3c755d141ca5dbfb78f368",
+        "urls": [
+          "bzz-raw://2e654d4947bfddda09340711ac961871527ba9587d300100036604b97d9668e7",
+          "dweb:/ipfs/QmUg32HGvV17CHwu2tThPpVrojQwhuXEnfFe2WFwvqkqzF"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/diamonds/nayms/interfaces/ITokenizedVaultFacet.sol",
+    "id": 41834,
+    "exportedSymbols": {
+      "ITokenizedVaultFacet": [
+        41833
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:3516:64",
+    "nodes": [
+      {
+        "id": 41735,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:64",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 41833,
+        "nodeType": "ContractDefinition",
+        "src": "57:3490:64",
+        "nodes": [
+          {
+            "id": 41745,
+            "nodeType": "FunctionDefinition",
+            "src": "293:95:64",
+            "nodes": [],
+            "documentation": {
+              "id": 41736,
+              "nodeType": "StructuredDocumentation",
+              "src": "94:194:64",
+              "text": " @notice Gets balance of an account within platform\n @dev Internal balance for given account\n @param tokenId Internal ID of the asset\n @return current balance"
+            },
+            "functionSelector": "5c923301",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "internalBalanceOf",
+            "nameLocation": "302:17:64",
+            "parameters": {
+              "id": 41741,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41738,
+                  "mutability": "mutable",
+                  "name": "accountId",
+                  "nameLocation": "328:9:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41745,
+                  "src": "320:17:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41737,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "320:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41740,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "347:7:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41745,
+                  "src": "339:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41739,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "339:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "319:36:64"
+            },
+            "returnParameters": {
+              "id": 41744,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41743,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41745,
+                  "src": "379:7:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41742,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "379:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "378:9:64"
+            },
+            "scope": 41833,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41753,
+            "nodeType": "FunctionDefinition",
+            "src": "575:78:64",
+            "nodes": [],
+            "documentation": {
+              "id": 41746,
+              "nodeType": "StructuredDocumentation",
+              "src": "394:176:64",
+              "text": " @notice Current supply for the asset\n @dev Total supply of platform asset\n @param tokenId Internal ID of the asset\n @return current balance"
+            },
+            "functionSelector": "e208f10a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "internalTokenSupply",
+            "nameLocation": "584:19:64",
+            "parameters": {
+              "id": 41749,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41748,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "612:7:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41753,
+                  "src": "604:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41747,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "604:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "603:17:64"
+            },
+            "returnParameters": {
+              "id": 41752,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41751,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41753,
+                  "src": "644:7:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41750,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "644:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "643:9:64"
+            },
+            "scope": 41833,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41763,
+            "nodeType": "FunctionDefinition",
+            "src": "845:120:64",
+            "nodes": [],
+            "documentation": {
+              "id": 41754,
+              "nodeType": "StructuredDocumentation",
+              "src": "659:181:64",
+              "text": " @notice Internal transfer of `amount` tokens\n @dev Transfer tokens internally\n @param to token receiver\n @param tokenId Internal ID of the token"
+            },
+            "functionSelector": "a6cd857d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "internalTransferFromEntity",
+            "nameLocation": "854:26:64",
+            "parameters": {
+              "id": 41761,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41756,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "898:2:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41763,
+                  "src": "890:10:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41755,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "890:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41758,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "918:7:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41763,
+                  "src": "910:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41757,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "910:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41760,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "943:6:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41763,
+                  "src": "935:14:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41759,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "935:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "880:75:64"
+            },
+            "returnParameters": {
+              "id": 41762,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "964:0:64"
+            },
+            "scope": 41833,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41775,
+            "nodeType": "FunctionDefinition",
+            "src": "1220:143:64",
+            "nodes": [],
+            "documentation": {
+              "id": 41764,
+              "nodeType": "StructuredDocumentation",
+              "src": "971:244:64",
+              "text": " @notice Internal transfer of `amount` tokens `from` -> `to`\n @dev Transfer tokens internally between two IDs\n @param from token sender\n @param to token receiver\n @param tokenId Internal ID of the token"
+            },
+            "functionSelector": "1ed7db65",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "wrapperInternalTransferFrom",
+            "nameLocation": "1229:27:64",
+            "parameters": {
+              "id": 41773,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41766,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "1274:4:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41775,
+                  "src": "1266:12:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41765,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1266:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41768,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "1296:2:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41775,
+                  "src": "1288:10:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41767,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1288:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41770,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "1316:7:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41775,
+                  "src": "1308:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41769,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1308:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41772,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "1341:6:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41775,
+                  "src": "1333:14:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41771,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1333:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1256:97:64"
+            },
+            "returnParameters": {
+              "id": 41774,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1362:0:64"
+            },
+            "scope": 41833,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41784,
+            "nodeType": "FunctionDefinition",
+            "src": "1369:108:64",
+            "nodes": [],
+            "functionSelector": "c9787589",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "internalBurn",
+            "nameLocation": "1378:12:64",
+            "parameters": {
+              "id": 41782,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41777,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "1408:4:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41784,
+                  "src": "1400:12:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41776,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1400:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41779,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "1430:7:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41784,
+                  "src": "1422:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41778,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1422:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41781,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "1455:6:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41784,
+                  "src": "1447:14:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41780,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1447:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1390:77:64"
+            },
+            "returnParameters": {
+              "id": 41783,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1476:0:64"
+            },
+            "scope": 41833,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41796,
+            "nodeType": "FunctionDefinition",
+            "src": "1803:172:64",
+            "nodes": [],
+            "documentation": {
+              "id": 41785,
+              "nodeType": "StructuredDocumentation",
+              "src": "1483:315:64",
+              "text": " @notice Get withdrawable dividend amount\n @dev Divident available for an entity to withdraw\n @param _entityId Unique ID of the entity\n @param _tokenId Unique ID of token\n @param _dividendTokenId Unique ID of dividend token\n @return _entityPayout accumulated dividend"
+            },
+            "functionSelector": "d588b132",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getWithdrawableDividend",
+            "nameLocation": "1812:23:64",
+            "parameters": {
+              "id": 41792,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41787,
+                  "mutability": "mutable",
+                  "name": "_entityId",
+                  "nameLocation": "1853:9:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41796,
+                  "src": "1845:17:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41786,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1845:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41789,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nameLocation": "1880:8:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41796,
+                  "src": "1872:16:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41788,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1872:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41791,
+                  "mutability": "mutable",
+                  "name": "_dividendTokenId",
+                  "nameLocation": "1906:16:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41796,
+                  "src": "1898:24:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41790,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1898:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1835:93:64"
+            },
+            "returnParameters": {
+              "id": 41795,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41794,
+                  "mutability": "mutable",
+                  "name": "_entityPayout",
+                  "nameLocation": "1960:13:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41796,
+                  "src": "1952:21:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41793,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1952:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1951:23:64"
+            },
+            "scope": 41833,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41806,
+            "nodeType": "FunctionDefinition",
+            "src": "2241:124:64",
+            "nodes": [],
+            "documentation": {
+              "id": 41797,
+              "nodeType": "StructuredDocumentation",
+              "src": "1981:255:64",
+              "text": " @notice Withdraw available dividend\n @dev Transfer dividends to the entity\n @param ownerId Unique ID of the dividend receiver\n @param tokenId Unique ID of token\n @param dividendTokenId Unique ID of dividend token"
+            },
+            "functionSelector": "33f6dfd8",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawDividend",
+            "nameLocation": "2250:16:64",
+            "parameters": {
+              "id": 41804,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41799,
+                  "mutability": "mutable",
+                  "name": "ownerId",
+                  "nameLocation": "2284:7:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41806,
+                  "src": "2276:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41798,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2276:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41801,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "2309:7:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41806,
+                  "src": "2301:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41800,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2301:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41803,
+                  "mutability": "mutable",
+                  "name": "dividendTokenId",
+                  "nameLocation": "2334:15:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41806,
+                  "src": "2326:23:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41802,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2326:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2266:89:64"
+            },
+            "returnParameters": {
+              "id": 41805,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2364:0:64"
+            },
+            "scope": 41833,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41814,
+            "nodeType": "FunctionDefinition",
+            "src": "2710:73:64",
+            "nodes": [],
+            "documentation": {
+              "id": 41807,
+              "nodeType": "StructuredDocumentation",
+              "src": "2371:334:64",
+              "text": " @notice Withdraws a user's available dividends.\n @dev Dividends can be available in more than one dividend denomination. This method will withdraw all available dividends in the different dividend denominations.\n @param ownerId Unique ID of the dividend receiver\n @param tokenId Unique ID of token"
+            },
+            "functionSelector": "ad747f2f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawAllDividends",
+            "nameLocation": "2719:20:64",
+            "parameters": {
+              "id": 41812,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41809,
+                  "mutability": "mutable",
+                  "name": "ownerId",
+                  "nameLocation": "2748:7:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41814,
+                  "src": "2740:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41808,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2740:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41811,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "2765:7:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41814,
+                  "src": "2757:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41810,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2757:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2739:34:64"
+            },
+            "returnParameters": {
+              "id": 41813,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2782:0:64"
+            },
+            "scope": 41833,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41822,
+            "nodeType": "FunctionDefinition",
+            "src": "3062:70:64",
+            "nodes": [],
+            "documentation": {
+              "id": 41815,
+              "nodeType": "StructuredDocumentation",
+              "src": "2789:268:64",
+              "text": " @notice Pay `amount` of dividends\n @dev Transfer dividends to the entity\n @param guid Globally unique identifier of a dividend distribution.\n @param amount the mamount of the dividend token to be distributed to NAYMS token holders."
+            },
+            "functionSelector": "aa47d5cb",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "payDividendFromEntity",
+            "nameLocation": "3071:21:64",
+            "parameters": {
+              "id": 41820,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41817,
+                  "mutability": "mutable",
+                  "name": "guid",
+                  "nameLocation": "3101:4:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41822,
+                  "src": "3093:12:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41816,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3093:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41819,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "3115:6:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41822,
+                  "src": "3107:14:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41818,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3107:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3092:30:64"
+            },
+            "returnParameters": {
+              "id": 41821,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3131:0:64"
+            },
+            "scope": 41833,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41832,
+            "nodeType": "FunctionDefinition",
+            "src": "3443:102:64",
+            "nodes": [],
+            "documentation": {
+              "id": 41823,
+              "nodeType": "StructuredDocumentation",
+              "src": "3138:300:64",
+              "text": " @notice Get the amount of tokens that an entity has for sale in the marketplace.\n @param _entityId  Unique platform ID of the entity.\n @param _tokenId The ID assigned to an external token.\n @return amount of tokens that the entity has for sale in the marketplace."
+            },
+            "functionSelector": "7baa1dde",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLockedBalance",
+            "nameLocation": "3452:16:64",
+            "parameters": {
+              "id": 41828,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41825,
+                  "mutability": "mutable",
+                  "name": "_entityId",
+                  "nameLocation": "3477:9:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41832,
+                  "src": "3469:17:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41824,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3469:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41827,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nameLocation": "3496:8:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41832,
+                  "src": "3488:16:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41826,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3488:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3468:37:64"
+            },
+            "returnParameters": {
+              "id": 41831,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41830,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "3537:6:64",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41832,
+                  "src": "3529:14:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41829,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3529:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3528:16:64"
+            },
+            "scope": 41833,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITokenizedVaultFacet",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          41833
+        ],
+        "name": "ITokenizedVaultFacet",
+        "nameLocation": "67:20:64",
+        "scope": 41834,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 64
+}

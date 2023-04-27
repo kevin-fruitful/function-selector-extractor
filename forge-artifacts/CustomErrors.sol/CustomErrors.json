@@ -1,0 +1,954 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/diamonds/nayms/interfaces/CustomErrors.sol",
+    "id": 41038,
+    "exportedSymbols": {
+      "AssignerGroupIsMissing": [
+        40953
+      ],
+      "CancelCannotBeTrueWhenCreatingSimplePolicy": [
+        41025
+      ],
+      "CannotAddNullDiscountToken": [
+        40962
+      ],
+      "CannotAddNullSupportedExternalToken": [
+        40956
+      ],
+      "CannotSupportExternalTokenWithMoreThan18Decimals": [
+        40959
+      ],
+      "CreatingEntityThatAlreadyExists": [
+        40972
+      ],
+      "DuplicateSignerCreatingSimplePolicy": [
+        41037
+      ],
+      "EntityDoesNotExist": [
+        40967
+      ],
+      "ExternalDepositAmountCannotBeZero": [
+        40985
+      ],
+      "ExternalWithdrawAmountCannotBeZero": [
+        40988
+      ],
+      "MissingSymbolWhenEnablingTokenization": [
+        40982
+      ],
+      "ObjectCannotBeTokenized": [
+        40977
+      ],
+      "OwnerCannotBeSystemAdmin": [
+        40947
+      ],
+      "PolicyCommissionsBasisPointsCannotBeGreaterThan10000": [
+        40996
+      ],
+      "PolicyDoesNotExist": [
+        41030
+      ],
+      "PolicyIdCannotBeZero": [
+        40991
+      ],
+      "RoleIsMissing": [
+        40950
+      ],
+      "SimplePolicyClaimsPaidShouldStartAtZero": [
+        41019
+      ],
+      "SimplePolicyPremiumsPaidShouldStartAtZero": [
+        41022
+      ],
+      "SimplePolicyStakeholderSignatureInvalid": [
+        41016
+      ],
+      "UtilizedCapacityGreaterThanMaxCapacity": [
+        41003
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2919:54",
+    "nodes": [
+      {
+        "id": 40944,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:54",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 40947,
+        "nodeType": "ErrorDefinition",
+        "src": "172:33:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40945,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:115:54",
+          "text": "@dev The Nayms Diamond (proxy contract) owner (address) must be mutually exclusive with the system admin role."
+        },
+        "errorSelector": "7f6dd5da",
+        "name": "OwnerCannotBeSystemAdmin",
+        "nameLocation": "178:24:54",
+        "parameters": {
+          "id": 40946,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "202:2:54"
+        }
+      },
+      {
+        "id": 40950,
+        "nodeType": "ErrorDefinition",
+        "src": "272:22:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40948,
+          "nodeType": "StructuredDocumentation",
+          "src": "207:65:54",
+          "text": "@dev Passing in a missing role when trying to assign a role."
+        },
+        "errorSelector": "5ccaaf10",
+        "name": "RoleIsMissing",
+        "nameLocation": "278:13:54",
+        "parameters": {
+          "id": 40949,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "291:2:54"
+        }
+      },
+      {
+        "id": 40953,
+        "nodeType": "ErrorDefinition",
+        "src": "373:31:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40951,
+          "nodeType": "StructuredDocumentation",
+          "src": "296:77:54",
+          "text": "@dev Passing in a missing group when trying to assign a role to a group."
+        },
+        "errorSelector": "36c3499c",
+        "name": "AssignerGroupIsMissing",
+        "nameLocation": "379:22:54",
+        "parameters": {
+          "id": 40952,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "401:2:54"
+        }
+      },
+      {
+        "id": 40956,
+        "nodeType": "ErrorDefinition",
+        "src": "517:44:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40954,
+          "nodeType": "StructuredDocumentation",
+          "src": "406:111:54",
+          "text": "@dev Passing in a missing address when trying to add a token address to the supported external token list."
+        },
+        "errorSelector": "fc12f5ca",
+        "name": "CannotAddNullSupportedExternalToken",
+        "nameLocation": "523:35:54",
+        "parameters": {
+          "id": 40955,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "558:2:54"
+        }
+      },
+      {
+        "id": 40959,
+        "nodeType": "ErrorDefinition",
+        "src": "672:57:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40957,
+          "nodeType": "StructuredDocumentation",
+          "src": "563:109:54",
+          "text": "@dev Cannot add a ERC20 token to the supported external token list that has more than 18 decimal places."
+        },
+        "errorSelector": "1e80a37a",
+        "name": "CannotSupportExternalTokenWithMoreThan18Decimals",
+        "nameLocation": "678:48:54",
+        "parameters": {
+          "id": 40958,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "726:2:54"
+        }
+      },
+      {
+        "id": 40962,
+        "nodeType": "ErrorDefinition",
+        "src": "838:35:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40960,
+          "nodeType": "StructuredDocumentation",
+          "src": "731:107:54",
+          "text": "@dev Passing in a missing address when trying to assign a new token address as the new discount token."
+        },
+        "errorSelector": "2079a526",
+        "name": "CannotAddNullDiscountToken",
+        "nameLocation": "844:26:54",
+        "parameters": {
+          "id": 40961,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "870:2:54"
+        }
+      },
+      {
+        "id": 40967,
+        "nodeType": "ErrorDefinition",
+        "src": "926:43:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40963,
+          "nodeType": "StructuredDocumentation",
+          "src": "875:51:54",
+          "text": "@dev The entity does not exist when it should."
+        },
+        "errorSelector": "e1f88013",
+        "name": "EntityDoesNotExist",
+        "nameLocation": "932:18:54",
+        "parameters": {
+          "id": 40966,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 40965,
+              "mutability": "mutable",
+              "name": "objectId",
+              "nameLocation": "959:8:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 40967,
+              "src": "951:16:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              },
+              "typeName": {
+                "id": 40964,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "951:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "950:18:54"
+        }
+      },
+      {
+        "id": 40972,
+        "nodeType": "ErrorDefinition",
+        "src": "1024:56:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40968,
+          "nodeType": "StructuredDocumentation",
+          "src": "970:54:54",
+          "text": "@dev Cannot create an entity that already exists."
+        },
+        "errorSelector": "9fa4a9ea",
+        "name": "CreatingEntityThatAlreadyExists",
+        "nameLocation": "1030:31:54",
+        "parameters": {
+          "id": 40971,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 40970,
+              "mutability": "mutable",
+              "name": "entityId",
+              "nameLocation": "1070:8:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 40972,
+              "src": "1062:16:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              },
+              "typeName": {
+                "id": 40969,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "1062:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "1061:18:54"
+        }
+      },
+      {
+        "id": 40977,
+        "nodeType": "ErrorDefinition",
+        "src": "1149:48:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40973,
+          "nodeType": "StructuredDocumentation",
+          "src": "1082:67:54",
+          "text": "@dev (non specific) the object is not enabled to be tokenized."
+        },
+        "errorSelector": "9262bf29",
+        "name": "ObjectCannotBeTokenized",
+        "nameLocation": "1155:23:54",
+        "parameters": {
+          "id": 40976,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 40975,
+              "mutability": "mutable",
+              "name": "objectId",
+              "nameLocation": "1187:8:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 40977,
+              "src": "1179:16:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              },
+              "typeName": {
+                "id": 40974,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "1179:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "1178:18:54"
+        }
+      },
+      {
+        "id": 40982,
+        "nodeType": "ErrorDefinition",
+        "src": "1285:62:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40978,
+          "nodeType": "StructuredDocumentation",
+          "src": "1199:86:54",
+          "text": "@dev Passing in a missing symbol when trying to enable an object to be tokenized."
+        },
+        "errorSelector": "64edfdd2",
+        "name": "MissingSymbolWhenEnablingTokenization",
+        "nameLocation": "1291:37:54",
+        "parameters": {
+          "id": 40981,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 40980,
+              "mutability": "mutable",
+              "name": "objectId",
+              "nameLocation": "1337:8:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 40982,
+              "src": "1329:16:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              },
+              "typeName": {
+                "id": 40979,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "1329:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "1328:18:54"
+        }
+      },
+      {
+        "id": 40985,
+        "nodeType": "ErrorDefinition",
+        "src": "1407:42:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40983,
+          "nodeType": "StructuredDocumentation",
+          "src": "1349:58:54",
+          "text": "@dev Passing in 0 amount for deposits is not allowed."
+        },
+        "errorSelector": "806daf11",
+        "name": "ExternalDepositAmountCannotBeZero",
+        "nameLocation": "1413:33:54",
+        "parameters": {
+          "id": 40984,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1446:2:54"
+        }
+      },
+      {
+        "id": 40988,
+        "nodeType": "ErrorDefinition",
+        "src": "1510:43:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40986,
+          "nodeType": "StructuredDocumentation",
+          "src": "1451:59:54",
+          "text": "@dev Passing in 0 amount for withdraws is not allowed."
+        },
+        "errorSelector": "959ed6e5",
+        "name": "ExternalWithdrawAmountCannotBeZero",
+        "nameLocation": "1516:34:54",
+        "parameters": {
+          "id": 40987,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1550:2:54"
+        }
+      },
+      {
+        "id": 40991,
+        "nodeType": "ErrorDefinition",
+        "src": "1613:29:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40989,
+          "nodeType": "StructuredDocumentation",
+          "src": "1555:58:54",
+          "text": "@dev Cannot create a simple policy with policyId of 0"
+        },
+        "errorSelector": "83191a30",
+        "name": "PolicyIdCannotBeZero",
+        "nameLocation": "1619:20:54",
+        "parameters": {
+          "id": 40990,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1639:2:54"
+        }
+      },
+      {
+        "id": 40996,
+        "nodeType": "ErrorDefinition",
+        "src": "1750:86:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40992,
+          "nodeType": "StructuredDocumentation",
+          "src": "1644:106:54",
+          "text": "@dev Policy commissions among commission receivers cannot sum to be greater than 10_000 basis points."
+        },
+        "errorSelector": "3b4c95fd",
+        "name": "PolicyCommissionsBasisPointsCannotBeGreaterThan10000",
+        "nameLocation": "1756:52:54",
+        "parameters": {
+          "id": 40995,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 40994,
+              "mutability": "mutable",
+              "name": "calculatedTotalBp",
+              "nameLocation": "1817:17:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 40996,
+              "src": "1809:25:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName": {
+                "id": 40993,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1809:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "1808:27:54"
+        }
+      },
+      {
+        "id": 41003,
+        "nodeType": "ErrorDefinition",
+        "src": "1937:92:54",
+        "nodes": [],
+        "documentation": {
+          "id": 40997,
+          "nodeType": "StructuredDocumentation",
+          "src": "1838:99:54",
+          "text": "@dev When validating an entity, the utilized capacity cannot be greater than the max capacity."
+        },
+        "errorSelector": "0204930a",
+        "name": "UtilizedCapacityGreaterThanMaxCapacity",
+        "nameLocation": "1943:38:54",
+        "parameters": {
+          "id": 41002,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 40999,
+              "mutability": "mutable",
+              "name": "utilizedCapacity",
+              "nameLocation": "1990:16:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 41003,
+              "src": "1982:24:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName": {
+                "id": 40998,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1982:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 41001,
+              "mutability": "mutable",
+              "name": "maxCapacity",
+              "nameLocation": "2016:11:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 41003,
+              "src": "2008:19:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName": {
+                "id": 41000,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "2008:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "1981:47:54"
+        }
+      },
+      {
+        "id": 41016,
+        "nodeType": "ErrorDefinition",
+        "src": "2087:143:54",
+        "nodes": [],
+        "documentation": {
+          "id": 41004,
+          "nodeType": "StructuredDocumentation",
+          "src": "2031:56:54",
+          "text": "@dev Policy stakeholder signature validation failed"
+        },
+        "errorSelector": "ed7dd8af",
+        "name": "SimplePolicyStakeholderSignatureInvalid",
+        "nameLocation": "2093:39:54",
+        "parameters": {
+          "id": 41015,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 41006,
+              "mutability": "mutable",
+              "name": "signingHash",
+              "nameLocation": "2141:11:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 41016,
+              "src": "2133:19:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              },
+              "typeName": {
+                "id": 41005,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "2133:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 41008,
+              "mutability": "mutable",
+              "name": "signature",
+              "nameLocation": "2160:9:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 41016,
+              "src": "2154:15:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes_memory_ptr",
+                "typeString": "bytes"
+              },
+              "typeName": {
+                "id": 41007,
+                "name": "bytes",
+                "nodeType": "ElementaryTypeName",
+                "src": "2154:5:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 41010,
+              "mutability": "mutable",
+              "name": "signerId",
+              "nameLocation": "2179:8:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 41016,
+              "src": "2171:16:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              },
+              "typeName": {
+                "id": 41009,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "2171:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 41012,
+              "mutability": "mutable",
+              "name": "signersParent",
+              "nameLocation": "2197:13:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 41016,
+              "src": "2189:21:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              },
+              "typeName": {
+                "id": 41011,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "2189:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 41014,
+              "mutability": "mutable",
+              "name": "entityId",
+              "nameLocation": "2220:8:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 41016,
+              "src": "2212:16:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              },
+              "typeName": {
+                "id": 41013,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "2212:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "2132:97:54"
+        }
+      },
+      {
+        "id": 41019,
+        "nodeType": "ErrorDefinition",
+        "src": "2313:48:54",
+        "nodes": [],
+        "documentation": {
+          "id": 41017,
+          "nodeType": "StructuredDocumentation",
+          "src": "2232:81:54",
+          "text": "@dev When creating a simple policy, the total claims paid should start at 0."
+        },
+        "errorSelector": "c96caacd",
+        "name": "SimplePolicyClaimsPaidShouldStartAtZero",
+        "nameLocation": "2319:39:54",
+        "parameters": {
+          "id": 41018,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "2358:2:54"
+        }
+      },
+      {
+        "id": 41022,
+        "nodeType": "ErrorDefinition",
+        "src": "2446:50:54",
+        "nodes": [],
+        "documentation": {
+          "id": 41020,
+          "nodeType": "StructuredDocumentation",
+          "src": "2363:83:54",
+          "text": "@dev When creating a simple policy, the total premiums paid should start at 0."
+        },
+        "errorSelector": "4d2daaba",
+        "name": "SimplePolicyPremiumsPaidShouldStartAtZero",
+        "nameLocation": "2452:41:54",
+        "parameters": {
+          "id": 41021,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "2493:2:54"
+        }
+      },
+      {
+        "id": 41025,
+        "nodeType": "ErrorDefinition",
+        "src": "2584:51:54",
+        "nodes": [],
+        "documentation": {
+          "id": 41023,
+          "nodeType": "StructuredDocumentation",
+          "src": "2498:86:54",
+          "text": "@dev The cancel bool should not be set to true when creating a new simple policy."
+        },
+        "errorSelector": "9da0c278",
+        "name": "CancelCannotBeTrueWhenCreatingSimplePolicy",
+        "nameLocation": "2590:42:54",
+        "parameters": {
+          "id": 41024,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "2632:2:54"
+        }
+      },
+      {
+        "id": 41030,
+        "nodeType": "ErrorDefinition",
+        "src": "2686:43:54",
+        "nodes": [],
+        "documentation": {
+          "id": 41026,
+          "nodeType": "StructuredDocumentation",
+          "src": "2637:49:54",
+          "text": "@dev (non specific) The policyId must exist."
+        },
+        "errorSelector": "1f15e7cc",
+        "name": "PolicyDoesNotExist",
+        "nameLocation": "2692:18:54",
+        "parameters": {
+          "id": 41029,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 41028,
+              "mutability": "mutable",
+              "name": "policyId",
+              "nameLocation": "2719:8:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 41030,
+              "src": "2711:16:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              },
+              "typeName": {
+                "id": 41027,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "2711:7:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "2710:18:54"
+        }
+      },
+      {
+        "id": 41037,
+        "nodeType": "ErrorDefinition",
+        "src": "2864:86:54",
+        "nodes": [],
+        "documentation": {
+          "id": 41031,
+          "nodeType": "StructuredDocumentation",
+          "src": "2731:133:54",
+          "text": "@dev There is a duplicate address in the list of signers (the previous signer in the list is not < the next signer in the list)."
+        },
+        "errorSelector": "d953cdd9",
+        "name": "DuplicateSignerCreatingSimplePolicy",
+        "nameLocation": "2870:35:54",
+        "parameters": {
+          "id": 41036,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 41033,
+              "mutability": "mutable",
+              "name": "previousSigner",
+              "nameLocation": "2914:14:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 41037,
+              "src": "2906:22:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 41032,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "2906:7:54",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 41035,
+              "mutability": "mutable",
+              "name": "nextSigner",
+              "nameLocation": "2938:10:54",
+              "nodeType": "VariableDeclaration",
+              "scope": 41037,
+              "src": "2930:18:54",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 41034,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "2930:7:54",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "2905:44:54"
+        }
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 54
+}

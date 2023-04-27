@@ -1,0 +1,851 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "uniswapV3Pool",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "twapInterval",
+          "type": "uint32"
+        }
+      ],
+      "name": "getSqrtTwapX96",
+      "outputs": [
+        {
+          "internalType": "uint160",
+          "name": "sqrtPriceX96",
+          "type": "uint160"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTick",
+      "outputs": [
+        {
+          "internalType": "int24",
+          "name": "tick",
+          "type": "int24"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTwap",
+      "outputs": [
+        {
+          "internalType": "int24",
+          "name": "",
+          "type": "int24"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int24",
+          "name": "_baseThreshold",
+          "type": "int24"
+        },
+        {
+          "internalType": "int24",
+          "name": "_limitThreshold",
+          "type": "int24"
+        },
+        {
+          "internalType": "int24",
+          "name": "_maxTwapDeviation",
+          "type": "int24"
+        },
+        {
+          "internalType": "uint32",
+          "name": "_twapInterval",
+          "type": "uint32"
+        }
+      ],
+      "name": "initNdf",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "poolAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setLiquidityPool",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token0",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "uniswapPool",
+          "type": "address"
+        }
+      ],
+      "name": "setPool",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getSqrtTwapX96(address,uint32)": "47628f60",
+    "getTick()": "df8ad814",
+    "getTwap()": "5d752a9a",
+    "initNdf(int24,int24,int24,uint32)": "18b520d5",
+    "setLiquidityPool(address)": "01877020",
+    "setPool(address,address)": "4e847fc7"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"uniswapV3Pool\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"twapInterval\",\"type\":\"uint32\"}],\"name\":\"getSqrtTwapX96\",\"outputs\":[{\"internalType\":\"uint160\",\"name\":\"sqrtPriceX96\",\"type\":\"uint160\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTick\",\"outputs\":[{\"internalType\":\"int24\",\"name\":\"tick\",\"type\":\"int24\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTwap\",\"outputs\":[{\"internalType\":\"int24\",\"name\":\"\",\"type\":\"int24\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"int24\",\"name\":\"_baseThreshold\",\"type\":\"int24\"},{\"internalType\":\"int24\",\"name\":\"_limitThreshold\",\"type\":\"int24\"},{\"internalType\":\"int24\",\"name\":\"_maxTwapDeviation\",\"type\":\"int24\"},{\"internalType\":\"uint32\",\"name\":\"_twapInterval\",\"type\":\"uint32\"}],\"name\":\"initNdf\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"poolAddress\",\"type\":\"address\"}],\"name\":\"setLiquidityPool\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"uniswapPool\",\"type\":\"address\"}],\"name\":\"setPool\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/diamonds/nayms/interfaces/IUniswapFacet.sol\":\"IUniswapFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core-08/\",\":@uniswap/v3-periphery/=lib/v3-peri-08/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\",\":v3-core-08/=lib/v3-core-08/contracts/\",\":v3-peri-08/=lib/v3-peri-08/contracts/\"]},\"sources\":{\"src/diamonds/nayms/interfaces/IUniswapFacet.sol\":{\"keccak256\":\"0x9d83eba7e391a5c7f0ac09166548dc47ad10e34bf7bd80fe3cccf9dd061dfef3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4425f211b6cb6e202adaa2ead0503bf796b813742a1a82b776e3c206682a58d0\",\"dweb:/ipfs/QmNjquHj1EM4DaBjm3CotyUh3KfSdfNikj2z5mgUUQePbe\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "uniswapV3Pool",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "twapInterval",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getSqrtTwapX96",
+          "outputs": [
+            {
+              "internalType": "uint160",
+              "name": "sqrtPriceX96",
+              "type": "uint160"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTick",
+          "outputs": [
+            {
+              "internalType": "int24",
+              "name": "tick",
+              "type": "int24"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTwap",
+          "outputs": [
+            {
+              "internalType": "int24",
+              "name": "",
+              "type": "int24"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "int24",
+              "name": "_baseThreshold",
+              "type": "int24"
+            },
+            {
+              "internalType": "int24",
+              "name": "_limitThreshold",
+              "type": "int24"
+            },
+            {
+              "internalType": "int24",
+              "name": "_maxTwapDeviation",
+              "type": "int24"
+            },
+            {
+              "internalType": "uint32",
+              "name": "_twapInterval",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "initNdf"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "poolAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setLiquidityPool"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "uniswapPool",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setPool"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core-08/",
+        ":@uniswap/v3-periphery/=lib/v3-peri-08/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/",
+        ":v3-core-08/=lib/v3-core-08/contracts/",
+        ":v3-peri-08/=lib/v3-peri-08/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/diamonds/nayms/interfaces/IUniswapFacet.sol": "IUniswapFacet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/interfaces/IUniswapFacet.sol": {
+        "keccak256": "0x9d83eba7e391a5c7f0ac09166548dc47ad10e34bf7bd80fe3cccf9dd061dfef3",
+        "urls": [
+          "bzz-raw://4425f211b6cb6e202adaa2ead0503bf796b813742a1a82b776e3c206682a58d0",
+          "dweb:/ipfs/QmNjquHj1EM4DaBjm3CotyUh3KfSdfNikj2z5mgUUQePbe"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/diamonds/nayms/interfaces/IUniswapFacet.sol",
+    "id": 44301,
+    "exportedSymbols": {
+      "IUniswapFacet": [
+        44300
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:581:97",
+    "nodes": [
+      {
+        "id": 44257,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:97",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 44300,
+        "nodeType": "ContractDefinition",
+        "src": "59:553:97",
+        "nodes": [
+          {
+            "id": 44262,
+            "nodeType": "FunctionDefinition",
+            "src": "89:56:97",
+            "nodes": [],
+            "functionSelector": "01877020",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setLiquidityPool",
+            "nameLocation": "98:16:97",
+            "parameters": {
+              "id": 44260,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44259,
+                  "mutability": "mutable",
+                  "name": "poolAddress",
+                  "nameLocation": "123:11:97",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44262,
+                  "src": "115:19:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44258,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "115:7:97",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "114:21:97"
+            },
+            "returnParameters": {
+              "id": 44261,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "144:0:97"
+            },
+            "scope": 44300,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 44269,
+            "nodeType": "FunctionDefinition",
+            "src": "151:63:97",
+            "nodes": [],
+            "functionSelector": "4e847fc7",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setPool",
+            "nameLocation": "160:7:97",
+            "parameters": {
+              "id": 44267,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44264,
+                  "mutability": "mutable",
+                  "name": "token0",
+                  "nameLocation": "176:6:97",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44269,
+                  "src": "168:14:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44263,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "168:7:97",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44266,
+                  "mutability": "mutable",
+                  "name": "uniswapPool",
+                  "nameLocation": "192:11:97",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44269,
+                  "src": "184:19:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44265,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:7:97",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "167:37:97"
+            },
+            "returnParameters": {
+              "id": 44268,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "213:0:97"
+            },
+            "scope": 44300,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 44280,
+            "nodeType": "FunctionDefinition",
+            "src": "220:156:97",
+            "nodes": [],
+            "functionSelector": "18b520d5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initNdf",
+            "nameLocation": "229:7:97",
+            "parameters": {
+              "id": 44278,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44271,
+                  "mutability": "mutable",
+                  "name": "_baseThreshold",
+                  "nameLocation": "252:14:97",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44280,
+                  "src": "246:20:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  },
+                  "typeName": {
+                    "id": 44270,
+                    "name": "int24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "246:5:97",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int24",
+                      "typeString": "int24"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44273,
+                  "mutability": "mutable",
+                  "name": "_limitThreshold",
+                  "nameLocation": "282:15:97",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44280,
+                  "src": "276:21:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  },
+                  "typeName": {
+                    "id": 44272,
+                    "name": "int24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "276:5:97",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int24",
+                      "typeString": "int24"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44275,
+                  "mutability": "mutable",
+                  "name": "_maxTwapDeviation",
+                  "nameLocation": "313:17:97",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44280,
+                  "src": "307:23:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  },
+                  "typeName": {
+                    "id": 44274,
+                    "name": "int24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "307:5:97",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int24",
+                      "typeString": "int24"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44277,
+                  "mutability": "mutable",
+                  "name": "_twapInterval",
+                  "nameLocation": "347:13:97",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44280,
+                  "src": "340:20:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 44276,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "340:6:97",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "236:130:97"
+            },
+            "returnParameters": {
+              "id": 44279,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "375:0:97"
+            },
+            "scope": 44300,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 44285,
+            "nodeType": "FunctionDefinition",
+            "src": "382:54:97",
+            "nodes": [],
+            "functionSelector": "df8ad814",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTick",
+            "nameLocation": "391:7:97",
+            "parameters": {
+              "id": 44281,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "398:2:97"
+            },
+            "returnParameters": {
+              "id": 44284,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44283,
+                  "mutability": "mutable",
+                  "name": "tick",
+                  "nameLocation": "430:4:97",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44285,
+                  "src": "424:10:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  },
+                  "typeName": {
+                    "id": 44282,
+                    "name": "int24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "424:5:97",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int24",
+                      "typeString": "int24"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "423:12:97"
+            },
+            "scope": 44300,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 44290,
+            "nodeType": "FunctionDefinition",
+            "src": "442:49:97",
+            "nodes": [],
+            "functionSelector": "5d752a9a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTwap",
+            "nameLocation": "451:7:97",
+            "parameters": {
+              "id": 44286,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "458:2:97"
+            },
+            "returnParameters": {
+              "id": 44289,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44288,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44290,
+                  "src": "484:5:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  },
+                  "typeName": {
+                    "id": 44287,
+                    "name": "int24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "484:5:97",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int24",
+                      "typeString": "int24"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "483:7:97"
+            },
+            "scope": 44300,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 44299,
+            "nodeType": "FunctionDefinition",
+            "src": "497:113:97",
+            "nodes": [],
+            "functionSelector": "47628f60",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSqrtTwapX96",
+            "nameLocation": "506:14:97",
+            "parameters": {
+              "id": 44295,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44292,
+                  "mutability": "mutable",
+                  "name": "uniswapV3Pool",
+                  "nameLocation": "529:13:97",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44299,
+                  "src": "521:21:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44291,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "521:7:97",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44294,
+                  "mutability": "mutable",
+                  "name": "twapInterval",
+                  "nameLocation": "551:12:97",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44299,
+                  "src": "544:19:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 44293,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "544:6:97",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "520:44:97"
+            },
+            "returnParameters": {
+              "id": 44298,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44297,
+                  "mutability": "mutable",
+                  "name": "sqrtPriceX96",
+                  "nameLocation": "596:12:97",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44299,
+                  "src": "588:20:97",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint160",
+                    "typeString": "uint160"
+                  },
+                  "typeName": {
+                    "id": 44296,
+                    "name": "uint160",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "588:7:97",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "587:22:97"
+            },
+            "scope": 44300,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IUniswapFacet",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          44300
+        ],
+        "name": "IUniswapFacet",
+        "nameLocation": "69:13:97",
+        "scope": 44301,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 97
+}

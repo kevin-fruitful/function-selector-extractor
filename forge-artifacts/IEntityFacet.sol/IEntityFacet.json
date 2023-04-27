@@ -1,0 +1,1714 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_policyId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_entityId",
+          "type": "bytes32"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bytes32[]",
+              "name": "roles",
+              "type": "bytes32[]"
+            },
+            {
+              "internalType": "bytes32[]",
+              "name": "entityIds",
+              "type": "bytes32[]"
+            },
+            {
+              "internalType": "bytes[]",
+              "name": "signatures",
+              "type": "bytes[]"
+            }
+          ],
+          "internalType": "struct Stakeholders",
+          "name": "_stakeholders",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "startDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maturationDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "asset",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "limit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "fundsLocked",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "cancelled",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "claimsPaid",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "premiumsPaid",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32[]",
+              "name": "commissionReceivers",
+              "type": "bytes32[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "commissionBasisPoints",
+              "type": "uint256[]"
+            }
+          ],
+          "internalType": "struct SimplePolicy",
+          "name": "_simplePolicy",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_dataHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "createSimplePolicy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "domainSeparatorV4",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_entityId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "_symbol",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "name": "enableEntityTokenization",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_entityId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getEntityInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "assetId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateralRatio",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxCapacity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "utilizedCapacity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "simplePolicyEnabled",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct Entity",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "structHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "hashTypedDataV4",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_entityId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isTokenWrapped",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_entityId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_totalPrice",
+          "type": "uint256"
+        }
+      ],
+      "name": "startTokenSale",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_entityId",
+          "type": "bytes32"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "assetId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateralRatio",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxCapacity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "utilizedCapacity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "simplePolicyEnabled",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct Entity",
+          "name": "_entity",
+          "type": "tuple"
+        }
+      ],
+      "name": "updateEntity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "createSimplePolicy(bytes32,bytes32,(bytes32[],bytes32[],bytes[]),(uint256,uint256,bytes32,uint256,bool,bool,uint256,uint256,bytes32[],uint256[]),bytes32)": "04e2e500",
+    "domainSeparatorV4()": "78e890ba",
+    "enableEntityTokenization(bytes32,string,string)": "f17d17f4",
+    "getEntityInfo(bytes32)": "edd2133b",
+    "hashTypedDataV4(bytes32)": "4980f288",
+    "isTokenWrapped(bytes32)": "10b4955d",
+    "startTokenSale(bytes32,uint256,uint256)": "a2e4569b",
+    "updateEntity(bytes32,(bytes32,uint256,uint256,uint256,bool))": "73abdfa5"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_policyId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_entityId\",\"type\":\"bytes32\"},{\"components\":[{\"internalType\":\"bytes32[]\",\"name\":\"roles\",\"type\":\"bytes32[]\"},{\"internalType\":\"bytes32[]\",\"name\":\"entityIds\",\"type\":\"bytes32[]\"},{\"internalType\":\"bytes[]\",\"name\":\"signatures\",\"type\":\"bytes[]\"}],\"internalType\":\"struct Stakeholders\",\"name\":\"_stakeholders\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"startDate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maturationDate\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"asset\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"limit\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"fundsLocked\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"cancelled\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"claimsPaid\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"premiumsPaid\",\"type\":\"uint256\"},{\"internalType\":\"bytes32[]\",\"name\":\"commissionReceivers\",\"type\":\"bytes32[]\"},{\"internalType\":\"uint256[]\",\"name\":\"commissionBasisPoints\",\"type\":\"uint256[]\"}],\"internalType\":\"struct SimplePolicy\",\"name\":\"_simplePolicy\",\"type\":\"tuple\"},{\"internalType\":\"bytes32\",\"name\":\"_dataHash\",\"type\":\"bytes32\"}],\"name\":\"createSimplePolicy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"domainSeparatorV4\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_entityId\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"_symbol\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"}],\"name\":\"enableEntityTokenization\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_entityId\",\"type\":\"bytes32\"}],\"name\":\"getEntityInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"assetId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"collateralRatio\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxCapacity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"utilizedCapacity\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"simplePolicyEnabled\",\"type\":\"bool\"}],\"internalType\":\"struct Entity\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"structHash\",\"type\":\"bytes32\"}],\"name\":\"hashTypedDataV4\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_entityId\",\"type\":\"bytes32\"}],\"name\":\"isTokenWrapped\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_entityId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_totalPrice\",\"type\":\"uint256\"}],\"name\":\"startTokenSale\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_entityId\",\"type\":\"bytes32\"},{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"assetId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"collateralRatio\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxCapacity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"utilizedCapacity\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"simplePolicyEnabled\",\"type\":\"bool\"}],\"internalType\":\"struct Entity\",\"name\":\"_entity\",\"type\":\"tuple\"}],\"name\":\"updateEntity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Mainly used for token sale and policies\",\"kind\":\"dev\",\"methods\":{\"createSimplePolicy(bytes32,bytes32,(bytes32[],bytes32[],bytes[]),(uint256,uint256,bytes32,uint256,bool,bool,uint256,uint256,bytes32[],uint256[]),bytes32)\":{\"params\":{\"_dataHash\":\"hash of the offchain data\",\"_entityId\":\"id of the entity\",\"_policyId\":\"id of the policy\",\"_simplePolicy\":\"policy to create\",\"_stakeholders\":\"Struct of roles, entity IDs and signatures for the policy\"}},\"domainSeparatorV4()\":{\"details\":\"Returns the domain separator for the current chain.\"},\"enableEntityTokenization(bytes32,string,string)\":{\"params\":{\"_entityId\":\"ID of the entity\",\"_name\":\"The name assigned to the entity token\",\"_symbol\":\"The symbol assigned to the entity token\"}},\"getEntityInfo(bytes32)\":{\"details\":\"Get the Entity data for a given entityId\",\"params\":{\"_entityId\":\"ID of the entity\"},\"returns\":{\"_0\":\"Entity struct with metadata of the entity\"}},\"hashTypedDataV4(bytes32)\":{\"details\":\"Given an already https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct[hashed struct], this function returns the hash of the fully encoded EIP712 message for this domain. This hash can be used together with {ECDSA-recover} to obtain the signer of a message. For example: ```solidity bytes32 digest = _hashTypedDataV4(keccak256(abi.encode(     keccak256(\\\"Mail(address to,string contents)\\\"),     mailTo,     keccak256(bytes(mailContents)) ))); address signer = ECDSA.recover(digest, signature); ```\"},\"isTokenWrapped(bytes32)\":{\"params\":{\"_entityId\":\"ID of the entity\"}},\"startTokenSale(bytes32,uint256,uint256)\":{\"details\":\"Entity tokens are minted when the sale is started\",\"params\":{\"_amount\":\"amount of entity tokens to put on sale\",\"_entityId\":\"ID of the entity\",\"_totalPrice\":\"total price of the tokens\"}},\"updateEntity(bytes32,(bytes32,uint256,uint256,uint256,bool))\":{\"params\":{\"_entity\":\"metadata of the entity\",\"_entityId\":\"ID of the entity\"}}},\"title\":\"Entities\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"createSimplePolicy(bytes32,bytes32,(bytes32[],bytes32[],bytes[]),(uint256,uint256,bytes32,uint256,bool,bool,uint256,uint256,bytes32[],uint256[]),bytes32)\":{\"notice\":\"Create a Simple Policy\"},\"enableEntityTokenization(bytes32,string,string)\":{\"notice\":\"Enable an entity to be tokenized\"},\"getEntityInfo(bytes32)\":{\"notice\":\"Get the the data for entity with ID: `_entityId`\"},\"isTokenWrapped(bytes32)\":{\"notice\":\"Check if an entity token is wrapped as ERC20\"},\"startTokenSale(bytes32,uint256,uint256)\":{\"notice\":\"Start token sale of `_amount` tokens for total price of `_totalPrice`\"},\"updateEntity(bytes32,(bytes32,uint256,uint256,uint256,bool))\":{\"notice\":\"Update entity metadata\"}},\"notice\":\"Used to handle policies and token sales\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/diamonds/nayms/interfaces/IEntityFacet.sol\":\"IEntityFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\"]},\"sources\":{\"src/diamonds/nayms/interfaces/FreeStructs.sol\":{\"keccak256\":\"0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4\",\"dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD\"]},\"src/diamonds/nayms/interfaces/IEntityFacet.sol\":{\"keccak256\":\"0xce32aa04ea48b38030d2b8650d0989b37cde6e48bcbbb133ff8e7e7ffd0f78e4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c970eb23c90a71386c7524abf0faca59dada315598df56826312ef15065556f5\",\"dweb:/ipfs/QmZCxwYYyPQyKgrpR7cqKWSw8aCbDHCYCi4JZUVdkKrQRY\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_policyId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_entityId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "struct Stakeholders",
+              "name": "_stakeholders",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes32[]",
+                  "name": "roles",
+                  "type": "bytes32[]"
+                },
+                {
+                  "internalType": "bytes32[]",
+                  "name": "entityIds",
+                  "type": "bytes32[]"
+                },
+                {
+                  "internalType": "bytes[]",
+                  "name": "signatures",
+                  "type": "bytes[]"
+                }
+              ]
+            },
+            {
+              "internalType": "struct SimplePolicy",
+              "name": "_simplePolicy",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "startDate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "maturationDate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "asset",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "limit",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "fundsLocked",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "cancelled",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "claimsPaid",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "premiumsPaid",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes32[]",
+                  "name": "commissionReceivers",
+                  "type": "bytes32[]"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "commissionBasisPoints",
+                  "type": "uint256[]"
+                }
+              ]
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_dataHash",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "createSimplePolicy"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "domainSeparatorV4",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_entityId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "string",
+              "name": "_symbol",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_name",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "enableEntityTokenization"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_entityId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEntityInfo",
+          "outputs": [
+            {
+              "internalType": "struct Entity",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "assetId",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "collateralRatio",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "maxCapacity",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "utilizedCapacity",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "simplePolicyEnabled",
+                  "type": "bool"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "structHash",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "hashTypedDataV4",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_entityId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isTokenWrapped",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_entityId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_totalPrice",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "startTokenSale"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_entityId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "struct Entity",
+              "name": "_entity",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "assetId",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "collateralRatio",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "maxCapacity",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "utilizedCapacity",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "simplePolicyEnabled",
+                  "type": "bool"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "updateEntity"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "createSimplePolicy(bytes32,bytes32,(bytes32[],bytes32[],bytes[]),(uint256,uint256,bytes32,uint256,bool,bool,uint256,uint256,bytes32[],uint256[]),bytes32)": {
+            "params": {
+              "_dataHash": "hash of the offchain data",
+              "_entityId": "id of the entity",
+              "_policyId": "id of the policy",
+              "_simplePolicy": "policy to create",
+              "_stakeholders": "Struct of roles, entity IDs and signatures for the policy"
+            }
+          },
+          "domainSeparatorV4()": {
+            "details": "Returns the domain separator for the current chain."
+          },
+          "enableEntityTokenization(bytes32,string,string)": {
+            "params": {
+              "_entityId": "ID of the entity",
+              "_name": "The name assigned to the entity token",
+              "_symbol": "The symbol assigned to the entity token"
+            }
+          },
+          "getEntityInfo(bytes32)": {
+            "details": "Get the Entity data for a given entityId",
+            "params": {
+              "_entityId": "ID of the entity"
+            },
+            "returns": {
+              "_0": "Entity struct with metadata of the entity"
+            }
+          },
+          "hashTypedDataV4(bytes32)": {
+            "details": "Given an already https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct[hashed struct], this function returns the hash of the fully encoded EIP712 message for this domain. This hash can be used together with {ECDSA-recover} to obtain the signer of a message. For example: ```solidity bytes32 digest = _hashTypedDataV4(keccak256(abi.encode(     keccak256(\"Mail(address to,string contents)\"),     mailTo,     keccak256(bytes(mailContents)) ))); address signer = ECDSA.recover(digest, signature); ```"
+          },
+          "isTokenWrapped(bytes32)": {
+            "params": {
+              "_entityId": "ID of the entity"
+            }
+          },
+          "startTokenSale(bytes32,uint256,uint256)": {
+            "details": "Entity tokens are minted when the sale is started",
+            "params": {
+              "_amount": "amount of entity tokens to put on sale",
+              "_entityId": "ID of the entity",
+              "_totalPrice": "total price of the tokens"
+            }
+          },
+          "updateEntity(bytes32,(bytes32,uint256,uint256,uint256,bool))": {
+            "params": {
+              "_entity": "metadata of the entity",
+              "_entityId": "ID of the entity"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "createSimplePolicy(bytes32,bytes32,(bytes32[],bytes32[],bytes[]),(uint256,uint256,bytes32,uint256,bool,bool,uint256,uint256,bytes32[],uint256[]),bytes32)": {
+            "notice": "Create a Simple Policy"
+          },
+          "enableEntityTokenization(bytes32,string,string)": {
+            "notice": "Enable an entity to be tokenized"
+          },
+          "getEntityInfo(bytes32)": {
+            "notice": "Get the the data for entity with ID: `_entityId`"
+          },
+          "isTokenWrapped(bytes32)": {
+            "notice": "Check if an entity token is wrapped as ERC20"
+          },
+          "startTokenSale(bytes32,uint256,uint256)": {
+            "notice": "Start token sale of `_amount` tokens for total price of `_totalPrice`"
+          },
+          "updateEntity(bytes32,(bytes32,uint256,uint256,uint256,bool))": {
+            "notice": "Update entity metadata"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/diamonds/nayms/interfaces/IEntityFacet.sol": "IEntityFacet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/interfaces/FreeStructs.sol": {
+        "keccak256": "0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384",
+        "urls": [
+          "bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4",
+          "dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/IEntityFacet.sol": {
+        "keccak256": "0xce32aa04ea48b38030d2b8650d0989b37cde6e48bcbbb133ff8e7e7ffd0f78e4",
+        "urls": [
+          "bzz-raw://c970eb23c90a71386c7524abf0faca59dada315598df56826312ef15065556f5",
+          "dweb:/ipfs/QmZCxwYYyPQyKgrpR7cqKWSw8aCbDHCYCi4JZUVdkKrQRY"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/diamonds/nayms/interfaces/IEntityFacet.sol",
+    "id": 41606,
+    "exportedSymbols": {
+      "Entity": [
+        41213
+      ],
+      "IEntityFacet": [
+        41605
+      ],
+      "SimplePolicy": [
+        41243
+      ],
+      "Stakeholders": [
+        41277
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:3179:58",
+    "nodes": [
+      {
+        "id": 41523,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:58",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 41527,
+        "nodeType": "ImportDirective",
+        "src": "57:71:58",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/interfaces/FreeStructs.sol",
+        "file": "./FreeStructs.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 41606,
+        "sourceUnit": 41323,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 41524,
+              "name": "SimplePolicy",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41243,
+              "src": "66:12:58",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 41525,
+              "name": "Entity",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41213,
+              "src": "80:6:58",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 41526,
+              "name": "Stakeholders",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41277,
+              "src": "88:12:58",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 41605,
+        "nodeType": "ContractDefinition",
+        "src": "256:2954:58",
+        "nodes": [
+          {
+            "id": 41534,
+            "nodeType": "FunctionDefinition",
+            "src": "365:61:58",
+            "nodes": [],
+            "documentation": {
+              "id": 41529,
+              "nodeType": "StructuredDocumentation",
+              "src": "285:75:58",
+              "text": " @dev Returns the domain separator for the current chain."
+            },
+            "functionSelector": "78e890ba",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "domainSeparatorV4",
+            "nameLocation": "374:17:58",
+            "parameters": {
+              "id": 41530,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "391:2:58"
+            },
+            "returnParameters": {
+              "id": 41533,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41532,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41534,
+                  "src": "417:7:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41531,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "417:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "416:9:58"
+            },
+            "scope": 41605,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41542,
+            "nodeType": "FunctionDefinition",
+            "src": "1051:77:58",
+            "nodes": [],
+            "documentation": {
+              "id": 41535,
+              "nodeType": "StructuredDocumentation",
+              "src": "432:614:58",
+              "text": " @dev Given an already https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct[hashed struct], this\n function returns the hash of the fully encoded EIP712 message for this domain.\n This hash can be used together with {ECDSA-recover} to obtain the signer of a message. For example:\n ```solidity\n bytes32 digest = _hashTypedDataV4(keccak256(abi.encode(\n     keccak256(\"Mail(address to,string contents)\"),\n     mailTo,\n     keccak256(bytes(mailContents))\n )));\n address signer = ECDSA.recover(digest, signature);\n ```"
+            },
+            "functionSelector": "4980f288",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "hashTypedDataV4",
+            "nameLocation": "1060:15:58",
+            "parameters": {
+              "id": 41538,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41537,
+                  "mutability": "mutable",
+                  "name": "structHash",
+                  "nameLocation": "1084:10:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41542,
+                  "src": "1076:18:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41536,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1076:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1075:20:58"
+            },
+            "returnParameters": {
+              "id": 41541,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41540,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41542,
+                  "src": "1119:7:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41539,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1119:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1118:9:58"
+            },
+            "scope": 41605,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41558,
+            "nodeType": "FunctionDefinition",
+            "src": "1451:214:58",
+            "nodes": [],
+            "documentation": {
+              "id": 41543,
+              "nodeType": "StructuredDocumentation",
+              "src": "1134:312:58",
+              "text": " @notice Create a Simple Policy\n @param _policyId id of the policy\n @param _entityId id of the entity\n @param _stakeholders Struct of roles, entity IDs and signatures for the policy\n @param _simplePolicy policy to create\n @param _dataHash hash of the offchain data"
+            },
+            "functionSelector": "04e2e500",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createSimplePolicy",
+            "nameLocation": "1460:18:58",
+            "parameters": {
+              "id": 41556,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41545,
+                  "mutability": "mutable",
+                  "name": "_policyId",
+                  "nameLocation": "1496:9:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41558,
+                  "src": "1488:17:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41544,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1488:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41547,
+                  "mutability": "mutable",
+                  "name": "_entityId",
+                  "nameLocation": "1523:9:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41558,
+                  "src": "1515:17:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41546,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1515:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41550,
+                  "mutability": "mutable",
+                  "name": "_stakeholders",
+                  "nameLocation": "1564:13:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41558,
+                  "src": "1542:35:58",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Stakeholders_$41277_calldata_ptr",
+                    "typeString": "struct Stakeholders"
+                  },
+                  "typeName": {
+                    "id": 41549,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 41548,
+                      "name": "Stakeholders",
+                      "nameLocations": [
+                        "1542:12:58"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 41277,
+                      "src": "1542:12:58"
+                    },
+                    "referencedDeclaration": 41277,
+                    "src": "1542:12:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Stakeholders_$41277_storage_ptr",
+                      "typeString": "struct Stakeholders"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41553,
+                  "mutability": "mutable",
+                  "name": "_simplePolicy",
+                  "nameLocation": "1609:13:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41558,
+                  "src": "1587:35:58",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_SimplePolicy_$41243_calldata_ptr",
+                    "typeString": "struct SimplePolicy"
+                  },
+                  "typeName": {
+                    "id": 41552,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 41551,
+                      "name": "SimplePolicy",
+                      "nameLocations": [
+                        "1587:12:58"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 41243,
+                      "src": "1587:12:58"
+                    },
+                    "referencedDeclaration": 41243,
+                    "src": "1587:12:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_SimplePolicy_$41243_storage_ptr",
+                      "typeString": "struct SimplePolicy"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41555,
+                  "mutability": "mutable",
+                  "name": "_dataHash",
+                  "nameLocation": "1640:9:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41558,
+                  "src": "1632:17:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41554,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1632:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1478:177:58"
+            },
+            "returnParameters": {
+              "id": 41557,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1664:0:58"
+            },
+            "scope": 41605,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41568,
+            "nodeType": "FunctionDefinition",
+            "src": "1896:136:58",
+            "nodes": [],
+            "documentation": {
+              "id": 41559,
+              "nodeType": "StructuredDocumentation",
+              "src": "1671:220:58",
+              "text": " @notice Enable an entity to be tokenized\n @param _entityId ID of the entity\n @param _symbol The symbol assigned to the entity token\n @param _name The name assigned to the entity token"
+            },
+            "functionSelector": "f17d17f4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "enableEntityTokenization",
+            "nameLocation": "1905:24:58",
+            "parameters": {
+              "id": 41566,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41561,
+                  "mutability": "mutable",
+                  "name": "_entityId",
+                  "nameLocation": "1947:9:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41568,
+                  "src": "1939:17:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41560,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1939:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41563,
+                  "mutability": "mutable",
+                  "name": "_symbol",
+                  "nameLocation": "1980:7:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41568,
+                  "src": "1966:21:58",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41562,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1966:6:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41565,
+                  "mutability": "mutable",
+                  "name": "_name",
+                  "nameLocation": "2011:5:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41568,
+                  "src": "1997:19:58",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 41564,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1997:6:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1929:93:58"
+            },
+            "returnParameters": {
+              "id": 41567,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2031:0:58"
+            },
+            "scope": 41605,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41578,
+            "nodeType": "FunctionDefinition",
+            "src": "2355:120:58",
+            "nodes": [],
+            "documentation": {
+              "id": 41569,
+              "nodeType": "StructuredDocumentation",
+              "src": "2038:312:58",
+              "text": " @notice Start token sale of `_amount` tokens for total price of `_totalPrice`\n @dev Entity tokens are minted when the sale is started\n @param _entityId ID of the entity\n @param _amount amount of entity tokens to put on sale\n @param _totalPrice total price of the tokens"
+            },
+            "functionSelector": "a2e4569b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "startTokenSale",
+            "nameLocation": "2364:14:58",
+            "parameters": {
+              "id": 41576,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41571,
+                  "mutability": "mutable",
+                  "name": "_entityId",
+                  "nameLocation": "2396:9:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41578,
+                  "src": "2388:17:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41570,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2388:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41573,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "2423:7:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41578,
+                  "src": "2415:15:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41572,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2415:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41575,
+                  "mutability": "mutable",
+                  "name": "_totalPrice",
+                  "nameLocation": "2448:11:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41578,
+                  "src": "2440:19:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41574,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2440:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2378:87:58"
+            },
+            "returnParameters": {
+              "id": 41577,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2474:0:58"
+            },
+            "scope": 41605,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41586,
+            "nodeType": "FunctionDefinition",
+            "src": "2598:72:58",
+            "nodes": [],
+            "documentation": {
+              "id": 41579,
+              "nodeType": "StructuredDocumentation",
+              "src": "2481:112:58",
+              "text": " @notice Check if an entity token is wrapped as ERC20\n @param _entityId ID of the entity"
+            },
+            "functionSelector": "10b4955d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isTokenWrapped",
+            "nameLocation": "2607:14:58",
+            "parameters": {
+              "id": 41582,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41581,
+                  "mutability": "mutable",
+                  "name": "_entityId",
+                  "nameLocation": "2630:9:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41586,
+                  "src": "2622:17:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41580,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2622:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2621:19:58"
+            },
+            "returnParameters": {
+              "id": 41585,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41584,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41586,
+                  "src": "2664:4:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 41583,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2664:4:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2663:6:58"
+            },
+            "scope": 41605,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41595,
+            "nodeType": "FunctionDefinition",
+            "src": "2816:75:58",
+            "nodes": [],
+            "documentation": {
+              "id": 41587,
+              "nodeType": "StructuredDocumentation",
+              "src": "2676:135:58",
+              "text": " @notice Update entity metadata\n @param _entityId ID of the entity\n @param _entity metadata of the entity"
+            },
+            "functionSelector": "73abdfa5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateEntity",
+            "nameLocation": "2825:12:58",
+            "parameters": {
+              "id": 41593,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41589,
+                  "mutability": "mutable",
+                  "name": "_entityId",
+                  "nameLocation": "2846:9:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41595,
+                  "src": "2838:17:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41588,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2838:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41592,
+                  "mutability": "mutable",
+                  "name": "_entity",
+                  "nameLocation": "2873:7:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41595,
+                  "src": "2857:23:58",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Entity_$41213_calldata_ptr",
+                    "typeString": "struct Entity"
+                  },
+                  "typeName": {
+                    "id": 41591,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 41590,
+                      "name": "Entity",
+                      "nameLocations": [
+                        "2857:6:58"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 41213,
+                      "src": "2857:6:58"
+                    },
+                    "referencedDeclaration": 41213,
+                    "src": "2857:6:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Entity_$41213_storage_ptr",
+                      "typeString": "struct Entity"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2837:44:58"
+            },
+            "returnParameters": {
+              "id": 41594,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2890:0:58"
+            },
+            "scope": 41605,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41604,
+            "nodeType": "FunctionDefinition",
+            "src": "3128:80:58",
+            "nodes": [],
+            "documentation": {
+              "id": 41596,
+              "nodeType": "StructuredDocumentation",
+              "src": "2897:226:58",
+              "text": " @notice Get the the data for entity with ID: `_entityId`\n @dev Get the Entity data for a given entityId\n @param _entityId ID of the entity\n @return Entity struct with metadata of the entity"
+            },
+            "functionSelector": "edd2133b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEntityInfo",
+            "nameLocation": "3137:13:58",
+            "parameters": {
+              "id": 41599,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41598,
+                  "mutability": "mutable",
+                  "name": "_entityId",
+                  "nameLocation": "3159:9:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41604,
+                  "src": "3151:17:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41597,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3151:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3150:19:58"
+            },
+            "returnParameters": {
+              "id": 41603,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41602,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41604,
+                  "src": "3193:13:58",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Entity_$41213_memory_ptr",
+                    "typeString": "struct Entity"
+                  },
+                  "typeName": {
+                    "id": 41601,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 41600,
+                      "name": "Entity",
+                      "nameLocations": [
+                        "3193:6:58"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 41213,
+                      "src": "3193:6:58"
+                    },
+                    "referencedDeclaration": 41213,
+                    "src": "3193:6:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Entity_$41213_storage_ptr",
+                      "typeString": "struct Entity"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3192:15:58"
+            },
+            "scope": 41605,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IEntityFacet",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 41528,
+          "nodeType": "StructuredDocumentation",
+          "src": "130:125:58",
+          "text": " @title Entities\n @notice Used to handle policies and token sales\n @dev Mainly used for token sale and policies"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          41605
+        ],
+        "name": "IEntityFacet",
+        "nameLocation": "266:12:58",
+        "scope": 41606,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 58
+}

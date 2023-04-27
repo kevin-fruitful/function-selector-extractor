@@ -1,0 +1,1390 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_policyId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "cancelSimplePolicy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "checkAndUpdateSimplePolicyState",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPremiumCommissionBasisPoints",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint16",
+              "name": "premiumCommissionNaymsLtdBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "premiumCommissionNDFBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "premiumCommissionSTMBP",
+              "type": "uint16"
+            }
+          ],
+          "internalType": "struct PolicyCommissionsBasisPoints",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_startDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_maturationDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_asset",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_limit",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_offchainDataHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getSigningHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "signingHash_",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getSimplePolicyInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "startDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maturationDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "asset",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "limit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "fundsLocked",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "cancelled",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "claimsPaid",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "premiumsPaid",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct SimplePolicyInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_claimId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_policyId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_insuredId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "paySimpleClaim",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_policyId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "paySimplePremium",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "cancelSimplePolicy(bytes32)": "23eaabe3",
+    "checkAndUpdateSimplePolicyState(bytes32)": "00bae173",
+    "getPremiumCommissionBasisPoints()": "3a0b7208",
+    "getSigningHash(uint256,uint256,bytes32,uint256,bytes32)": "f3253b5f",
+    "getSimplePolicyInfo(bytes32)": "c3ab48cb",
+    "paySimpleClaim(bytes32,bytes32,bytes32,uint256)": "e8b3fb3c",
+    "paySimplePremium(bytes32,uint256)": "7d292605"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_policyId\",\"type\":\"bytes32\"}],\"name\":\"cancelSimplePolicy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_id\",\"type\":\"bytes32\"}],\"name\":\"checkAndUpdateSimplePolicyState\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getPremiumCommissionBasisPoints\",\"outputs\":[{\"components\":[{\"internalType\":\"uint16\",\"name\":\"premiumCommissionNaymsLtdBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"premiumCommissionNDFBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"premiumCommissionSTMBP\",\"type\":\"uint16\"}],\"internalType\":\"struct PolicyCommissionsBasisPoints\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_startDate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_maturationDate\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"_asset\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"_limit\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"_offchainDataHash\",\"type\":\"bytes32\"}],\"name\":\"getSigningHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"signingHash_\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_id\",\"type\":\"bytes32\"}],\"name\":\"getSimplePolicyInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"startDate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maturationDate\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"asset\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"limit\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"fundsLocked\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"cancelled\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"claimsPaid\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"premiumsPaid\",\"type\":\"uint256\"}],\"internalType\":\"struct SimplePolicyInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_claimId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_policyId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_insuredId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"paySimpleClaim\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_policyId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"paySimplePremium\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Simple Policy facet\",\"kind\":\"dev\",\"methods\":{\"cancelSimplePolicy(bytes32)\":{\"details\":\"Cancel a simple policy\",\"params\":{\"_policyId\":\"Id of the simple policy\"}},\"checkAndUpdateSimplePolicyState(bytes32)\":{\"details\":\"Check and update simple policy state\",\"params\":{\"_id\":\"Id of the simple policy\"}},\"getPremiumCommissionBasisPoints()\":{\"returns\":{\"_0\":\"PolicyCommissionsBasisPoints struct containing the individual basis points set for each policy commission receiver.\"}},\"getSigningHash(uint256,uint256,bytes32,uint256,bytes32)\":{\"details\":\"Generate a simple policy hash for singing by the stakeholders\",\"params\":{\"_asset\":\"ID of the underlying asset, used as collateral and to pay out claims\",\"_limit\":\"Policy coverage limit\",\"_maturationDate\":\"Date after which policy becomes matured\",\"_offchainDataHash\":\"Hash of all the important policy data stored offchain\",\"_startDate\":\"Date when policy becomes active\"},\"returns\":{\"signingHash_\":\"hash for signing\"}},\"getSimplePolicyInfo(bytes32)\":{\"details\":\"Get simple policy info\",\"params\":{\"_id\":\"Id of the simple policy\"},\"returns\":{\"_0\":\"Simple policy metadata\"}},\"paySimpleClaim(bytes32,bytes32,bytes32,uint256)\":{\"details\":\"Pay a claim of `_amount` for simple policy\",\"params\":{\"_amount\":\"Amount of the claim\",\"_claimId\":\"Id of the simple policy claim\",\"_insuredId\":\"Id of the insured party\",\"_policyId\":\"Id of the simple policy\"}},\"paySimplePremium(bytes32,uint256)\":{\"details\":\"Pay a premium of `_amount` on simple policy\",\"params\":{\"_amount\":\"Amount of the premium\",\"_policyId\":\"Id of the simple policy\"}}},\"title\":\"Simple Policies\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getPremiumCommissionBasisPoints()\":{\"notice\":\"Get the policy premium commissions basis points.\"}},\"notice\":\"Facet for working with Simple Policies\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/diamonds/nayms/interfaces/ISimplePolicyFacet.sol\":\"ISimplePolicyFacet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\"]},\"sources\":{\"src/diamonds/nayms/interfaces/FreeStructs.sol\":{\"keccak256\":\"0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4\",\"dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD\"]},\"src/diamonds/nayms/interfaces/ISimplePolicyFacet.sol\":{\"keccak256\":\"0xa19aacc7591f778a17b6238212567584d4f261dd035ea1a5430cc4acde135b9c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://796c08003a00a8fac916d3dd60f753b7eac13f0bcf063af738045008684d9369\",\"dweb:/ipfs/QmVntDBDnY7xXKVDh1hniz84v8XHcrXf8tm4pgANAnH7Ts\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_policyId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "cancelSimplePolicy"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_id",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "checkAndUpdateSimplePolicyState"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getPremiumCommissionBasisPoints",
+          "outputs": [
+            {
+              "internalType": "struct PolicyCommissionsBasisPoints",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint16",
+                  "name": "premiumCommissionNaymsLtdBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "premiumCommissionNDFBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "premiumCommissionSTMBP",
+                  "type": "uint16"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_startDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_maturationDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_asset",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_limit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_offchainDataHash",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getSigningHash",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "signingHash_",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_id",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getSimplePolicyInfo",
+          "outputs": [
+            {
+              "internalType": "struct SimplePolicyInfo",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "startDate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "maturationDate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "asset",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "limit",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "fundsLocked",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "cancelled",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "claimsPaid",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "premiumsPaid",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_claimId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_policyId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_insuredId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "paySimpleClaim"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_policyId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "paySimplePremium"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "cancelSimplePolicy(bytes32)": {
+            "details": "Cancel a simple policy",
+            "params": {
+              "_policyId": "Id of the simple policy"
+            }
+          },
+          "checkAndUpdateSimplePolicyState(bytes32)": {
+            "details": "Check and update simple policy state",
+            "params": {
+              "_id": "Id of the simple policy"
+            }
+          },
+          "getPremiumCommissionBasisPoints()": {
+            "returns": {
+              "_0": "PolicyCommissionsBasisPoints struct containing the individual basis points set for each policy commission receiver."
+            }
+          },
+          "getSigningHash(uint256,uint256,bytes32,uint256,bytes32)": {
+            "details": "Generate a simple policy hash for singing by the stakeholders",
+            "params": {
+              "_asset": "ID of the underlying asset, used as collateral and to pay out claims",
+              "_limit": "Policy coverage limit",
+              "_maturationDate": "Date after which policy becomes matured",
+              "_offchainDataHash": "Hash of all the important policy data stored offchain",
+              "_startDate": "Date when policy becomes active"
+            },
+            "returns": {
+              "signingHash_": "hash for signing"
+            }
+          },
+          "getSimplePolicyInfo(bytes32)": {
+            "details": "Get simple policy info",
+            "params": {
+              "_id": "Id of the simple policy"
+            },
+            "returns": {
+              "_0": "Simple policy metadata"
+            }
+          },
+          "paySimpleClaim(bytes32,bytes32,bytes32,uint256)": {
+            "details": "Pay a claim of `_amount` for simple policy",
+            "params": {
+              "_amount": "Amount of the claim",
+              "_claimId": "Id of the simple policy claim",
+              "_insuredId": "Id of the insured party",
+              "_policyId": "Id of the simple policy"
+            }
+          },
+          "paySimplePremium(bytes32,uint256)": {
+            "details": "Pay a premium of `_amount` on simple policy",
+            "params": {
+              "_amount": "Amount of the premium",
+              "_policyId": "Id of the simple policy"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "getPremiumCommissionBasisPoints()": {
+            "notice": "Get the policy premium commissions basis points."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/diamonds/nayms/interfaces/ISimplePolicyFacet.sol": "ISimplePolicyFacet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/interfaces/FreeStructs.sol": {
+        "keccak256": "0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384",
+        "urls": [
+          "bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4",
+          "dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/ISimplePolicyFacet.sol": {
+        "keccak256": "0xa19aacc7591f778a17b6238212567584d4f261dd035ea1a5430cc4acde135b9c",
+        "urls": [
+          "bzz-raw://796c08003a00a8fac916d3dd60f753b7eac13f0bcf063af738045008684d9369",
+          "dweb:/ipfs/QmVntDBDnY7xXKVDh1hniz84v8XHcrXf8tm4pgANAnH7Ts"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/diamonds/nayms/interfaces/ISimplePolicyFacet.sol",
+    "id": 41818,
+    "exportedSymbols": {
+      "ISimplePolicyFacet": [
+        41817
+      ],
+      "PolicyCommissionsBasisPoints": [
+        41267
+      ],
+      "SimplePolicy": [
+        41243
+      ],
+      "SimplePolicyInfo": [
+        41260
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2513:62",
+    "nodes": [
+      {
+        "id": 41747,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:62",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 41751,
+        "nodeType": "ImportDirective",
+        "src": "57:97:62",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/interfaces/FreeStructs.sol",
+        "file": "./FreeStructs.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 41818,
+        "sourceUnit": 41323,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 41748,
+              "name": "SimplePolicy",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41243,
+              "src": "66:12:62",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 41749,
+              "name": "SimplePolicyInfo",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41260,
+              "src": "80:16:62",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 41750,
+              "name": "PolicyCommissionsBasisPoints",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 41267,
+              "src": "98:28:62",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 41817,
+        "nodeType": "ContractDefinition",
+        "src": "268:2276:62",
+        "nodes": [
+          {
+            "id": 41768,
+            "nodeType": "FunctionDefinition",
+            "src": "784:219:62",
+            "nodes": [],
+            "documentation": {
+              "id": 41753,
+              "nodeType": "StructuredDocumentation",
+              "src": "303:476:62",
+              "text": " @dev Generate a simple policy hash for singing by the stakeholders\n @param _startDate Date when policy becomes active\n @param _maturationDate Date after which policy becomes matured\n @param _asset ID of the underlying asset, used as collateral and to pay out claims\n @param _limit Policy coverage limit\n @param _offchainDataHash Hash of all the important policy data stored offchain\n @return signingHash_ hash for signing"
+            },
+            "functionSelector": "f3253b5f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSigningHash",
+            "nameLocation": "793:14:62",
+            "parameters": {
+              "id": 41764,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41755,
+                  "mutability": "mutable",
+                  "name": "_startDate",
+                  "nameLocation": "825:10:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41768,
+                  "src": "817:18:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41754,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "817:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41757,
+                  "mutability": "mutable",
+                  "name": "_maturationDate",
+                  "nameLocation": "853:15:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41768,
+                  "src": "845:23:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41756,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "845:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41759,
+                  "mutability": "mutable",
+                  "name": "_asset",
+                  "nameLocation": "886:6:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41768,
+                  "src": "878:14:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41758,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "878:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41761,
+                  "mutability": "mutable",
+                  "name": "_limit",
+                  "nameLocation": "910:6:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41768,
+                  "src": "902:14:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41760,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "902:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41763,
+                  "mutability": "mutable",
+                  "name": "_offchainDataHash",
+                  "nameLocation": "934:17:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41768,
+                  "src": "926:25:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41762,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "926:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "807:150:62"
+            },
+            "returnParameters": {
+              "id": 41767,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41766,
+                  "mutability": "mutable",
+                  "name": "signingHash_",
+                  "nameLocation": "989:12:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41768,
+                  "src": "981:20:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41765,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "981:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "980:22:62"
+            },
+            "scope": 41817,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41776,
+            "nodeType": "FunctionDefinition",
+            "src": "1173:71:62",
+            "nodes": [],
+            "documentation": {
+              "id": 41769,
+              "nodeType": "StructuredDocumentation",
+              "src": "1009:159:62",
+              "text": " @dev Pay a premium of `_amount` on simple policy\n @param _policyId Id of the simple policy\n @param _amount Amount of the premium"
+            },
+            "functionSelector": "7d292605",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "paySimplePremium",
+            "nameLocation": "1182:16:62",
+            "parameters": {
+              "id": 41774,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41771,
+                  "mutability": "mutable",
+                  "name": "_policyId",
+                  "nameLocation": "1207:9:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41776,
+                  "src": "1199:17:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41770,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1199:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41773,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "1226:7:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41776,
+                  "src": "1218:15:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41772,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1218:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1198:36:62"
+            },
+            "returnParameters": {
+              "id": 41775,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1243:0:62"
+            },
+            "scope": 41817,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41788,
+            "nodeType": "FunctionDefinition",
+            "src": "1513:145:62",
+            "nodes": [],
+            "documentation": {
+              "id": 41777,
+              "nodeType": "StructuredDocumentation",
+              "src": "1250:258:62",
+              "text": " @dev Pay a claim of `_amount` for simple policy\n @param _claimId Id of the simple policy claim\n @param _policyId Id of the simple policy\n @param _insuredId Id of the insured party\n @param _amount Amount of the claim"
+            },
+            "functionSelector": "e8b3fb3c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "paySimpleClaim",
+            "nameLocation": "1522:14:62",
+            "parameters": {
+              "id": 41786,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41779,
+                  "mutability": "mutable",
+                  "name": "_claimId",
+                  "nameLocation": "1554:8:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41788,
+                  "src": "1546:16:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41778,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1546:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41781,
+                  "mutability": "mutable",
+                  "name": "_policyId",
+                  "nameLocation": "1580:9:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41788,
+                  "src": "1572:17:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41780,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1572:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41783,
+                  "mutability": "mutable",
+                  "name": "_insuredId",
+                  "nameLocation": "1607:10:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41788,
+                  "src": "1599:18:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41782,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1599:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41785,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "1635:7:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41788,
+                  "src": "1627:15:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41784,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1627:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1536:112:62"
+            },
+            "returnParameters": {
+              "id": 41787,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1657:0:62"
+            },
+            "scope": 41817,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41797,
+            "nodeType": "FunctionDefinition",
+            "src": "1795:90:62",
+            "nodes": [],
+            "documentation": {
+              "id": 41789,
+              "nodeType": "StructuredDocumentation",
+              "src": "1664:126:62",
+              "text": " @dev Get simple policy info\n @param _id Id of the simple policy\n @return Simple policy metadata"
+            },
+            "functionSelector": "c3ab48cb",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSimplePolicyInfo",
+            "nameLocation": "1804:19:62",
+            "parameters": {
+              "id": 41792,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41791,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nameLocation": "1832:3:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41797,
+                  "src": "1824:11:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41790,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1824:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1823:13:62"
+            },
+            "returnParameters": {
+              "id": 41796,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41795,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41797,
+                  "src": "1860:23:62",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_SimplePolicyInfo_$41260_memory_ptr",
+                    "typeString": "struct SimplePolicyInfo"
+                  },
+                  "typeName": {
+                    "id": 41794,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 41793,
+                      "name": "SimplePolicyInfo",
+                      "nameLocations": [
+                        "1860:16:62"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 41260,
+                      "src": "1860:16:62"
+                    },
+                    "referencedDeclaration": 41260,
+                    "src": "1860:16:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_SimplePolicyInfo_$41260_storage_ptr",
+                      "typeString": "struct SimplePolicyInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1859:25:62"
+            },
+            "scope": 41817,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41804,
+            "nodeType": "FunctionDefinition",
+            "src": "2102:103:62",
+            "nodes": [],
+            "documentation": {
+              "id": 41798,
+              "nodeType": "StructuredDocumentation",
+              "src": "1891:206:62",
+              "text": " @notice Get the policy premium commissions basis points.\n @return PolicyCommissionsBasisPoints struct containing the individual basis points set for each policy commission receiver."
+            },
+            "functionSelector": "3a0b7208",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPremiumCommissionBasisPoints",
+            "nameLocation": "2111:31:62",
+            "parameters": {
+              "id": 41799,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2142:2:62"
+            },
+            "returnParameters": {
+              "id": 41803,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41802,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41804,
+                  "src": "2168:35:62",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_memory_ptr",
+                    "typeString": "struct PolicyCommissionsBasisPoints"
+                  },
+                  "typeName": {
+                    "id": 41801,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 41800,
+                      "name": "PolicyCommissionsBasisPoints",
+                      "nameLocations": [
+                        "2168:28:62"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 41267,
+                      "src": "2168:28:62"
+                    },
+                    "referencedDeclaration": 41267,
+                    "src": "2168:28:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_PolicyCommissionsBasisPoints_$41267_storage_ptr",
+                      "typeString": "struct PolicyCommissionsBasisPoints"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2167:37:62"
+            },
+            "scope": 41817,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41810,
+            "nodeType": "FunctionDefinition",
+            "src": "2318:63:62",
+            "nodes": [],
+            "documentation": {
+              "id": 41805,
+              "nodeType": "StructuredDocumentation",
+              "src": "2211:102:62",
+              "text": " @dev Check and update simple policy state\n @param _id Id of the simple policy"
+            },
+            "functionSelector": "00bae173",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkAndUpdateSimplePolicyState",
+            "nameLocation": "2327:31:62",
+            "parameters": {
+              "id": 41808,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41807,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nameLocation": "2367:3:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41810,
+                  "src": "2359:11:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41806,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2359:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2358:13:62"
+            },
+            "returnParameters": {
+              "id": 41809,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2380:0:62"
+            },
+            "scope": 41817,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41816,
+            "nodeType": "FunctionDefinition",
+            "src": "2486:56:62",
+            "nodes": [],
+            "documentation": {
+              "id": 41811,
+              "nodeType": "StructuredDocumentation",
+              "src": "2387:94:62",
+              "text": " @dev Cancel a simple policy\n @param _policyId Id of the simple policy"
+            },
+            "functionSelector": "23eaabe3",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "cancelSimplePolicy",
+            "nameLocation": "2495:18:62",
+            "parameters": {
+              "id": 41814,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41813,
+                  "mutability": "mutable",
+                  "name": "_policyId",
+                  "nameLocation": "2522:9:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41816,
+                  "src": "2514:17:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 41812,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2514:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2513:19:62"
+            },
+            "returnParameters": {
+              "id": 41815,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2541:0:62"
+            },
+            "scope": 41817,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISimplePolicyFacet",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 41752,
+          "nodeType": "StructuredDocumentation",
+          "src": "156:111:62",
+          "text": " @title Simple Policies\n @notice Facet for working with Simple Policies\n @dev Simple Policy facet"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          41817
+        ],
+        "name": "ISimplePolicyFacet",
+        "nameLocation": "278:18:62",
+        "scope": 41818,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 62
+}

@@ -1,0 +1,820 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getCommissionsConfig",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint16",
+              "name": "tradingCommissionTotalBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "tradingCommissionNaymsLtdBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "tradingCommissionNDFBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "tradingCommissionSTMBP",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "tradingCommissionMakerBP",
+              "type": "uint16"
+            }
+          ],
+          "internalType": "struct TradingCommissionsConfig",
+          "name": "config_",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50610167806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063c5ff2cd314610030575b600080fd5b6100de6040805160a0810182526000808252602082018190529181018290526060810182905260808101829052907f1ab5ce5b595c6e94c5fba2e588bf4eafa8b384a4fb6e188b892768e695c1bfc76040805160a08101825260269092015461ffff8082168452620100008204811660208501526401000000008204811692840192909252660100000000000081048216606084015268010000000000000000900416608082015292915050565b6040516101289190815161ffff9081168252602080840151821690830152604080840151821690830152606080840151821690830152608092830151169181019190915260a00190565b60405180910390f3fea2646970667358221220521320e1c552bba47b1e3bade21aad02f4a8e8bbd4b9eb6992108e23c3a69bd364736f6c63430008110033",
+    "sourceMap": "358:586:119:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063c5ff2cd314610030575b600080fd5b6100de6040805160a0810182526000808252602082018190529181018290526060810182905260808101829052907f1ab5ce5b595c6e94c5fba2e588bf4eafa8b384a4fb6e188b892768e695c1bfc76040805160a08101825260269092015461ffff8082168452620100008204811660208501526401000000008204811692840192909252660100000000000081048216606084015268010000000000000000900416608082015292915050565b6040516101289190815161ffff9081168252602080840151821690830152604080840151821690830152606080840151821690830152608092830151169181019190915260a00190565b60405180910390f3fea2646970667358221220521320e1c552bba47b1e3bade21aad02f4a8e8bbd4b9eb6992108e23c3a69bd364736f6c63430008110033",
+    "sourceMap": "358:586:119:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;399:543;;-1:-1:-1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4704:43:38;571:364:119;;;;;;;;636:26;;;;;;;;;571:364;;705:29;;;;;571:364;;;;772:24;;;;;571:364;;;;;;;834:24;;;;;571:364;;;;898:26;;;;571:364;;;;;399:543;-1:-1:-1;;399:543:119;;;;;;;294:13:123;;257:6;290:22;;;272:41;;373:4;361:17;;;355:24;351:33;;329:20;;;322:63;445:4;433:17;;;427:24;423:33;;401:20;;;394:63;517:4;505:17;;;499:24;495:33;;473:20;;;466:63;589:4;577:17;;;571:24;567:33;545:20;;;538:63;;;;234:3;219:19;;14:593;399:543:119;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getCommissionsConfig()": "c5ff2cd3"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getCommissionsConfig\",\"outputs\":[{\"components\":[{\"internalType\":\"uint16\",\"name\":\"tradingCommissionTotalBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"tradingCommissionNaymsLtdBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"tradingCommissionNDFBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"tradingCommissionSTMBP\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"tradingCommissionMakerBP\",\"type\":\"uint16\"}],\"internalType\":\"struct TradingCommissionsConfig\",\"name\":\"config_\",\"type\":\"tuple\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"test/fixtures/TradingCommissionsFixture.sol\":\"TradingCommissionsFixture\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/ozv4/\",\":@uniswap/lib/=lib/solidity-lib/\",\":@uniswap/v2-core/=lib/v2-core/\",\":@uniswap/v3-core/=lib/v3-core/\",\":@uniswap/v3-periphery/=lib/v3-periphery/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":ozv4/=lib/ozv4/\",\":script/=script/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":solidity-stringutils/=lib/solidity-stringutils/src/\",\":solmate/=lib/solmate/src/\",\":src/=src/\",\":test/=test/\"]},\"sources\":{\"src/diamonds/nayms/AppStorage.sol\":{\"keccak256\":\"0xea212ff0174b72ed18d8f4288df97a202eebe977d5858e525b748e596f279edf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f8e0b7c0f3cb0e886f221aaa3f5f4fbe2f4d9d17ca2e5fe8ab2095b8951740c6\",\"dweb:/ipfs/QmQme6aQVAn39Bp5upLuncPm8JZ6Pa7D6udPSwPK5GQbTx\"]},\"src/diamonds/nayms/interfaces/FreeStructs.sol\":{\"keccak256\":\"0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4\",\"dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD\"]},\"test/fixtures/TradingCommissionsFixture.sol\":{\"keccak256\":\"0x36851fa5b8e2f5fda919d2b7c511ed0cf2dfc37b223cef1ffbd8750a7f897dcc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aee460bdb9d9748138e02ed3591556b1d8ea99f72c7943cb8bbf63ad2d00319a\",\"dweb:/ipfs/QmPK1nchtw89EimLxYuL98HFg7o2gv1bDK79VPoS6Psawy\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "getCommissionsConfig",
+          "outputs": [
+            {
+              "internalType": "struct TradingCommissionsConfig",
+              "name": "config_",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint16",
+                  "name": "tradingCommissionTotalBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "tradingCommissionNaymsLtdBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "tradingCommissionNDFBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "tradingCommissionSTMBP",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "tradingCommissionMakerBP",
+                  "type": "uint16"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/ozv4/",
+        ":@uniswap/lib/=lib/solidity-lib/",
+        ":@uniswap/v2-core/=lib/v2-core/",
+        ":@uniswap/v3-core/=lib/v3-core/",
+        ":@uniswap/v3-periphery/=lib/v3-periphery/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":ozv4/=lib/ozv4/",
+        ":script/=script/",
+        ":solidity-lib/=lib/solidity-lib/contracts/",
+        ":solidity-stringutils/=lib/solidity-stringutils/src/",
+        ":solmate/=lib/solmate/src/",
+        ":src/=src/",
+        ":test/=test/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "test/fixtures/TradingCommissionsFixture.sol": "TradingCommissionsFixture"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/diamonds/nayms/AppStorage.sol": {
+        "keccak256": "0xea212ff0174b72ed18d8f4288df97a202eebe977d5858e525b748e596f279edf",
+        "urls": [
+          "bzz-raw://f8e0b7c0f3cb0e886f221aaa3f5f4fbe2f4d9d17ca2e5fe8ab2095b8951740c6",
+          "dweb:/ipfs/QmQme6aQVAn39Bp5upLuncPm8JZ6Pa7D6udPSwPK5GQbTx"
+        ],
+        "license": "MIT"
+      },
+      "src/diamonds/nayms/interfaces/FreeStructs.sol": {
+        "keccak256": "0xbcbdb86f63372f83a5014433874e8ae486ac5d219889203393e63337b4f3a384",
+        "urls": [
+          "bzz-raw://0538c135fa5950fbd362427f5d2c3d4a15e568bd84a151e6446bca72c1a955a4",
+          "dweb:/ipfs/QmQC4uX42LXPBD5nSHzSg7cf4pU8GqxQrAmoTkoGUgAzRD"
+        ],
+        "license": "MIT"
+      },
+      "test/fixtures/TradingCommissionsFixture.sol": {
+        "keccak256": "0x36851fa5b8e2f5fda919d2b7c511ed0cf2dfc37b223cef1ffbd8750a7f897dcc",
+        "urls": [
+          "bzz-raw://aee460bdb9d9748138e02ed3591556b1d8ea99f72c7943cb8bbf63ad2d00319a",
+          "dweb:/ipfs/QmPK1nchtw89EimLxYuL98HFg7o2gv1bDK79VPoS6Psawy"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "test/fixtures/TradingCommissionsFixture.sol",
+    "id": 75306,
+    "exportedSymbols": {
+      "AppStorage": [
+        38309
+      ],
+      "LibAppStorage": [
+        38349
+      ],
+      "TradingCommissionsConfig": [
+        75275
+      ],
+      "TradingCommissionsFixture": [
+        75305
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:913:119",
+    "nodes": [
+      {
+        "id": 75261,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:119",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 75264,
+        "nodeType": "ImportDirective",
+        "src": "57:78:119",
+        "nodes": [],
+        "absolutePath": "src/diamonds/nayms/AppStorage.sol",
+        "file": "src/diamonds/nayms/AppStorage.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 75306,
+        "sourceUnit": 38350,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 75262,
+              "name": "AppStorage",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 38309,
+              "src": "66:10:119",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 75263,
+              "name": "LibAppStorage",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 38349,
+              "src": "78:13:119",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 75275,
+        "nodeType": "StructDefinition",
+        "src": "137:219:119",
+        "nodes": [],
+        "canonicalName": "TradingCommissionsConfig",
+        "members": [
+          {
+            "constant": false,
+            "id": 75266,
+            "mutability": "mutable",
+            "name": "tradingCommissionTotalBP",
+            "nameLocation": "182:24:119",
+            "nodeType": "VariableDeclaration",
+            "scope": 75275,
+            "src": "175:31:119",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 75265,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "175:6:119",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 75268,
+            "mutability": "mutable",
+            "name": "tradingCommissionNaymsLtdBP",
+            "nameLocation": "219:27:119",
+            "nodeType": "VariableDeclaration",
+            "scope": 75275,
+            "src": "212:34:119",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 75267,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "212:6:119",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 75270,
+            "mutability": "mutable",
+            "name": "tradingCommissionNDFBP",
+            "nameLocation": "259:22:119",
+            "nodeType": "VariableDeclaration",
+            "scope": 75275,
+            "src": "252:29:119",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 75269,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "252:6:119",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 75272,
+            "mutability": "mutable",
+            "name": "tradingCommissionSTMBP",
+            "nameLocation": "294:22:119",
+            "nodeType": "VariableDeclaration",
+            "scope": 75275,
+            "src": "287:29:119",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 75271,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "287:6:119",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 75274,
+            "mutability": "mutable",
+            "name": "tradingCommissionMakerBP",
+            "nameLocation": "329:24:119",
+            "nodeType": "VariableDeclaration",
+            "scope": 75275,
+            "src": "322:31:119",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 75273,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "322:6:119",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "TradingCommissionsConfig",
+        "nameLocation": "144:24:119",
+        "scope": 75306,
+        "visibility": "public"
+      },
+      {
+        "id": 75305,
+        "nodeType": "ContractDefinition",
+        "src": "358:586:119",
+        "nodes": [
+          {
+            "id": 75304,
+            "nodeType": "FunctionDefinition",
+            "src": "399:543:119",
+            "nodes": [],
+            "body": {
+              "id": 75303,
+              "nodeType": "Block",
+              "src": "488:454:119",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    75283
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 75283,
+                      "mutability": "mutable",
+                      "name": "s",
+                      "nameLocation": "517:1:119",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 75303,
+                      "src": "498:20:119",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_AppStorage_$38309_storage_ptr",
+                        "typeString": "struct AppStorage"
+                      },
+                      "typeName": {
+                        "id": 75282,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 75281,
+                          "name": "AppStorage",
+                          "nameLocations": [
+                            "498:10:119"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 38309,
+                          "src": "498:10:119"
+                        },
+                        "referencedDeclaration": 38309,
+                        "src": "498:10:119",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AppStorage_$38309_storage_ptr",
+                          "typeString": "struct AppStorage"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 75287,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 75284,
+                        "name": "LibAppStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 38349,
+                        "src": "521:13:119",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_LibAppStorage_$38349_$",
+                          "typeString": "type(library LibAppStorage)"
+                        }
+                      },
+                      "id": 75285,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "535:14:119",
+                      "memberName": "diamondStorage",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 38336,
+                      "src": "521:28:119",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_AppStorage_$38309_storage_ptr_$",
+                        "typeString": "function () pure returns (struct AppStorage storage pointer)"
+                      }
+                    },
+                    "id": 75286,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "521:30:119",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_AppStorage_$38309_storage_ptr",
+                      "typeString": "struct AppStorage storage pointer"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "498:53:119"
+                },
+                {
+                  "expression": {
+                    "id": 75301,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 75288,
+                      "name": "config_",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 75279,
+                      "src": "561:7:119",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_TradingCommissionsConfig_$75275_memory_ptr",
+                        "typeString": "struct TradingCommissionsConfig memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "expression": {
+                            "id": 75290,
+                            "name": "s",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 75283,
+                            "src": "636:1:119",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_AppStorage_$38309_storage_ptr",
+                              "typeString": "struct AppStorage storage pointer"
+                            }
+                          },
+                          "id": 75291,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "638:24:119",
+                          "memberName": "tradingCommissionTotalBP",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 38275,
+                          "src": "636:26:119",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint16",
+                            "typeString": "uint16"
+                          }
+                        },
+                        {
+                          "expression": {
+                            "id": 75292,
+                            "name": "s",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 75283,
+                            "src": "705:1:119",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_AppStorage_$38309_storage_ptr",
+                              "typeString": "struct AppStorage storage pointer"
+                            }
+                          },
+                          "id": 75293,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "707:27:119",
+                          "memberName": "tradingCommissionNaymsLtdBP",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 38277,
+                          "src": "705:29:119",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint16",
+                            "typeString": "uint16"
+                          }
+                        },
+                        {
+                          "expression": {
+                            "id": 75294,
+                            "name": "s",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 75283,
+                            "src": "772:1:119",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_AppStorage_$38309_storage_ptr",
+                              "typeString": "struct AppStorage storage pointer"
+                            }
+                          },
+                          "id": 75295,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "774:22:119",
+                          "memberName": "tradingCommissionNDFBP",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 38279,
+                          "src": "772:24:119",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint16",
+                            "typeString": "uint16"
+                          }
+                        },
+                        {
+                          "expression": {
+                            "id": 75296,
+                            "name": "s",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 75283,
+                            "src": "834:1:119",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_AppStorage_$38309_storage_ptr",
+                              "typeString": "struct AppStorage storage pointer"
+                            }
+                          },
+                          "id": 75297,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "836:22:119",
+                          "memberName": "tradingCommissionSTMBP",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 38281,
+                          "src": "834:24:119",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint16",
+                            "typeString": "uint16"
+                          }
+                        },
+                        {
+                          "expression": {
+                            "id": 75298,
+                            "name": "s",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 75283,
+                            "src": "898:1:119",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_AppStorage_$38309_storage_ptr",
+                              "typeString": "struct AppStorage storage pointer"
+                            }
+                          },
+                          "id": 75299,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "900:24:119",
+                          "memberName": "tradingCommissionMakerBP",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 38283,
+                          "src": "898:26:119",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint16",
+                            "typeString": "uint16"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint16",
+                            "typeString": "uint16"
+                          },
+                          {
+                            "typeIdentifier": "t_uint16",
+                            "typeString": "uint16"
+                          },
+                          {
+                            "typeIdentifier": "t_uint16",
+                            "typeString": "uint16"
+                          },
+                          {
+                            "typeIdentifier": "t_uint16",
+                            "typeString": "uint16"
+                          },
+                          {
+                            "typeIdentifier": "t_uint16",
+                            "typeString": "uint16"
+                          }
+                        ],
+                        "id": 75289,
+                        "name": "TradingCommissionsConfig",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 75275,
+                        "src": "571:24:119",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_TradingCommissionsConfig_$75275_storage_ptr_$",
+                          "typeString": "type(struct TradingCommissionsConfig storage pointer)"
+                        }
+                      },
+                      "id": 75300,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "nameLocations": [
+                        "610:24:119",
+                        "676:27:119",
+                        "748:22:119",
+                        "810:22:119",
+                        "872:24:119"
+                      ],
+                      "names": [
+                        "tradingCommissionTotalBP",
+                        "tradingCommissionNaymsLtdBP",
+                        "tradingCommissionNDFBP",
+                        "tradingCommissionSTMBP",
+                        "tradingCommissionMakerBP"
+                      ],
+                      "nodeType": "FunctionCall",
+                      "src": "571:364:119",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_TradingCommissionsConfig_$75275_memory_ptr",
+                        "typeString": "struct TradingCommissionsConfig memory"
+                      }
+                    },
+                    "src": "561:374:119",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TradingCommissionsConfig_$75275_memory_ptr",
+                      "typeString": "struct TradingCommissionsConfig memory"
+                    }
+                  },
+                  "id": 75302,
+                  "nodeType": "ExpressionStatement",
+                  "src": "561:374:119"
+                }
+              ]
+            },
+            "functionSelector": "c5ff2cd3",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCommissionsConfig",
+            "nameLocation": "408:20:119",
+            "parameters": {
+              "id": 75276,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "428:2:119"
+            },
+            "returnParameters": {
+              "id": 75280,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 75279,
+                  "mutability": "mutable",
+                  "name": "config_",
+                  "nameLocation": "479:7:119",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 75304,
+                  "src": "447:39:119",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_TradingCommissionsConfig_$75275_memory_ptr",
+                    "typeString": "struct TradingCommissionsConfig"
+                  },
+                  "typeName": {
+                    "id": 75278,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 75277,
+                      "name": "TradingCommissionsConfig",
+                      "nameLocations": [
+                        "447:24:119"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 75275,
+                      "src": "447:24:119"
+                    },
+                    "referencedDeclaration": 75275,
+                    "src": "447:24:119",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TradingCommissionsConfig_$75275_storage_ptr",
+                      "typeString": "struct TradingCommissionsConfig"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "446:41:119"
+            },
+            "scope": 75305,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "TradingCommissionsFixture",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          75305
+        ],
+        "name": "TradingCommissionsFixture",
+        "nameLocation": "367:25:119",
+        "scope": 75306,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 119
+}
